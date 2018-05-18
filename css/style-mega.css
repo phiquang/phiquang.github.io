@@ -2,6 +2,20 @@
 	box-sizing: border-box;
 	outline: none;
 }
+strike{
+	color: #959595;
+	font-family: roboto Condensed;
+	font-weight: 500;
+	font-size: 16px;
+}
+.nav>li>a:hover{
+	background-color: white;
+	color: red;
+}
+button:hover{
+	background-color: #e9e9e9;
+	color: black;
+}
 .sidenav {
     height: 100%; /* 100% Full-height */
     width: 0; /* 0 width - change this with JavaScript */
@@ -42,7 +56,7 @@
     transition: margin-left .5s;
     padding: 20px;
     }
-nav,.logo-pc,.search,.buttonsearch,.menu-all,.menu-main,.icon-cart,footer,aside,.electric{
+nav,.logo-pc,.search,.buttonsearch,.menu-all,.menu-main,.icon-cart,footer,aside,.electric,.sup,.foot-search{
 	display: none;
 }
 .menu-topbar{
@@ -69,12 +83,6 @@ nav,.logo-pc,.search,.buttonsearch,.menu-all,.menu-main,.icon-cart,footer,aside,
 .img-buynow img{
 	width: 100%;
 }
-.view{
-	display: none;
-}
-.product-item:hover{
- 	background-color: #e4e4e4;
- }
 .product-images img{
  	width: 100%;
  	transition: transform 1s ease;
@@ -91,7 +99,7 @@ nav,.logo-pc,.search,.buttonsearch,.menu-all,.menu-main,.icon-cart,footer,aside,
 	float: right;
 	padding-right: 2px;
  }
-.product-info p{
+.product-info h3{
 	font-family: Roboto;color: #6a6a6a;
 	font-size: 14px;
     font-weight: 600;
@@ -99,7 +107,7 @@ nav,.logo-pc,.search,.buttonsearch,.menu-all,.menu-main,.icon-cart,footer,aside,
 .product-info span{
 	font-family: Roboto Condensed;
 	font-size: 20px;
-	color: #f41d25;
+	color: #eb181e;
 }
 .pagi li a{
 	margin-right: 5px;
@@ -110,7 +118,7 @@ nav,.logo-pc,.search,.buttonsearch,.menu-all,.menu-main,.icon-cart,footer,aside,
 	border-color: #eb1a21;
 }
 @media only screen and (min-width: 900px){
-nav,.logo-pc,.search,.buttonsearch,.menu-all,.menu-main,.icon-cart,footer,aside,.electric{
+nav,.logo-pc,.search,.buttonsearch,.menu-all,.menu-main,.icon-cart,footer,aside,.electric,.sup,.foot-search{
 	display: block;
 }
 .menu-topbar{
@@ -152,6 +160,9 @@ aside{
 	color: #464646;
 }
 .topbar li{
+	font-family: roboto;
+	font-weight: 400;
+	font-size: 13px;
 	float: right;
 	padding-left: 20px;
     margin-left: 21px;
@@ -187,6 +198,9 @@ aside{
  	margin-top: 29px;
  	margin-left: 66px;
  }
+ .search .dropdown-menu{
+ 	max-width: 118px;
+ }
  header{
  	border-top: 1px solid #e9e9e9;
  }
@@ -207,6 +221,9 @@ aside{
  	height: 40px;
  	width: 70%;
  }
+ .buttonsearch button:hover{
+ 	background-color: grey;
+ }
  .buttonsearch span{
  	color: white; font-size:17px;font-family: Roboto Condensed;font-weight: 700;font-size: 18px;letter-spacing: 1px;
  }
@@ -214,6 +231,18 @@ aside{
  	width: 7%;
  	margin-left: -51px;
  	padding: 32px;
+ }
+ .count{
+ 	position: absolute;
+    right: 0;
+    top: 26px;
+    height: 16px;
+    width: 16px;
+    background-color: #ea1a27;
+    border-radius: 50%;
+    color: white;
+    text-align: center;
+    font-size: 12px;
  }
  .logo-pc,.buttonsearch,.icon-cart{
  	height: 99px;
@@ -241,6 +270,9 @@ aside{
 	font-family: roboto;
 	font-weight: bold;
 	font-size: 18px;
+}
+.menu-main .dropdown-menu{
+	max-width: 110px;
 }
  .menu-main li a{
  	font-family: roboto;
@@ -326,6 +358,7 @@ aside{
  }
  .electric{
  	height: 48px;margin-top: 56px;border-bottom: 1px solid #e9e9e9;
+ 	    margin-left: 26px;
  }
  .elec{
  	width: 15.2%;
@@ -339,6 +372,10 @@ aside{
  	font-family: roboto;
  	font-size: 15px;
  	padding-left: 418px;
+ 	float: right;
+ }
+ .show a{
+ 	text-decoration: none;
  }
  .show span{
  	color: #272727;
@@ -346,15 +383,16 @@ aside{
  }
  .show img{
  	border: 1px solid #e9e9e9;
- 	padding: 8px;
+ 	padding: 7px;
  	margin: 3px;
+ }
+ .content{
+ 	float: right;
  }
  .product-item{
  	position: relative;
- 	padding: 35px 20px 15px 20px;
- }
- .product-item:hover{
- 	background-color: #e4e4e4;
+ 	padding: 35px 20px 0 20px;
+
  }
  .product-images{
  	overflow: hidden;
@@ -372,57 +410,41 @@ aside{
  .product-info a:hover{
  	text-decoration:none;
  }
- .product-item:hover .product-info p{
- 	transform: rotateX(180deg);
- 	backface-visibility: hidden;
+ .product-item:hover .product-info h3{
+ 	color: red;
  }
- .product-item:hover .view{
- 	opacity: 1;
- }
+
  .product-info i{
  	font-size: 12px;
 	color: #f88952;
 	float: right;
 	padding-right: 2px;
  }
-.product-info p{
-	font-family: Roboto;color: #6a6a6a;
+.product-info h3{
+	font-family: Roboto;color: #2e2e2e;
 	font-size: 14px;
     font-weight: 600;
 }
 .product-info span{
 	font-family: Roboto Condensed;
+	font-weight: 500;
 	font-size: 20px;
-	color: #f41d25;
-}
-.view{
-	display: block;
-	opacity: 0;
-	overflow: hidden;
-	position: absolute;
-	bottom: 40px;
-    left: 95px;
-    z-index: 0;
-}
-.view a:hover{
-	text-decoration: none;
-}
-.view a{
-	color: red;
+	color: #eb181e;
 }
 .pagi{
-	margin: 20px 200px 80px 0;
-}
-.pagi li{
-	margin-right: 20px;
+	display: inline-block;
+	margin: 20px 0 80px 200px;
 }
 .pagi li a{
-	margin-right: 11px;
+	margin-right: 7px;
 	color: #3e3e3e;
 }
 .pagination>.active>a{
 	background-color: #eb1a21;
 	border-color: #eb1a21;
+}
+.pagination li{
+	display: inline-block;
 }
 .sup{
  	height: 223px;
@@ -513,6 +535,9 @@ padding-top: 47px;
 	width: 90px;
 	height: 38px;
 }
+.input-mail button:hover{
+	background-color: grey;
+}
 .foot-info{
 	height: 293px;
 	background-color:#f7f7f7; 
@@ -529,6 +554,13 @@ list-style-type: unset;
 font-family: roboto;
 font-size: 14px;
 font-weight: 400;
+color: #626262;
+}
+.infor1 li a:hover,.infor2 li a:hover,.infor3 li a:hover{
+	text-decoration: none;
+	color: red;
+}
+.infor1 li a,.infor2 li a,.infor3 li a{
 color: #626262;
 }
 .infor4 li{
@@ -554,22 +586,44 @@ color: #626262;
 	text-align: center;
 	padding-top: 45px;
 }
-.icon-inter .twit{
-	background-color: white;
-	color: #1ea3f0
-	
+.icon-fun-tw,.icon-fun-face,.icon-fun-insta,.icon-fun-youtube{
+	padding-top: 11px;
+	float: left;
+	width: 40px;
+	height: 40px;
+	border-radius: 50%;
+	margin-left: 10px;
+}
+.icon-fun-tw{
+	background-color: #1ea3f0;
+}
+.icon-fun-face{
+	background-color: #3b5997;
+}
+.icon-fun-youtube{
+	background-color: #e12b28;
+}
+.icon-fun-insta{
+	background-color: #a3349d;
+}
+.icon-inter .twits{
+	background-color: #1ea3f0;
+	color: white;
+	font-size:20px;
 }
 .icon-inter .face{
-	background-color: white;
-	color: #3b5997;
-	
+	background-color: #3b5997;
+	color: white;
+	font-size:20px;
 }
 .icon-inter .insta{
-	background-color: #a3349d !important;
+	background-color: #a3349d;
 	color: white;
+	font-size:20px;
 }
 .icon-inter .youtube{
-	background-color: white;
-	color: #e12b28;
+	background-color:#e12b28 ;
+	color: white;
+	font-size:20px;
 }
 }
