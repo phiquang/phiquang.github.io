@@ -3,6 +3,15 @@
 <head>
 	<title>Mega demo</title>
 	<meta charset="utf-8">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+<!-- jquery ui -->
+	<link href = "https://code.jquery.com/ui/1.10.4/themes/ui-lightness/jquery-ui.css"
+         rel = "stylesheet">
+      <script src = "https://code.jquery.com/jquery-1.10.2.js"></script>
+      <script src = "https://code.jquery.com/ui/1.10.4/jquery-ui.js"></script>
+
+<!-- bootstrap vs jquery -->
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 	<link rel="stylesheet" type="text/css" href="css/style-mega.css">
@@ -10,10 +19,14 @@
 	<link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:300,400,700" rel="stylesheet">
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+
+	
+<!-- file js -->
 	<script  src="js/function.js"></script>
+
 </head>
 <body>
-
+<script  src="js/function.js"></script>
 <!-- topbar pc -->
 	<nav>
 		<div class="container">
@@ -64,41 +77,88 @@
 				</div>
 			<div class="clearfix"></div>
 <!-- head-pc -->
-		<div class="navbar-nav col-md-2 logo-pc"><a href=""><img src="img/Logo.png"></a></div>
+		<div class="col-md-2 logo-pc"><a href=""><img src="img/Logo.png"></a></div>
 				<form>
-					<div class="navbar-nav nav col-md-7 search">
-						<li><a href="#" class="dropdown-toggle" data-toggle="dropdown">All Category <i class="fas fa-caret-down"></i>
+					<div class="col-md-7 search">
+						<button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">All Category <i class="fas fa-caret-down"></i>
+						</button>
 							<ul class="dropdown-menu">
 								<li><a href="#">Food</a></li>
 								<li><a href="#">Fashion</a></li>
 								<li><a href="#">Mobile</a></li>
 							</ul>
-						</a></li>
-						<input class="navbar-nav input-search col-md-1" type="text" name="" placeholder="Enter keyword here...">
+						
+						<input class="input-search col-md-1" type="text" name="" placeholder="Enter keyword here...">
 					</div>	
-					<div class="navbar-nav buttonsearch col-md-2"><button type="submit"><span>SEARCH</span></button>
+					<div class="buttonsearch col-md-2"><button type="submit"><span>SEARCH</span></button>
 					</div>
 				</form>
 					
-					<div class="navbar-nav icon-cart col-md-1"><a href="#"><img src="img/cart-icon.png"><span class="count">3</span></a></div>
+					<div class="icon-cart col-md-1"><a href="#"><img src="img/cart-icon.png"><span class="count">3</span></a></div>
 
 <!-- menu main cho pc -->
-		<div class="navbar-nav nav col-md-3 menu-all">
-			<button class="dropdown-toggle"><p><img src="img/icon-search.png"> <span>ALL CATEGORIES</span></p></button>
+		<div class="col-md-3 menu-all">
+			<button><p><img src="img/icon-search.png"> <span>ALL CATEGORIES</span></p></button>
 		</div>
 		
-			<ul class="nav navbar-nav col-md-9 menu-main">
-				<li><a class="link-home" href=""> Home</a></li>
-				<li><a href=""> About Us</a></li>
-				<li><a href=""> News</a></li>
-				<li><a href=""> Contact Us</a></li>
-				<li><a class="dropdown-toggle" data-toggle="dropdown" href=""> Pages <i class="fas fa-angle-down"></i>
+			<div class="col-md-9 menu-main">
+				
+				<div class="dropdown"><button class="dropdown-toggle" data-toggle="dropdown"><a class="link-home" href=""> Home</a></button>
+						<ul class="dropdown-menu mega-menu">
+    
+						    <li class="mega-menu-column">
+						    <ul>
+						        <li class="nav-header">Mega menu 1</li>
+						        <img src="http://placehold.it/150x120">
+								<li><a href="#">Mega-menu link</a></li>
+						        <li><a href="#">Mega-menu link</a></li>
+						        <li><a href="#">Mega-menu link</a></li>
+						        <li><a href="#">Mega-menu link</a></li>
+						        <li><a href="#">Mega-menu link</a></li>
+						        <li><a href="#">Mega-menu link</a></li>
+						    </ul>
+						    </li>    
+        
+						    <li class="mega-menu-column">
+						    <ul>
+						    <li class="nav-header">Mega menu 2</li>
+						        <img src="http://placehold.it/150x120">
+								<li><a href="#">Mega-menu link</a></li>
+						        <li><a href="#">Mega-menu link</a></li>
+						        <li><a href="#">Mega-menu link</a></li>
+						        <li><a href="#">Mega-menu link</a></li>
+						        <li><a href="#">Mega-menu link</a></li>
+						        <li><a href="#">Mega-menu link</a></li>
+						    </ul>
+						    </li> 
+
+						    <li class="mega-menu-column">
+						    <ul>                            
+						    <li class="nav-header">Mega menu 3</li>
+						        <img src="http://placehold.it/150x120">
+								<li><a href="#">Mega-menu link</a></li>
+						        <li><a href="#">Mega-menu link</a></li>
+						        <li><a href="#">Mega-menu link</a></li>
+						        <li><a href="#">Mega-menu link</a></li>
+						        <li><a href="#">Mega-menu link</a></li>
+						        <li><a href="#">Mega-menu link</a></li>
+						    </ul>
+						    </li> 
+							
+						</ul><!-- dropdown-menu -->
+				</div>
+				
+
+				<div class="dropdown"><button class="dropbtn"><a href=""> About Us</a></button></div>
+				<div class="dropdown"><button class="dropbtn"><a href=""> News</a></button></div>
+				<div class="dropdown"><button class="dropbtn"><a href=""> Contact Us</a></button></div>
+				<div class="dropdown"><button class="dropdown-toggle" data-toggle="dropdown" href=""><a href=""> Pages <i class="fas fa-angle-down"></i></a></button>
 					<ul class="dropdown-menu">
 						<li><a href="#"> Page 1</a></li>
 						<li><a href="#"> Page 2</a></li>
 					</ul>
-				</a></li>
-			</ul>
+				</div>
+			</div>
 		
 	</header>
 <!-- nav2 cho pc -->
@@ -117,13 +177,14 @@
 	</nav>
 <!-- content -->
 <main class="container">
+
+<!-- section cho pc -->
+	<section class="col-md-9 content">
 <!--banner  -->
 	<div class="banner">	
 			<div class="img-buynow"><a href="#"><img src="img/BUY-NOW.jpg"></a></div>
 		
-	</div>
-<!-- section cho pc -->
-	<section class="col-md-9 content">
+	</div>		
 		<div class="electric">
 				<div class="col-md-2 elec">Electronic</div>
 				<div class="col-md-10 show"><span>Showing 1-20 of 75 results</span><a href="#"> <img src="img/icon4.png"></a>
@@ -287,7 +348,7 @@
 	</section>
 
 <!-- aside cho pc -->
-	<aside class="sidebar">
+	<aside class="sidebar col-md-3">
 <!-- catelogry -->
 		<div class="menu-right1">
 		<p class="top-menu">CATEGORIES</p>
@@ -308,56 +369,80 @@
 <!-- Brand -->
 		<div class="menu-right2">
 			<p class="top-menu">BRANDS</p>
-		<ul class="nav">
-			<li><a><input type="checkbox" name="" id="1"><span> Apple (465)</span></a></li>
-			<li><a><input type="checkbox" name="" id="2"><span> Asus (344)</span></a></li>
-			<li><a><input type="checkbox" name="" id="3"><span> Audio-Technica (136)</span></a></li>
-			<li><a><input type="checkbox" name="" id="4"><span> Belkin (121)</span></a></li>
-			<li><a><input type="checkbox" name="" id="5"><span> BlueStone (258)</span></a></li>
-			<li><a><input type="checkbox" name="" id="6"><span> Brother (119)</span></a></li>
-			<li><a><input type="checkbox" name="" id="7"><span> Canon (205)</span></a></li>
-			<li><a><input type="checkbox" name="" id="8"><span> China OEM (113)</span></a></li>
-			<li><a><input type="checkbox" name="" id="9"><span> Comet (330)</span></a></li>
-		</ul>	
+		
+			<label for="c1" class="custom-input"><input type="checkbox" name="" id="c1"> Apple (465) <span class="check-mark"></span></label>
+			<label for="c2" class="custom-input"><input type="checkbox" name="" id="c2"> Asus (344)<span class="check-mark"></span></label>
+			<label for="c3" class="custom-input"><input type="checkbox" name="" id="c3"> Audio-Technica (136)<span class="check-mark"></span></label>
+			<label for="c4" class="custom-input"><input type="checkbox" name="" id="c4"> Belkin (121)<span class="check-mark"></span></label>
+			<label for="c5" class="custom-input"><input type="checkbox" name="" id="c5"> BlueStone (258)<span class="check-mark"></span></label>
+			<label for="c6" class="custom-input"><input type="checkbox" name="" id="c6"> Brother (119)<span class="check-mark"></span></label>
+			<label for="c7" class="custom-input"><input type="checkbox" name="" id="c7"> Canon (205)<span class="check-mark"></span></label>
+			<label for="c8" class="custom-input"><input type="checkbox" name="" id="c8"> China OEM (113)<span class="check-mark"></span></label>
+			<label for="c9" class="custom-input"><input type="checkbox" name="" id="c9"> Comet (330)<span class="check-mark"></span></label>
+			
 		</div>
 <!-- prince -->
 		<div class="menu-right3">
 			<div class="prince">
 			<p class="top-menu">PRINCE</p>
 			<div class="ellipse">
-				<img src="img/Ellipse.png">
-				<h5>Range: $50 - $350</h5>
+			<!-- Javascript -->
+      <script>
+         $(function() {
+            $( "#slider-3" ).slider({
+               range:true,
+               min: 0,
+               max: 500,
+               values: [ 50, 350 ],
+               slide: function( event, ui ) {
+                  $( "#price" ).val( "$" + ui.values[ 0 ] + " - $" + ui.values[ 1 ] );
+               }
+            });
+            $( "#price" ).val( "$" + $( "#slider-3" ).slider( "values", 0 ) +
+               " - $" + $( "#slider-3" ).slider( "values", 1 ) );
+         });
+      </script>
+   
+      <!-- HTML --> 
+      <div id = "slider-3"></div>
+      <p class="range-p">
+         <label for = "price" >Range:</label>
+         <input type = "text" id = "price">
+      </p>
+      
+
+			</div>
 			</div>
 			
 			
 			<p class="top-menu">COLOR</p>
 			<div class="img-color">
-				<div class="color color1"><img src="img/color-grey.png"></div>
-				<div class="color color2"><img src="img/color-grey2.png"></div>
-				<div class="color color3"><img src="img/color-grey3.png"></div>
-				<div class="color color4"><img src="img/color-ping.png"></div>
-				<div class="color color5"><img src="img/color-brown2.png"></div>
-				<div class="color color6"><img src="img/color-white.png"></div>
-				<div class="color color7"><img src="img/color-red.png"></div>
-				<div class="color color8"><img src="img/color-brown.png"></div>
-				<div class="color color9"><img src="img/color-orange.png"></div>
-				<div class="color color10"><img src="img/color-blue.png"></div>
-				<div class="color color11"><img src="img/color-green.png"></div>
-				<div class="color color12"><img src="img/color-yellow.png"></div>
+				<div class="color color1"><a href=""><img src="img/color-grey.png"></a></div>
+				<div class="color color2"><a href=""><img src="img/color-grey2.png"></a></div>
+				<div class="color color3"><a href=""><img src="img/color-grey3.png"></a></div>
+				<div class="color color4"><a href=""><img src="img/color-ping.png"></a></div>
+				<div class="color color5"><a href=""><img src="img/color-brown2.png"></a></div>
+				<div class="color color6"><a href=""><img src="img/color-white.png"></a></div>
+				<div class="color color7"><a href=""><img src="img/color-red.png"></a></div>
+				<div class="color color8"><a href=""><img src="img/color-brown.png"></a></div>
+				<div class="color color9"><a href=""><img src="img/color-orange.png"></a></div>
+				<div class="color color10"><a href=""><img src="img/color-blue.png"></a></div>
+				<div class="color color11"><a href=""><img src="img/color-green.png"></a></div>
+				<div class="color color12"><a href=""><img src="img/color-yellow.png"></a></div>
 			</div>
 			
-		</div>
+		
 		<div class="clearfix"></div>
 		<div class="size">
 			<p class="top-menu">SIZE</p>
-			<div class="nav check-size">
-				<li class="check1"><a href="#S"><input type="checkbox" name="" id="S"><span>S</span></a></li>
-				<li class="check1"><a href="#M"><input type="checkbox" name="" id="M"><span>M</span></a></li>
-				<li class="check1"><a href="#L"><input type="checkbox" name="" id="L"><span>L</span></a></li>
-				<li class="check1"><a href="#XL"><input type="checkbox" name="" id="XL"><span>XL</span></a></li>
-				<li class="check1"><a href="#XXL"><input type="checkbox" name="" id="XXL"><span>XXL</span></a></li>
-				<li class="check1"><a href="#XXXL"><input type="checkbox" name="" id="XXXL"><span>XXXL</span></a></li>
-			</div>
+			
+				<label class="check1" for="S"><input type="checkbox" name="" id="S">S<span class="check-mark"></span></label>
+				<label class="check1" for="M"><input type="checkbox" name="" id="M">M<span class="check-mark"></span></label>
+				<label class="check1" for="L"><input type="checkbox" name="" id="L">L<span class="check-mark"></span></label>
+				<label class="check1" for="XL"><input type="checkbox" name="" id="XL">XL<span class="check-mark"></span></label>
+				<label class="check1" for="XXL"><input type="checkbox" name="" id="XXL">XXL<span class="check-mark"></span></label>
+				<label class="check1" for="XXXL"><input type="checkbox" name="" id="XXXL">XXXL<span class="check-mark"></span></label>
+			
 		</div>
 		</div>
 <!-- sale-image -->
@@ -401,7 +486,7 @@
 						
 					</div>
 					<div class="col-md-4 input-mail"><input type="text" name="" placeholder="  Enter your email..."><button>SUBSCRIBE</button></div>
-					<div class="col-md-4 icon-inter">
+					<div class="col-md-4 icon-inter social">
 						<div class="icon-fun-tw "><a href="#"><i class="fab fa-twitter twits"></i></a></div>
 						<div class="icon-fun-face "><a href="#"><i class="fab fa-facebook-f face"></i></a></div>
 						<div class="icon-fun-insta"><a href="#"><i class="fab fa-instagram insta"></i></a></div>
@@ -462,7 +547,6 @@
 					
 				</div>
 	</footer>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
 </body>
 </html>

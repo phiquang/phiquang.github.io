@@ -118,7 +118,6 @@ nav,.logo-pc,.search,.buttonsearch,.menu-all,.menu-main,.icon-cart,footer,aside,
 	color: #eb181e;
 }
 .pagi li a{
-	margin-right: 5px;
 	color: #3e3e3e;
 }
 .pagination>.active>a{
@@ -129,6 +128,9 @@ nav,.logo-pc,.search,.buttonsearch,.menu-all,.menu-main,.icon-cart,footer,aside,
 nav,.logo-pc,.search,.buttonsearch,.menu-all,.menu-main,.icon-cart,footer,aside,.electric,.sup,.foot-search{
 	display: block;
 }
+
+
+
 .menu-topbar{
 	display: none;
 }
@@ -143,18 +145,16 @@ nav,.logo-pc,.search,.buttonsearch,.menu-all,.menu-main,.icon-cart,footer,aside,
 	max-width: 1170px;
 	padding: 0;
 }
-aside{
-	position: absolute;
-	top: 0;
-	left: 0;
+.sidebar{
+	max-width: 270px;
 }
 .col-md-8,.col-md-4,.col-md-7,.col-md-1,.col-md-3,.col-md-9,.col-md-12,.col-md-5,.col-md-10,.col-md-2{
 	padding: 0;
 }
-.dropdown-menu{
+.list .dropdown-menu {
 	min-width: 60px;
 	max-width: 73px;
-    padding-right: 26px;
+	padding-right: 26px;
 }
 .dropdown-menu li{
 	clear: right;
@@ -200,6 +200,56 @@ aside{
  	font-family: Roboto Condensed; border: none;outline: none;padding-left: 15px;
  	opacity: 0.5;letter-spacing: 0.5px;width: 200px;margin-top: 8px;
  }
+.mega-menu {
+padding: 10px 0px ! important;
+width: 540px;
+ border-radius: 0;
+ margin-top: 0px;
+	}
+.mega-menu-column li a{
+font-size: 10px;
+    padding: 15px 10px;
+}
+.mega-menu li {
+		display: inline-block;
+		float: left;
+		font-size: 0.94rem;
+		padding: 3px 0px;
+		}
+
+		.mega-menu li.mega-menu-column {
+			margin-right: 20px;
+			width: 150px;
+			}
+
+			.mega-menu .nav-header {
+			padding: 0 !important;
+			margin-bottom: 10px;
+			display: inline-block;
+			width: 100%;
+			border-bottom: 1px solid #ddd;
+			}
+      .mega-menu img { padding-bottom: 10px;}
+
+.dropdown{
+	float: left;	
+}
+.dropdown button{
+	border:none;
+	outline: none;
+	font-size: 17px;
+	font-family: roboto;
+	font-weight: 500;
+	background-color: white;
+	padding: 10px 20px;
+}
+.dropdown button a{
+	color: #232323;
+}
+.dropdown button a:hover{
+	text-decoration: none;
+	color: red;
+}
  .search{
  	height: 40px;
  	border: 2px solid #ed1a23;
@@ -208,6 +258,14 @@ aside{
  }
  .search .dropdown-menu{
  	max-width: 118px;
+ }
+ .search button{
+ 	color: #040404;
+    background-color: white;
+    border: none;
+    outline: none;
+    float: left;
+    border-radius: 0;
  }
  header{
  	border-top: 1px solid #e9e9e9;
@@ -219,7 +277,7 @@ aside{
  	font-family: roboto Condensed;
  	font-size: 16px;
  	padding-top: 7px;
- 	padding-bottom: 8px;
+ 	padding-bottom: 7px;
  	border-right: 1px solid #e9e9e9;
  }
  .buttonsearch button{
@@ -279,14 +337,10 @@ aside{
 	font-weight: bold;
 	font-size: 18px;
 }
-.menu-main .dropdown-menu{
-	max-width: 110px;
-}
+
  .menu-main li a{
  	font-family: roboto;
 	font-weight: 500;
- 	font-size: 17px;
- 	padding: 15px 25px;
  }
  .menu-main .link-home{
  	margin-left: 20px;
@@ -297,8 +351,8 @@ aside{
  	font-size: 15px;
  }
  .breadcrumb{
- 	padding: 10px 15px;
-    margin-bottom: 7px;
+ 	padding: 15px 15px;
+    margin-bottom: 0px;
     background-color: white;
  }
  .breadcrumb li{
@@ -352,12 +406,79 @@ aside{
  .menu-right3{
  	margin-top: 30px;
  }
+ #slider-3{
+ 	border: none; height: 5px;border-radius: 0;background:none; ;background-color: #d5d5d5;
+ }
+ .range-p{
+ 	color: #6c6c6c;font-family: roboto Condensed; font-weight:400;font-size: 17px;padding-top: 20px;
+ }
+ .range-p label{
+ 	font-weight: 400;
+ }
+ .range-p input{
+ 	border:0;
+ }
+ .ui-slider .ui-slider-handle{
+ 	border-radius: 50%;
+ 	width: 15px;
+ 	height: 15px;
+ 	cursor: pointer;
+ 	background:none;
+ 	background-color: #e21a1d;
+ 	border: none;
+ }
+ .ui-slider-range{
+ 	background: none;
+ 	background-color: #e21a1d;
+ 	border: none;
+ }
+ input[type="checkbox"]{
+ 	opacity: 0;
+
+ }
+ .check-mark {
+    position: absolute;
+    top: 15px;
+    left: 21px;
+    height: 12px;
+    width: 12px;
+    border: 1px solid #e9e9e9;
+    background-color: white;
+}
+input:checked ~ .check-mark:after {
+   content: "\2713";
+   position: absolute;
+   top: -6px;
+   left: 0;
+}
+
+ .custom-input{
+ 	position: relative;
+ 	font-family: roboto;
+ 	font-size: 16px;
+ 	font-weight: 400;
+ 	color: #8e8e8e;
+ 	display: block;
+ 	padding: 10px 10px 5px 23px;
+ 	cursor: pointer;
+ }
+ .check1{
+ 	position: relative;
+ 	font-family: roboto;
+ 	font-size: 16px;
+ 	font-weight: 400;
+ 	color: #8e8e8e;
+ 	display: block;
+ 	padding: 10px 10px 5px 23px;
+ 	cursor: pointer;
+ }
  .ellipse{
  	height: 82px;
  	margin-left: 22px;
  	margin-right: 24px;
  	border-bottom: 1px solid #e9e9e9;
  }
+
  .img-color{
  	margin-left: 19px;
  	height: 91px;
@@ -384,7 +505,7 @@ aside{
  }
  .electric{
  	height: 48px;margin-top: 56px;border-bottom: 1px solid #e9e9e9;
- 	    margin-left: 26px;
+ 	    margin-left: 13px;
  }
  .elec{
  	width: 15.2%;
@@ -413,7 +534,7 @@ aside{
  	margin: 3px;
  }
  .banner{
- 	float: right;
+ 	padding-left: 10px;
  }
  .img-buynow img{
 	padding-top: 0;
