@@ -201,38 +201,46 @@ nav,.logo-pc,.search,.buttonsearch,.menu-all,.menu-main,.icon-cart,footer,aside,
  	opacity: 0.5;letter-spacing: 0.5px;width: 200px;margin-top: 8px;
  }
  .dropdown:hover .mega-menu{
+ 	opacity: 1;
  	display: inline-block;
+ 	transform: translate(0,10px);
+	
  }
-.mega-menu {
-padding: 10px 0px ! important;
-width: 540px;
- border-radius: 0;
- margin-top: 0px;
-	}
+.dropdown .mega-menu {
+	opacity: 0;
+	position: absolute;
+	top: 50px;
+	left: 0;
+	opacity: 0;
+	padding: 10px 0px ! important;
+	width: 540px;
+	border-radius: 0;
+ 	margin-top: 0px;
+ 	transition: all 0.5s ease;
+}
 .mega-menu-column li a{
-font-size: 10px;
-    padding: 15px 10px;
+	font-size: 10px;
+	padding: 15px 10px;
 }
 .mega-menu li {
-		display: inline-block;
-		float: left;
-		font-size: 0.94rem;
-		padding: 3px 0px;
+	display: inline-block;
+	float: left;
+	font-size: 0.94rem;
+	padding: 3px 0px;
 		}
 
-		.mega-menu li.mega-menu-column {
-			margin-right: 20px;
-			width: 150px;
-			}
-
-			.mega-menu .nav-header {
-			padding: 0 !important;
-			margin-bottom: 10px;
-			display: inline-block;
-			width: 100%;
-			border-bottom: 1px solid #ddd;
-			}
-      .mega-menu img { padding-bottom: 10px;}
+.mega-menu li.mega-menu-column {
+	margin-right: 20px;
+	width: 150px;
+	}
+.mega-menu .nav-header {
+	padding: 0 !important;
+	margin-bottom: 10px;
+	display: inline-block;
+	width: 100%;
+	border-bottom: 1px solid #ddd;
+}
+.mega-menu img { padding-bottom: 10px;}
 
 .dropdown{
 	float: left;	
@@ -270,6 +278,10 @@ font-size: 10px;
     float: left;
     border-radius: 0;
  }
+ .btn-allcategory:hover{
+ 	background-color: black;
+ 	color: white;
+ }
  header{
  	border-top: 1px solid #e9e9e9;
  }
@@ -282,6 +294,8 @@ font-size: 10px;
  	padding-top: 7px;
  	padding-bottom: 7px;
  	border-right: 1px solid #e9e9e9;
+ 	padding-left: 17px;
+    padding-right: 17px;
  }
  .buttonsearch button{
  	margin-top: 29px;
@@ -361,7 +375,7 @@ font-size: 10px;
  	font-size: 15px;
  }
  .breadcrumb{
- 	padding: 15px 15px;
+ 	padding: 14px 15px 13px 15px;
     margin-bottom: 0px;
     background-color: white;
  }
@@ -436,6 +450,7 @@ font-size: 10px;
  	background:none;
  	background-color: #e21a1d;
  	border: none;
+ 	outline: none;
  }
  .ui-slider-range{
  	background: none;
@@ -447,6 +462,7 @@ font-size: 10px;
 
  }
  .check-mark {
+
     position: absolute;
     top: 15px;
     left: 21px;
@@ -479,7 +495,7 @@ input:checked ~ .check-mark:after {
  	font-weight: 400;
  	color: #8e8e8e;
  	display: block;
- 	padding: 10px 10px 5px 23px;
+ 	padding: 10px 10px 5px 26px;
  	cursor: pointer;
  }
  .ellipse{
@@ -500,15 +516,6 @@ input:checked ~ .check-mark:after {
  }
  .color8{
  	clear: left;
- }
- .check1{
- 	margin-left: 9px;
- }
- .check1 span{
- 	font-family: roboto;
- 	font-size: 16px;
- 	color: #707070;
- 	padding-left: 5px;
  }
  .sale{
  	margin-top: 30px;
@@ -578,11 +585,15 @@ input:checked ~ .check-mark:after {
  	border-color: red;
  }
  .product-item .add-to-cart span{
- 	font-size: 13px;
  	display: none;
+ 	font-size: 14px;
+ 	opacity: 0;
+ 	transition: all 0.5s ease;
+ 	padding-left: 10px;
  }
  .product-item .add-to-cart:hover span{
  	display: inline-block;
+ 	opacity: 1;
  }
  .product-images{
  	overflow: hidden;
@@ -600,7 +611,7 @@ input:checked ~ .check-mark:after {
  .product-info a:hover{
  	text-decoration:none;
  }
- .product-item:hover .product-info h3{
+  .product-info:hover h3{
  	color: red;
  }
 
@@ -779,6 +790,9 @@ color: #626262;
 .icon-inter{
 	text-align: center;
 	padding-top: 45px;
+}
+.icon-all{
+	padding-left: 155px;
 }
 .icon-fun-tw,.icon-fun-face,.icon-fun-insta,.icon-fun-youtube{
 	padding-top: 11px;
