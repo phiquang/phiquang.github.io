@@ -16,7 +16,7 @@
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 	<link rel="stylesheet" type="text/css" href="css/style-mega.css">
 	<link rel="stylesheet" href="font/fontawesome-all.css">
-	<link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:300,400,700" rel="stylesheet">
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
 
@@ -47,9 +47,43 @@
     					</ul>
 					</a></li>
 					<li class="list"><a href="#">Wishlist</a></li>
-					<li><a href="#">My Account</a></li>
+					<li><a href="#" data-toggle="modal" data-target="#myModal">My Account</a></li>
+					<!-- Modal -->
+  <div class="modal fade" id="myModal" role="dialog">
+    <div class="modal-dialog">
+    
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title">ĐĂNG NHẬP</h4>
+        </div>
+        <div class="modal-body">
+        	<form>
+        		<label for="user-name">Tên tài khoản</label>
+          <input type="text" name="" id="user-name">
+          <br><br>
+          <label for="pass" style="padding-left: 2px;">Mật khẩu</label>
+          <input type="password" name="" id="pass" style="margin-left: 28px;">
+          <br>
+          <input type="button" name="" value="Đăng nhập">
+          <a href="#">Đăng ký</a>
+        	</form>
+          
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+      
+    </div>
+  </div>
+  
 				</ul>
 			
+ 
+
+  
 		</div>
 	</nav>
 <!-- header cho pc -->
@@ -102,7 +136,20 @@
 
 <!-- menu main cho pc -->
 		<div class="col-md-3 menu-all">
-			<button><p><img src="img/icon-search.png"> <span>ALL CATEGORIES</span></p></button>
+			<button class="dropdown-toggle" data-toggle="dropdown"><p><img src="img/icon-search.png"> <span>ALL CATEGORIES</span></p></button>
+			<ul class="dropdown-menu btn-category">
+			<li><a href=""><i class="fas fa-chevron-right"></i><span class="menu-sidebar"> Food</span></a></li>
+			<li><a href=""><i class="fas fa-chevron-right"></i><span class="menu-sidebar"> Mobile & Tablet</span></a></li>
+			<li><a href=""><i class="fas fa-chevron-right"></i><span class="menu-sidebar"> Electric Appliances</span></a></li>
+			<li><a href=""><i class="fas fa-chevron-right"></i><span class="menu-sidebar"> Electronics & Technology</span></a></li>
+			<li><a href=""><i class="fas fa-chevron-right"></i><span class="menu-sidebar"> Fashion</span></a></li>
+			<li><a href=""><i class="fas fa-chevron-right"></i><span class="menu-sidebar"> Heal & Beauty</span></a></li>
+			<li><a href=""><i class="fas fa-chevron-right"></i><span class="menu-sidebar"> Mother & Baby</span></a></li>
+			<li><a href=""><i class="fas fa-chevron-right"></i><span class="menu-sidebar"> Books & Stationery</span></a></li>
+			<li><a href=""><i class="fas fa-chevron-right"></i><span class="menu-sidebar"> Home & Life</span></a></li>
+			<li><a href=""><i class="fas fa-chevron-right"></i><span class="menu-sidebar"> Sports & Outdoors</span></a></li>
+			<li><a href=""><i class="fas fa-chevron-right"></i><span class="menu-sidebar"> Auto & Moto</span></a></li>
+		</ul>	
 		</div>
 		
 			<div class="col-md-9 menu-main">
@@ -186,7 +233,7 @@
 	<section class="col-md-9 content">
 <!--banner  -->
 	<div class="banner">	
-			<div class="img-buynow"><a href="#"><img src="img/BUY-NOW.jpg"></a></div>
+			<div class="img-buynow"><figure><a href="#"><img src="img/BUY-NOW.jpg"></a></figure></div>
 		
 	</div>		
 		<div class="electric">
@@ -255,7 +302,7 @@
 				</div>
 			</div>
 
-			<div class="nav col-md-4 product-item">
+			<div class="col-md-4 product-item">
 				<div class="product-images"><a href=""><img src="img/7.jpg"></a></div>
 				<div class="product-info">
 					<a href=""><h3>PRODUCT DEMO TITLE</h3><strike>$700.00</strike> <span>$350.00</span><span class="star-icon"><i class="far fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star "></i><i class="fas fa-star"></i></span></a>
@@ -393,17 +440,17 @@
 		<div class="menu-right1">
 		<p class="top-menu">CATEGORIES</p>
 		<ul class="nav">
-			<li><a href=""><i class="fas fa-chevron-right"></i><span> Food</span></a></li>
-			<li><a href=""><i class="fas fa-chevron-right"></i><span> Mobile & Tablet</span></a></li>
-			<li><a href=""><i class="fas fa-chevron-right"></i><span> Electric Appliances</span></a></li>
-			<li><a href=""><i class="fas fa-chevron-right"></i><span> Electronics & Technology</span></a></li>
-			<li><a href=""><i class="fas fa-chevron-right"></i><span> Fashion</span></a></li>
-			<li><a href=""><i class="fas fa-chevron-right"></i><span> Heal & Beauty</span></a></li>
-			<li><a href=""><i class="fas fa-chevron-right"></i><span> Mother & Baby</span></a></li>
-			<li><a href=""><i class="fas fa-chevron-right"></i><span> Books & Stationery</span></a></li>
-			<li><a href=""><i class="fas fa-chevron-right"></i><span> Home & Life</span></a></li>
-			<li><a href=""><i class="fas fa-chevron-right"></i><span> Sports & Outdoors</span></a></li>
-			<li><a href=""><i class="fas fa-chevron-right"></i><span> Auto & Moto</span></a></li>
+			<li><a href=""><i class="fas fa-chevron-right"></i><span class="menu-sidebar"> Food</span></a></li>
+			<li><a href=""><i class="fas fa-chevron-right"></i><span class="menu-sidebar"> Mobile & Tablet</span></a></li>
+			<li><a href=""><i class="fas fa-chevron-right"></i><span class="menu-sidebar"> Electric Appliances</span></a></li>
+			<li><a href=""><i class="fas fa-chevron-right"></i><span class="menu-sidebar"> Electronics & Technology</span></a></li>
+			<li><a href=""><i class="fas fa-chevron-right"></i><span class="menu-sidebar"> Fashion</span></a></li>
+			<li><a href=""><i class="fas fa-chevron-right"></i><span class="menu-sidebar"> Heal & Beauty</span></a></li>
+			<li><a href=""><i class="fas fa-chevron-right"></i><span class="menu-sidebar"> Mother & Baby</span></a></li>
+			<li><a href=""><i class="fas fa-chevron-right"></i><span class="menu-sidebar"> Books & Stationery</span></a></li>
+			<li><a href=""><i class="fas fa-chevron-right"></i><span class="menu-sidebar"> Home & Life</span></a></li>
+			<li><a href=""><i class="fas fa-chevron-right"></i><span class="menu-sidebar"> Sports & Outdoors</span></a></li>
+			<li><a href=""><i class="fas fa-chevron-right"></i><span class="menu-sidebar"> Auto & Moto</span></a></li>
 		</ul>	
 		</div>
 <!-- Brand -->
@@ -574,11 +621,11 @@
 					</div>
 					<div class="infor4 nav col-md-3">
 						<p>CONTACT US</p>
-						<li><i class="fas fa-home"></i> 262 Milacina Mrest,Behansed,Paris</li>
-						<li><i class="fas fa-envelope"></i> contact@yourcompany.com</li>
-						<li><i class="fas fa-phone"></i> 070-7782-9137</li>
-						<li><i class="fas fa-fax"></i> 070-7782-9138</li>
-						<li><i class="far fa-clock"></i> 09:00 AM - 18:00 PM</li>
+						<li><i class="fas fa-home"></i><span>262 Milacina Mrest,Behansed,Paris</span></li>
+						<li><i class="fas fa-envelope"></i><span>contact@yourcompany.com</span></li>
+						<li><i class="fas fa-phone"></i> <span> 070-7782-9137</span></li>
+						<li><i class="fas fa-fax"></i> <span>070-7782-9138</span> </li>
+						<li><i class="far fa-clock"></i> <span> 09:00 AM - 18:00 PM</span></li>
 					
 					</div>
 				</div>
