@@ -35,19 +35,19 @@
 			
 				<ul class="nav navbar-nav col-md-4 topbar">
 					<li class="list"><a class="dropdown-toggle" data-toggle="dropdown" href="#">USD <i class="fas fa-angle-down"></i>
-						<ul class="dropdown-menu">
+						<ul class="dropdown-menu menu-en">
     								<li><a href="#">USD</a></li>
     								<li><a href="#">VND</a></li>
     					</ul>
     					</a></li>
 					<li class="list"><a class="dropdown-toggle" data-toggle="dropdown" href="#">EN <i class="fas fa-angle-down"></i>
-						<ul class="dropdown-menu">
+						<ul class="dropdown-menu menu-usd">
     								<li><a href="#">EN</a></li>
     								<li><a href="#">VN</a></li>
     					</ul>
 					</a></li>
 					<li class="list"><a href="#">Wishlist</a></li>
-					<li><a href="#" data-toggle="modal" data-target="#myModal">My Account</a></li>
+					<li class="list-acc"><a href="#" data-toggle="modal" data-target="#myModal">My Account</a></li>
 					<!-- Modal -->
   <div class="modal fade" id="myModal" role="dialog">
     <div class="modal-dialog">
@@ -98,7 +98,7 @@
 					</div>
 
 <!-- Use any element to open the sidenav -->
-					<span onclick="openNav()"><i class="fas fa-align-justify"></i></span>
+					<span class="js-open-menu"><i class="fas fa-align-justify"></i></span>
 				</div>
 <!-- logo megaStore cho iphone -->
 				<div class="logo col-xs-6"><a href="#"><img style="" src="img/Logo.png"></a></div>
@@ -115,7 +115,7 @@
 					<div class="col-md-7 search">
 						<button class="btn-allcategory dropdown-toggle" type="button" data-toggle="dropdown">All Category <i class="fas fa-caret-down"></i>
 						</button>
-							<ul class="dropdown-menu">
+							<ul class="dropdown-menu drop-allcategory">
 								<li><a href="#">Food</a></li>
 								<li><a href="#">Fashion</a></li>
 								<li><a href="#">Mobile</a></li>
@@ -137,17 +137,89 @@
 		<div class="col-md-3 menu-all">
 			<button class="dropdown-toggle" data-toggle="dropdown"><p><img src="img/icon-search.png"> <span>ALL CATEGORIES</span></p></button>
 			<ul class="dropdown-menu btn-category">
-			<li><a href=""><i class="fas fa-chevron-right"></i><span class="menu-sidebar"> Food</span></a></li>
-			<li><a href=""><i class="fas fa-chevron-right"></i><span class="menu-sidebar"> Mobile & Tablet</span></a></li>
-			<li><a href=""><i class="fas fa-chevron-right"></i><span class="menu-sidebar"> Electric Appliances</span></a></li>
-			<li><a href=""><i class="fas fa-chevron-right"></i><span class="menu-sidebar"> Electronics & Technology</span></a></li>
-			<li><a href=""><i class="fas fa-chevron-right"></i><span class="menu-sidebar"> Fashion</span></a></li>
-			<li><a href=""><i class="fas fa-chevron-right"></i><span class="menu-sidebar"> Heal & Beauty</span></a></li>
-			<li><a href=""><i class="fas fa-chevron-right"></i><span class="menu-sidebar"> Mother & Baby</span></a></li>
-			<li><a href=""><i class="fas fa-chevron-right"></i><span class="menu-sidebar"> Books & Stationery</span></a></li>
-			<li><a href=""><i class="fas fa-chevron-right"></i><span class="menu-sidebar"> Home & Life</span></a></li>
-			<li><a href=""><i class="fas fa-chevron-right"></i><span class="menu-sidebar"> Sports & Outdoors</span></a></li>
-			<li><a href=""><i class="fas fa-chevron-right"></i><span class="menu-sidebar"> Auto & Moto</span></a></li>
+			<li class="menu-btn-allcategory">
+				<a href="" class="dropdown-toggle" data="dropdown"><i class="fas fa-chevron-right"></i><span class="menu-sidebar"> Food</span></a>
+				<ul class="dropdown-menu btn-drop-list-food row">
+					
+                                                    <li class="list-category-menu-lv2 col-md-4">
+                                                        <h3>ACCESSORIES</h3>
+                                                        <ul class="level2">
+                                                            <li class="col-inner"><a href="#">Maybellin Face Power</a></li>
+                                                            <li class="col-inner"><a href="#">Chanel Mascara</a></li>
+                                                            <li class="col-inner"><a href="#">Mascara For Full Lashes Mascara</a></li>
+                                                            <li class="col-inner"><a href="#">Offical Cosme-Decom Maybellin Face</a></li>
+                                                            <li class="col-inner"><a href="#">Offical Cosme-Decom</a></li>
+                                                            <li class="col-inner"><a href="#">Lady Dior Mascara</a></li>
+                                                            <li class="col-inner"><a href="#">Mirinda</a></li>
+                                                        </ul>
+                                                    </li>
+                                                    <li class="list-category-menu-lv2 col-md-4">
+                                                        <h3>Electronic</h3>
+                                                        <ul class="level2">
+                                                            <li class="col-inner"><a href="#">Maybellin Face Power</a></li>
+                                                            <li class="col-inner"><a href="#">Chanel Mascara</a></li>
+                                                            <li class="col-inner"><a href="#">Mascara For Full Lashes Mascara</a></li>
+                                                            <li class="col-inner"><a href="#">Offical Cosme-Decom Maybellin Face</a></li>
+                                                            <li class="col-inner"><a href="#">Offical Cosme-Decom</a></li>
+                                                            <li class="col-inner"><a href="#">Lady Dior Mascara</a></li>
+                                                            <li class="col-inner"><a href="#">Casopia</a></li>
+                                                        </ul>
+                                                    </li>
+                                                    <li class="list-category-menu-lv2 col-md-4">
+                                                        <h3>COMPUTER & OTHERS</h3>
+                                                        <ul class="level2">
+                                                            <li class="col-inner"><a href="#">Maybellin Face Power</a></li>
+                                                            <li class="col-inner"><a href="#">Chanel Mascara</a></li>
+                                                            <li class="col-inner"><a href="#">Mascara For Full Lashes Mascara</a></li>
+                                                            <li class="col-inner"><a href="#">Offical Cosme-Decom Maybellin Face</a></li>
+                                                            <li class="col-inner"><a href="#">Offical Cosme-Decom</a></li>
+                                                            <li class="col-inner"><a href="#">Lady Dior Mascara</a></li>
+                                                            <li class="col-inner"><a href="#">Draven</a></li>
+                                                        </ul>
+                                                    </li>
+                   
+				</ul>
+			</li>
+			<li>
+				<a href="" class="dropdown-toggle" data="dropdown"><i class="fas fa-chevron-right"></i><span class="menu-sidebar"> Mobile & Tablet</span></a>
+
+			</li>
+			<li>
+				<a href="" class="dropdown-toggle" data="dropdown"><i class="fas fa-chevron-right"></i><span class="menu-sidebar"> Electric Appliances</span></a>
+
+			</li>
+			<li>
+				<a href="" class="dropdown-toggle" data="dropdown"><i class="fas fa-chevron-right"></i><span class="menu-sidebar"> Electronics & Technology</span></a>
+
+			</li>
+			<li>
+				<a href="" class="dropdown-toggle" data="dropdown"><i class="fas fa-chevron-right"></i><span class="menu-sidebar"> Fashion</span></a>
+
+			</li>
+			<li>
+				<a href="" class="dropdown-toggle" data="dropdown"><i class="fas fa-chevron-right"></i><span class="menu-sidebar"> Heal & Beauty</span></a>
+
+			</li>
+			<li>
+				<a href="" class="dropdown-toggle" data="dropdown"><i class="fas fa-chevron-right"></i><span class="menu-sidebar"> Mother & Baby</span></a>
+
+			</li>
+			<li>
+				<a href="" class="dropdown-toggle" data="dropdown"><i class="fas fa-chevron-right"></i><span class="menu-sidebar"> Books & Stationery</span></a>
+
+			</li>
+			<li>
+				<a href="" class="dropdown-toggle" data="dropdown"><i class="fas fa-chevron-right"></i><span class="menu-sidebar"> Home & Life</span></a>
+
+			</li>
+			<li>
+				<a href="" class="dropdown-toggle" data="dropdown"><i class="fas fa-chevron-right"></i><span class="menu-sidebar"> Sports & Outdoors</span></a>
+
+			</li>
+			<li>
+				<a href="" class="dropdown-toggle" data="dropdown"><i class="fas fa-chevron-right"></i><span class="menu-sidebar"> Auto & Moto</span></a>
+
+			</li>
 		</ul>	
 		</div>
 		
@@ -175,14 +247,14 @@
 				</div>
 
 				<div class="dropdown"><button class="dropbtn"><a href=""> About Us</a></button></div>
-				<div class="dropdown"><button class="dropbtn">
+				<div class="dropdown dropdown-menu-main"><button class="dropbtn">
 					<a href=""> News</a></button>
 					<div class="row">
 						<ul class="dropdown-menu mega-menu">
     						
 						    <li class="col-md-4">
 						    <ul>
-						        <h4 class="nav-header">Mega menu 1</h4>
+						        <h3 class="nav-header">Mega menu 1</h3>
 						        <ul class="mega-level-2">
 						        <li><a href="#">Shop Layout</a></li>
 						        <li><a href="#">Filter area</a></li>
@@ -197,7 +269,7 @@
         
 						    <li class="col-md-4">
 						    <ul>
-						    <h4 class="nav-header">Mega menu 2</h4>
+						    <h3 class="nav-header">Mega menu 2</h3>
 						       <ul class="mega-level-2">
 						       	<li><a href="#">Shopping cart</a></li>
 						        <li><a href="#">My Account</a></li>
@@ -212,7 +284,7 @@
 
 						    <li class="col-md-4">
 						    <ul>                            
-						    <h4 class="nav-header">Mega menu 3</h4>
+						    <h3 class="nav-header">Mega menu 3</h3>
 						       <ul class="mega-level-2">
 						       	<li><a href="#">Product style</a></li>
 						        <li><a href="#">Simple Product</a></li>
@@ -231,7 +303,7 @@
 				<div class="dropdown"><button class="dropbtn"><a href=""> Contact Us</a></button></div>
 				<div class="page-menu">
 					<div class="dropdown"><button class="dropdown-toggle" data-toggle="dropdown" href=""><a href=""> Pages <i class="fas fa-angle-down"></i></a></button>
-					<ul class="dropdown-menu">
+					<ul class="dropdown-menu drop-page">
 						<li><a href="#"> Page 1</a></li>
 						<li><a href="#"> Page 2</a></li>
 					</ul>
@@ -267,196 +339,254 @@
 		
 	</div>		
 		<div class="electric">
-			<div class="row">
+			<div class="row product-page">
 				<div class="col-md-2 elec">Electronic</div>
-				<div class="col-md-10 show"><span>Showing 1-20 of 75 results</span><a href="#"> <img src="img/icon4.png"></a>
-					<a href=""><img src="img/icon3.png"></a>
+				<div class="col-md-10 show"><span>Showing 1-20 of 75 results</span>
+					<button onclick="gridView()"> <img src="img/icon4.png"></button>
+					<button onclick="listView()"><img src="img/icon3.png"></button>
+					
 				</div>
 				</div>
-		</div>
-		<div class="row">
-			<div class="col-md-4 product-item">
+			<div class="row product">
+			<div class="col-md-4 product-item column">
 				<div class="product-images"><a href=""><img src="img/1.jpg"></a></div>
 				<div class="product-info">
 					<a href=""><h3>PRODUCT DEMO TITLE</h3><strike>$700.00</strike> <span>$350.00</span><span class="star-icon"><i class="far fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star "></i><i class="fas fa-star"></i></span></a>
 				</div>
 				<div class="btn-button add-to-cart">
-					<a href="" title="Add to cart"><i class="fas fa-shopping-cart"><span>Add to cart</span></i></a>
+					<a href="" title="Add to Wishlist" id="icon-wishlist"><i class="fas fa-heart"></i></a>
+					<a href="#" title="Quick View" id="icon-view"><i class="fas fa-search"></i></a>
+					<a href="" title="Add to cart" id="icon-cart"><i class="fas fa-shopping-cart"></i></a>
 				</div>
 			</div>
 
-			<div class="col-md-4 product-item">
+			<div class="col-md-4 product-item column">
 				<div class="product-images"><a href=""><img src="img/2.jpg"></a></div>
 				<div class="product-info">
 					<a href=""><h3>PRODUCT DEMO TITLE</h3><strike>$700.00</strike> <span>$350.00</span><span class="star-icon"><i class="far fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star "></i><i class="fas fa-star"></i></span></a>
 				</div>
 				<div class="btn-button add-to-cart">
-					<a href="" title="Add to cart"><i class="fas fa-shopping-cart"><span>Add to cart</span></i></a>
+					<a href="" title="Add to Wishlist" id="icon-wishlist"><i class="fas fa-heart"></i></a>
+					<a href="#" title="Quick View" id="icon-view"><i class="fas fa-search"></i></a>
+					<a href="" title="Add to cart" id="icon-cart"><i class="fas fa-shopping-cart"></i></a>
 				</div>
 			</div>
 
-			<div class="col-md-4 product-item">
+			<div class="col-md-4 product-item column">
 				<div class="product-images"><a href=""><img src="img/3.jpg"></a></div>
 				<div class="product-info">
 					<a href=""><h3>PRODUCT DEMO TITLE</h3><strike>$700.00</strike> <span>$350.00</span><span class="star-icon"><i class="far fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star "></i><i class="fas fa-star"></i></span></a>
 				</div>
 				<div class="btn-button add-to-cart">
-					<a href="" title="Add to cart"><i class="fas fa-shopping-cart"><span>Add to cart</span></i></a>
+					<a href="" title="Add to Wishlist" id="icon-wishlist"><i class="fas fa-heart"></i></a>
+					<a href="#" title="Quick View" id="icon-view"><i class="fas fa-search"></i></a>
+					<a href="" title="Add to cart" id="icon-cart"><i class="fas fa-shopping-cart"></i></a>
 				</div>
 			</div>
 
-			<div class="col-md-4 product-item">
+			<div class="col-md-4 product-item column">
 				<div class="product-images"><a href=""><img src="img/4.jpg"></a></div>
 				<div class="product-info">
 					<a href=""><h3>PRODUCT DEMO TITLE</h3><strike>$700.00</strike> <span>$350.00</span><span class="star-icon"><i class="far fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star "></i><i class="fas fa-star"></i></span></a>
 				</div>
 				<div class="btn-button add-to-cart">
-					<a href="" title="Add to cart"><i class="fas fa-shopping-cart"><span>Add to cart</span></i></a>
+					<a href="" title="Add to Wishlist" id="icon-wishlist"><i class="fas fa-heart"></i></a>
+					<a href="#" title="Quick View" id="icon-view"><i class="fas fa-search"></i></a>
+					<a href="" title="Add to cart" id="icon-cart"><i class="fas fa-shopping-cart"></i></a>
 				</div>
 			</div>
 
-			<div class="col-md-4 product-item">
+			<div class="col-md-4 product-item column">
 				<div class="product-images"><a href=""><img src="img/5.jpg"></a></div>
 				<div class="product-info">
 					<a href=""><h3>PRODUCT DEMO TITLE</h3><strike>$700.00</strike> <span>$350.00</span><span class="star-icon"><i class="far fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star "></i><i class="fas fa-star"></i></span></a>
 				</div>
 				<div class="btn-button add-to-cart">
-					<a href="" title="Add to cart"><i class="fas fa-shopping-cart"><span>Add to cart</span></i></a>
+					<a href="" title="Add to Wishlist" id="icon-wishlist"><i class="fas fa-heart"></i></a>
+					<a href="#" title="Quick View" id="icon-view"><i class="fas fa-search"></i></a>
+					<a href="" title="Add to cart" id="icon-cart"><i class="fas fa-shopping-cart"></i></a>
 				</div>
 			</div>
 
-			<div class="col-md-4 product-item">
+			<div class="col-md-4 product-item column">
 				<div class="product-images"><a href=""><img src="img/6.jpg"></a></div>
 				<div class="product-info">	
 					<a href=""><h3>PRODUCT DEMO TITLE</h3><strike>$700.00</strike> <span>$350.00</span><span class="star-icon"><i class="far fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star "></i><i class="fas fa-star"></i></span></a>
 				</div>
 				<div class="btn-button add-to-cart">
-					<a href="" title="Add to cart"><i class="fas fa-shopping-cart"><span>Add to cart</span></i></a>
+					<a href="" title="Add to Wishlist" id="icon-wishlist"><i class="fas fa-heart"></i></a>
+					<a href="#" title="Quick View" id="icon-view"><i class="fas fa-search"></i></a>
+					<a href="" title="Add to cart" id="icon-cart"><i class="fas fa-shopping-cart"></i></a>
 				</div>
 			</div>
 
-			<div class="col-md-4 product-item">
+			<div class="col-md-4 product-item column">
 				<div class="product-images"><a href=""><img src="img/7.jpg"></a></div>
 				<div class="product-info">
 					<a href=""><h3>PRODUCT DEMO TITLE</h3><strike>$700.00</strike> <span>$350.00</span><span class="star-icon"><i class="far fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star "></i><i class="fas fa-star"></i></span></a>
 				</div>
 				<div class="btn-button add-to-cart">
-					<a href="" title="Add to cart"><i class="fas fa-shopping-cart"><span>Add to cart</span></i></a>
+					<a href="" title="Add to Wishlist" id="icon-wishlist"><i class="fas fa-heart"></i></a>
+					<a href="#" title="Quick View" id="icon-view"><i class="fas fa-search"></i></a>
+					<a href="" title="Add to cart" id="icon-cart"><i class="fas fa-shopping-cart"></i></a>
 				</div>
 			</div>
 
-			<div class="col-md-4 product-item">
+			<div class="col-md-4 product-item column">
 				<div class="product-images"><a href=""><img src="img/8.jpg"></a></div>
 				<div class="product-info">
 					<a href=""><h3>PRODUCT DEMO TITLE</h3><strike>$700.00</strike> <span>$350.00</span><span class="star-icon"><i class="far fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star "></i><i class="fas fa-star"></i></span></a>
 				</div>
 				<div class="btn-button add-to-cart">
-					<a href="" title="Add to cart"><i class="fas fa-shopping-cart"><span>Add to cart</span></i></a>
+					<a href="" title="Add to Wishlist" id="icon-wishlist"><i class="fas fa-heart"></i></a>
+					<a href="#" title="Quick View" id="icon-view"><i class="fas fa-search"></i></a>
+					<a href="" title="Add to cart" id="icon-cart"><i class="fas fa-shopping-cart"></i></a>
 				</div>
 			</div>
 
-			<div class="col-md-4 product-item">
+			<div class="col-md-4 product-item column">
 				<div class="product-images"><a href=""><img src="img/9.jpg"></a></div>
 				<div class="product-info">
 					<a href=""><h3>PRODUCT DEMO TITLE</h3><strike>$700.00</strike> <span>$350.00</span><span class="star-icon"><i class="far fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star "></i><i class="fas fa-star"></i></span></a>
 				</div>
 				<div class="btn-button add-to-cart">
-					<a href="" title="Add to cart"><i class="fas fa-shopping-cart"><span>Add to cart</span></i></a>
+					<a href="" title="Add to Wishlist" id="icon-wishlist"><i class="fas fa-heart"></i></a>
+					<a href="#" title="Quick View" id="icon-view"><i class="fas fa-search"></i></a>
+					<a href="" title="Add to cart" id="icon-cart"><i class="fas fa-shopping-cart"></i></a>
 				</div>
 			</div>
 
-			<div class="col-md-4 product-item">
+			<div class="col-md-4 product-item column">
 				<div class="product-images"><a href=""><img src="img/10.jpg"></a></div>
 				<div class="product-info">
 					<a href=""><h3>PRODUCT DEMO TITLE</h3><strike>$700.00</strike> <span>$350.00</span><span class="star-icon"><i class="far fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star "></i><i class="fas fa-star"></i></span></a>
 				</div>
 				<div class="btn-button add-to-cart">
-					<a href="" title="Add to cart"><i class="fas fa-shopping-cart"><span>Add to cart</span></i></a>
+					<a href="" title="Add to Wishlist" id="icon-wishlist"><i class="fas fa-heart"></i></a>
+					<a href="#" title="Quick View" id="icon-view"><i class="fas fa-search"></i></a>
+					<a href="" title="Add to cart" id="icon-cart"><i class="fas fa-shopping-cart"></i></a>
 				</div>
 			</div>
 
-			<div class="col-md-4 product-item">
+			<div class="col-md-4 product-item column">
 				<div class="product-images"><a href=""><img src="img/11.jpg"></a></div>
 				<div class="product-info">
 					<a href=""><h3>PRODUCT DEMO TITLE</h3><strike>$700.00</strike> <span>$350.00</span><span class="star-icon"><i class="far fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star "></i><i class="fas fa-star"></i></span></a>
 				</div>
 				<div class="btn-button add-to-cart">
-					<a href="" title="Add to cart"><i class="fas fa-shopping-cart"><span>Add to cart</span></i></a>
+					<a href="" title="Add to Wishlist" id="icon-wishlist"><i class="fas fa-heart"></i></a>
+					<a href="#" title="Quick View" id="icon-view"><i class="fas fa-search"></i></a>
+					<a href="" title="Add to cart" id="icon-cart"><i class="fas fa-shopping-cart"></i></a>
 				</div>
 			</div>
 
-			<div class="col-md-4 product-item">
+			<div class="col-md-4 product-item column">
 				<div class="product-images"><a href=""><img src="img/12.jpg"></a></div>
 				<div class="product-info">	
 					<a href=""><h3>PRODUCT DEMO TITLE</h3><strike>$700.00</strike> <span>$350.00</span><span class="star-icon"><i class="far fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star "></i><i class="fas fa-star"></i></span></a>
 				</div>
 				<div class="btn-button add-to-cart">
-					<a href="" title="Add to cart"><i class="fas fa-shopping-cart"><span>Add to cart</span></i></a>
+					<a href="" title="Add to Wishlist" id="icon-wishlist"><i class="fas fa-heart"></i></a>
+					<a href="#" title="Quick View" id="icon-view"><i class="fas fa-search"></i></a>
+					<a href="" title="Add to cart" id="icon-cart"><i class="fas fa-shopping-cart"></i></a>
 				</div>
 			</div>
 
-			<div class="col-md-4 product-item">
+			<div class="col-md-4 product-item column">
 				<div class="product-images"><a href=""><img src="img/13.jpg"></a></div>	
 				<div class="product-info">
 					<a href=""><h3>PRODUCT DEMO TITLE</h3><strike>$700.00</strike> <span>$350.00</span><span class="star-icon"><i class="far fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star "></i><i class="fas fa-star"></i></span></a>
 				</div>
 				<div class="btn-button add-to-cart">
-					<a href="" title="Add to cart"><i class="fas fa-shopping-cart"><span>Add to cart</span></i></a>
+					<a href="" title="Add to Wishlist" id="icon-wishlist"><i class="fas fa-heart"></i></a>
+					<a href="#" title="Quick View" id="icon-view"><i class="fas fa-search"></i></a>
+					<a href="" title="Add to cart" id="icon-cart"><i class="fas fa-shopping-cart"></i></a>
 				</div>
 			</div>
 
-			<div class="col-md-4 product-item">
+			<div class="col-md-4 product-item column">
 				<div class="product-images"><a href=""><img src="img/14.jpg"></a></div>	
 				<div class="product-info">
 					<a href=""><h3>PRODUCT DEMO TITLE</h3><strike>$700.00</strike> <span>$350.00</span><span class="star-icon"><i class="far fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star "></i><i class="fas fa-star"></i></span></a>
 				</div>
 				<div class="btn-button add-to-cart">
-					<a href="" title="Add to cart"><i class="fas fa-shopping-cart"><span>Add to cart</span></i></a>
+					<a href="" title="Add to Wishlist" id="icon-wishlist"><i class="fas fa-heart"></i></a>
+					<a href="#" title="Quick View" id="icon-view"><i class="fas fa-search"></i></a>
+					<a href="" title="Add to cart" id="icon-cart"><i class="fas fa-shopping-cart"></i></a>
 				</div>
 			</div>
 
-			<div class="col-md-4 product-item">
+			<div class="col-md-4 product-item column">
 				<div class="product-images"><a href=""><img src="img/15.jpg"></a></div>
 				<div class="product-info">	
 					<a href=""><h3>PRODUCT DEMO TITLE</h3><strike>$700.00</strike> <span>$350.00</span><span class="star-icon"><i class="far fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star "></i><i class="fas fa-star"></i></span></a>
 				</div>
 				<div class="btn-button add-to-cart">
-					<a href="" title="Add to cart"><i class="fas fa-shopping-cart"><span>Add to cart</span></i></a>
+					<a href="" title="Add to Wishlist" id="icon-wishlist"><i class="fas fa-heart"></i></a>
+					<a href="#" title="Quick View" id="icon-view"><i class="fas fa-search"></i></a>
+					<a href="" title="Add to cart" id="icon-cart"><i class="fas fa-shopping-cart"></i></a>
 				</div>
 			</div>
 
-			<div class="col-md-4 product-item">
+			<div class="col-md-4 product-item column">
 				<div class="product-images"><a href=""><img src="img/16.jpg"></a></div>
 				<div class="product-info">	
 					<a href=""><h3>PRODUCT DEMO TITLE</h3><strike>$700.00</strike> <span>$350.00</span><span class="star-icon"><i class="far fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star "></i><i class="fas fa-star"></i></span></a>
 				</div>
 				<div class="btn-button add-to-cart">
-					<a href="" title="Add to cart"><i class="fas fa-shopping-cart"><span>Add to cart</span></i></a>
+					<a href="" title="Add to Wishlist" id="icon-wishlist"><i class="fas fa-heart"></i></a>
+					<a href="#" title="Quick View" id="icon-view"><i class="fas fa-search"></i></a>
+					<a href="" title="Add to cart" id="icon-cart"><i class="fas fa-shopping-cart"></i></a>
 				</div>
 			</div>
 
-			<div class="col-md-4 product-item">
+			<div class="col-md-4 product-item column">
 				<div class="product-images"><a href=""><img src="img/17.jpg"></a></div>
 				<div class="product-info">	
 					<a href=""><h3>PRODUCT DEMO TITLE</h3><strike>$700.00</strike> <span>$350.00</span><span class="star-icon"><i class="far fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star "></i><i class="fas fa-star"></i></span></a>
 				</div>
 				<div class="btn-button add-to-cart">
-					<a href="" title="Add to cart"><i class="fas fa-shopping-cart"><span>Add to cart</span></i></a>
+					<a href="" title="Add to Wishlist" id="icon-wishlist"><i class="fas fa-heart"></i></a>
+					<a href="#" title="Quick View" id="icon-view"><i class="fas fa-search"></i></a>
+					<a href="" title="Add to cart" id="icon-cart"><i class="fas fa-shopping-cart"></i></a>
 				</div>
 			</div>
 
-			<div class="col-md-4 product-item">
+			<div class="col-md-4 product-item column">
 				<div class="product-images"><a href=""><img src="img/18.jpg"></a></div>
 				<div class="product-info">
 					<a href=""><h3>PRODUCT DEMO TITLE</h3><strike>$700.00</strike> <span>$350.00</span><span class="star-icon"><i class="far fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star "></i><i class="fas fa-star"></i></span></a>
 				</div>
 				<div class="btn-button add-to-cart">
-					<a href="" title="Add to cart"><i class="fas fa-shopping-cart"><span>Add to cart</span></i></a>
+					<a href="" title="Add to Wishlist" id="icon-wishlist"><i class="fas fa-heart"></i></a>
+					<a href="#" title="Quick View" id="icon-view"><i class="fas fa-search"></i></a>
+					<a href="" title="Add to cart" id="icon-cart"><i class="fas fa-shopping-cart"></i></a>
 				</div>
 			</div>
-			</div>
-<!-- first-last -->			
-		<div class="pagi row">
+			</div>	
+			<script>
+				// Get the elements with class="column"
+var elements = document.getElementsByClassName("column");
+
+// Declare a loop variable
+var i;
+
+// List View
+function listView() {
+  for (i = 0; i < elements.length; i++) {
+    elements[i].style.width = "51%";
+  }
+}
+
+// Grid View
+function gridView() {
+  for (i = 0; i < elements.length; i++) {
+    elements[i].style.width = "33.33333333%";
+  }
+}
+			</script>
+			<!-- first-last -->			
+		<div class="pagi">
 			<ul class="pagination">
 				<li><a href="#"><i class="fas fa-chevron-left"></i> First</a></li>
 				<li class="active"><a href="#">1</a></li>
@@ -466,6 +596,9 @@
 				<li><a href="#">Last <i class="fas fa-chevron-right"></i></a></li>
 			</ul>
 		</div>
+		</div>
+		
+
 	</section>
 
 <!-- aside cho pc -->
@@ -476,41 +609,244 @@
 		<ul class="list-group">
 			<li class="list-group-item">
 				<a href="#" class="dropdown-toggle" data="dropdown"><i class="fas fa-chevron-right"></i><span class="menu-sidebar"> Food</span></a>	
-				<ul class="dropdown-menu">
-					<ul class="menu-level-2">
-						<h4>Menu 1</h4>
-						<li><a href="#"> Pig</a></li>
-						<li><a href="#"> Chicken</a></li>
-						<li><a href="#"> Buffalow</a></li>
-						<li><a href="#"> Cow</a></li>
-					</ul>
-					<ul class="menu-level-2">
-						<h4>Menu 2</h4>
-						<li><a href="#"> Pig</a></li>
-						<li><a href="#"> Chicken</a></li>
-						<li><a href="#"> Buffalow</a></li>
-						<li><a href="#"> Cow</a></li>
-					</ul>
-					<ul class="menu-level-2">
-						<h4>Menu 2</h4>
-						<li><a href="#"> Pig</a></li>
-						<li><a href="#"> Chicken</a></li>
-						<li><a href="#"> Buffalow</a></li>
-						<li><a href="#"> Cow</a></li>
-					</ul>
+				<ul class="dropdown-menu drop-list-food row">
+					
+                                                    <li class="list-category-menu col-md-4">
+                                                        <h3>ACCESSORIES</h3>
+                                                        <ul class="level2">
+                                                            <li class="col-inner"><a href="#">Maybellin Face Power</a></li>
+                                                            <li class="col-inner"><a href="#">Chanel Mascara</a></li>
+                                                            <li class="col-inner"><a href="#">Mascara For Full Lashes Mascara</a></li>
+                                                            <li class="col-inner"><a href="#">Offical Cosme-Decom Maybellin Face</a></li>
+                                                            <li class="col-inner"><a href="#">Offical Cosme-Decom</a></li>
+                                                            <li class="col-inner"><a href="#">Lady Dior Mascara</a></li>
+                                                            <li class="col-inner"><a href="#">Mirinda</a></li>
+                                                        </ul>
+                                                    </li>
+                                                    <li class="list-category-menu col-md-4">
+                                                        <h3>Electronic</h3>
+                                                        <ul class="level2">
+                                                            <li class="col-inner"><a href="#">Maybellin Face Power</a></li>
+                                                            <li class="col-inner"><a href="#">Chanel Mascara</a></li>
+                                                            <li class="col-inner"><a href="#">Mascara For Full Lashes Mascara</a></li>
+                                                            <li class="col-inner"><a href="#">Offical Cosme-Decom Maybellin Face</a></li>
+                                                            <li class="col-inner"><a href="#">Offical Cosme-Decom</a></li>
+                                                            <li class="col-inner"><a href="#">Lady Dior Mascara</a></li>
+                                                            <li class="col-inner"><a href="#">Casopia</a></li>
+                                                        </ul>
+                                                    </li>
+                                                    <li class="list-category-menu col-md-4">
+                                                        <h3>COMPUTER & OTHERS</h3>
+                                                        <ul class="level2">
+                                                            <li class="col-inner"><a href="#">Maybellin Face Power</a></li>
+                                                            <li class="col-inner"><a href="#">Chanel Mascara</a></li>
+                                                            <li class="col-inner"><a href="#">Mascara For Full Lashes Mascara</a></li>
+                                                            <li class="col-inner"><a href="#">Offical Cosme-Decom Maybellin Face</a></li>
+                                                            <li class="col-inner"><a href="#">Offical Cosme-Decom</a></li>
+                                                            <li class="col-inner"><a href="#">Lady Dior Mascara</a></li>
+                                                            <li class="col-inner"><a href="#">Draven</a></li>
+                                                        </ul>
+                                                    </li>
+                   
 				</ul>
 			</li>
 
-			<li class="list-group-item"><a href=""><i class="fas fa-chevron-right"></i><span class="menu-sidebar"> Mobile & Tablet</span></a></li>
-			<li class="list-group-item"><a href=""><i class="fas fa-chevron-right"></i><span class="menu-sidebar"> Electric Appliances</span></a></li>
-			<li class="list-group-item"><a href=""><i class="fas fa-chevron-right"></i><span class="menu-sidebar"> Electronics & Technology</span></a></li>
-			<li class="list-group-item"><a href=""><i class="fas fa-chevron-right"></i><span class="menu-sidebar"> Fashion</span></a></li>
-			<li class="list-group-item"><a href=""><i class="fas fa-chevron-right"></i><span class="menu-sidebar"> Heal & Beauty</span></a></li>
-			<li class="list-group-item"><a href=""><i class="fas fa-chevron-right"></i><span class="menu-sidebar"> Mother & Baby</span></a></li>
-			<li class="list-group-item"><a href=""><i class="fas fa-chevron-right"></i><span class="menu-sidebar"> Books & Stationery</span></a></li>
-			<li class="list-group-item"><a href=""><i class="fas fa-chevron-right"></i><span class="menu-sidebar"> Home & Life</span></a></li>
-			<li class="list-group-item"><a href=""><i class="fas fa-chevron-right"></i><span class="menu-sidebar"> Sports & Outdoors</span></a></li>
-			<li class="list-group-item"><a href=""><i class="fas fa-chevron-right"></i><span class="menu-sidebar"> Auto & Moto</span></a></li>
+			<li class="list-group-item">
+				<a href="" class="dropdown-toggle" data="dropdown"><i class="fas fa-chevron-right"></i><span class="menu-sidebar"> Mobile & Tablet</span></a>
+				<ul class="dropdown-menu drop-list-food row">
+					
+                                                    <li class="list-category-menu col-md-4">
+                                                        <h3>ACCESSORIES</h3>
+                                                        <ul class="level2">
+                                                            <li class="col-inner"><a href="#">Maybellin Face Power</a></li>
+                                                            <li class="col-inner"><a href="#">Chanel Mascara</a></li>
+                                                            <li class="col-inner"><a href="#">Mascara For Full Lashes Mascara</a></li>
+                                                            <li class="col-inner"><a href="#">Offical Cosme-Decom Maybellin Face</a></li>
+                                                            <li class="col-inner"><a href="#">Offical Cosme-Decom</a></li>
+                                                            <li class="col-inner"><a href="#">Lady Dior Mascara</a></li>
+                                                            <li class="col-inner"><a href="#">Mirinda</a></li>
+                                                        </ul>
+                                                    </li>
+                                                    <li class="list-category-menu col-md-4">
+                                                        <h3>Electronic</h3>
+                                                        <ul class="level2">
+                                                            <li class="col-inner"><a href="#">Maybellin Face Power</a></li>
+                                                            <li class="col-inner"><a href="#">Chanel Mascara</a></li>
+                                                            <li class="col-inner"><a href="#">Mascara For Full Lashes Mascara</a></li>
+                                                            <li class="col-inner"><a href="#">Offical Cosme-Decom Maybellin Face</a></li>
+                                                            <li class="col-inner"><a href="#">Offical Cosme-Decom</a></li>
+                                                            <li class="col-inner"><a href="#">Lady Dior Mascara</a></li>
+                                                            <li class="col-inner"><a href="#">Casopia</a></li>
+                                                        </ul>
+                                                    </li>
+                                                    <li class="list-category-menu col-md-4">
+                                                        <h3>COMPUTER & OTHERS</h3>
+                                                        <ul class="level2">
+                                                            <li class="col-inner"><a href="#">Maybellin Face Power</a></li>
+                                                            <li class="col-inner"><a href="#">Chanel Mascara</a></li>
+                                                            <li class="col-inner"><a href="#">Mascara For Full Lashes Mascara</a></li>
+                                                            <li class="col-inner"><a href="#">Offical Cosme-Decom Maybellin Face</a></li>
+                                                            <li class="col-inner"><a href="#">Offical Cosme-Decom</a></li>
+                                                            <li class="col-inner"><a href="#">Lady Dior Mascara</a></li>
+                                                            <li class="col-inner"><a href="#">Draven</a></li>
+                                                        </ul>
+                                                    </li>
+                   
+				</ul>
+			</li>
+			<li class="list-group-item" class="dropdown-toggle" data="dropdown">
+				<a href=""><i class="fas fa-chevron-right"></i><span class="menu-sidebar"> Electric Appliances</span></a>
+				<ul class="dropdown-menu drop-list-food row">
+					
+                                                    <li class="list-category-menu col-md-4">
+                                                        <h3>ACCESSORIES</h3>
+                                                        <ul class="level2">
+                                                            <li class="col-inner"><a href="#">Maybellin Face Power</a></li>
+                                                            <li class="col-inner"><a href="#">Chanel Mascara</a></li>
+                                                            <li class="col-inner"><a href="#">Mascara For Full Lashes Mascara</a></li>
+                                                            <li class="col-inner"><a href="#">Offical Cosme-Decom Maybellin Face</a></li>
+                                                            <li class="col-inner"><a href="#">Offical Cosme-Decom</a></li>
+                                                            <li class="col-inner"><a href="#">Lady Dior Mascara</a></li>
+                                                            <li class="col-inner"><a href="#">Mirinda</a></li>
+                                                        </ul>
+                                                    </li>
+                                                    <li class="list-category-menu col-md-4">
+                                                        <h3>Electronic</h3>
+                                                        <ul class="level2">
+                                                            <li class="col-inner"><a href="#">Maybellin Face Power</a></li>
+                                                            <li class="col-inner"><a href="#">Chanel Mascara</a></li>
+                                                            <li class="col-inner"><a href="#">Mascara For Full Lashes Mascara</a></li>
+                                                            <li class="col-inner"><a href="#">Offical Cosme-Decom Maybellin Face</a></li>
+                                                            <li class="col-inner"><a href="#">Offical Cosme-Decom</a></li>
+                                                            <li class="col-inner"><a href="#">Lady Dior Mascara</a></li>
+                                                            <li class="col-inner"><a href="#">Casopia</a></li>
+                                                        </ul>
+                                                    </li>
+                                                    <li class="list-category-menu col-md-4">
+                                                        <h3>COMPUTER & OTHERS</h3>
+                                                        <ul class="level2">
+                                                            <li class="col-inner"><a href="#">Maybellin Face Power</a></li>
+                                                            <li class="col-inner"><a href="#">Chanel Mascara</a></li>
+                                                            <li class="col-inner"><a href="#">Mascara For Full Lashes Mascara</a></li>
+                                                            <li class="col-inner"><a href="#">Offical Cosme-Decom Maybellin Face</a></li>
+                                                            <li class="col-inner"><a href="#">Offical Cosme-Decom</a></li>
+                                                            <li class="col-inner"><a href="#">Lady Dior Mascara</a></li>
+                                                            <li class="col-inner"><a href="#">Draven</a></li>
+                                                        </ul>
+                                                    </li>
+                   
+				</ul>
+			</li>
+			<li class="list-group-item" class="dropdown-toggle" data="dropdown">
+				<a href=""><i class="fas fa-chevron-right"></i><span class="menu-sidebar"> Electronics & Technology</span></a>
+				<ul class="dropdown-menu drop-list-food row">
+					
+                                                    <li class="list-category-menu col-md-4">
+                                                        <h3>ACCESSORIES</h3>
+                                                        <ul class="level2">
+                                                            <li class="col-inner"><a href="#">Maybellin Face Power</a></li>
+                                                            <li class="col-inner"><a href="#">Chanel Mascara</a></li>
+                                                            <li class="col-inner"><a href="#">Mascara For Full Lashes Mascara</a></li>
+                                                            <li class="col-inner"><a href="#">Offical Cosme-Decom Maybellin Face</a></li>
+                                                            <li class="col-inner"><a href="#">Offical Cosme-Decom</a></li>
+                                                            <li class="col-inner"><a href="#">Lady Dior Mascara</a></li>
+                                                            <li class="col-inner"><a href="#">Mirinda</a></li>
+                                                        </ul>
+                                                    </li>
+                                                    <li class="list-category-menu col-md-4">
+                                                        <h3>Electronic</h3>
+                                                        <ul class="level2">
+                                                            <li class="col-inner"><a href="#">Maybellin Face Power</a></li>
+                                                            <li class="col-inner"><a href="#">Chanel Mascara</a></li>
+                                                            <li class="col-inner"><a href="#">Mascara For Full Lashes Mascara</a></li>
+                                                            <li class="col-inner"><a href="#">Offical Cosme-Decom Maybellin Face</a></li>
+                                                            <li class="col-inner"><a href="#">Offical Cosme-Decom</a></li>
+                                                            <li class="col-inner"><a href="#">Lady Dior Mascara</a></li>
+                                                            <li class="col-inner"><a href="#">Casopia</a></li>
+                                                        </ul>
+                                                    </li>
+                                                    <li class="list-category-menu col-md-4">
+                                                        <h3>COMPUTER & OTHERS</h3>
+                                                        <ul class="level2">
+                                                            <li class="col-inner"><a href="#">Maybellin Face Power</a></li>
+                                                            <li class="col-inner"><a href="#">Chanel Mascara</a></li>
+                                                            <li class="col-inner"><a href="#">Mascara For Full Lashes Mascara</a></li>
+                                                            <li class="col-inner"><a href="#">Offical Cosme-Decom Maybellin Face</a></li>
+                                                            <li class="col-inner"><a href="#">Offical Cosme-Decom</a></li>
+                                                            <li class="col-inner"><a href="#">Lady Dior Mascara</a></li>
+                                                            <li class="col-inner"><a href="#">Draven</a></li>
+                                                        </ul>
+                                                    </li>
+                   
+				</ul>
+			</li>
+			<li class="list-group-item" class="dropdown-toggle" data="dropdown">
+				<a href=""><i class="fas fa-chevron-right"></i><span class="menu-sidebar"> Fashion</span></a>
+				<ul class="dropdown-menu drop-list-food row">
+					
+                                                    <li class="list-category-menu col-md-4">
+                                                        <h3>ACCESSORIES</h3>
+                                                        <ul class="level2">
+                                                            <li class="col-inner"><a href="#">Maybellin Face Power</a></li>
+                                                            <li class="col-inner"><a href="#">Chanel Mascara</a></li>
+                                                            <li class="col-inner"><a href="#">Mascara For Full Lashes Mascara</a></li>
+                                                            <li class="col-inner"><a href="#">Offical Cosme-Decom Maybellin Face</a></li>
+                                                            <li class="col-inner"><a href="#">Offical Cosme-Decom</a></li>
+                                                            <li class="col-inner"><a href="#">Lady Dior Mascara</a></li>
+                                                            <li class="col-inner"><a href="#">Mirinda</a></li>
+                                                        </ul>
+                                                    </li>
+                                                    <li class="list-category-menu col-md-4">
+                                                        <h3>Electronic</h3>
+                                                        <ul class="level2">
+                                                            <li class="col-inner"><a href="#">Maybellin Face Power</a></li>
+                                                            <li class="col-inner"><a href="#">Chanel Mascara</a></li>
+                                                            <li class="col-inner"><a href="#">Mascara For Full Lashes Mascara</a></li>
+                                                            <li class="col-inner"><a href="#">Offical Cosme-Decom Maybellin Face</a></li>
+                                                            <li class="col-inner"><a href="#">Offical Cosme-Decom</a></li>
+                                                            <li class="col-inner"><a href="#">Lady Dior Mascara</a></li>
+                                                            <li class="col-inner"><a href="#">Casopia</a></li>
+                                                        </ul>
+                                                    </li>
+                                                    <li class="list-category-menu col-md-4">
+                                                        <h3>COMPUTER & OTHERS</h3>
+                                                        <ul class="level2">
+                                                            <li class="col-inner"><a href="#">Maybellin Face Power</a></li>
+                                                            <li class="col-inner"><a href="#">Chanel Mascara</a></li>
+                                                            <li class="col-inner"><a href="#">Mascara For Full Lashes Mascara</a></li>
+                                                            <li class="col-inner"><a href="#">Offical Cosme-Decom Maybellin Face</a></li>
+                                                            <li class="col-inner"><a href="#">Offical Cosme-Decom</a></li>
+                                                            <li class="col-inner"><a href="#">Lady Dior Mascara</a></li>
+                                                            <li class="col-inner"><a href="#">Draven</a></li>
+                                                        </ul>
+                                                    </li>
+                   
+				</ul>
+			</li>
+			<li class="list-group-item" class="dropdown-toggle" data="dropdown">
+				<a href=""><i class="fas fa-chevron-right"></i><span class="menu-sidebar"> Heal & Beauty</span></a>
+
+			</li>
+			<li class="list-group-item" class="dropdown-toggle" data="dropdown">
+				<a href=""><i class="fas fa-chevron-right"></i><span class="menu-sidebar"> Mother & Baby</span></a>
+
+			</li>
+			<li class="list-group-item" class="dropdown-toggle" data="dropdown">
+				<a href=""><i class="fas fa-chevron-right"></i><span class="menu-sidebar"> Books & Stationery</span></a>
+
+			</li>
+			<li class="list-group-item" class="dropdown-toggle" data="dropdown">
+				<a href=""><i class="fas fa-chevron-right"></i><span class="menu-sidebar"> Home & Life</span></a>
+
+			</li>
+			<li class="list-group-item" class="dropdown-toggle" data="dropdown">
+				<a href=""><i class="fas fa-chevron-right"></i><span class="menu-sidebar"> Sports & Outdoors</span></a>
+
+			</li>
+			<li class="list-group-item" class="dropdown-toggle" data="dropdown">
+				<a href=""><i class="fas fa-chevron-right"></i><span class="menu-sidebar"> Auto & Moto</span></a>
+
+			</li>
 		</ul>	
 		</div>
 <!-- Brand -->
@@ -534,7 +870,7 @@
 			<p class="top-menu">PRINCE</p>
 			<div class="ellipse">
 			<!-- Javascript -->
-      <script>
+     <!--  <script>
          $(function() {
             $( "#slider-3" ).slider({
                range:true,
@@ -547,8 +883,8 @@
             });
             $( "#price" ).val( "$" + $( "#slider-3" ).slider( "values", 0 ) +
                " - $" + $( "#slider-3" ).slider( "values", 1 ) );
-         });
-      </script>
+         });s
+      </script> -->
    
       <!-- HTML --> 
       <div id = "slider-3"></div>
@@ -564,18 +900,18 @@
 			
 			<p class="top-menu">COLOR</p>
 			<div class="img-color">
-				<div class="color color1"><a href=""><img src="img/color-grey.png"></a></div>
-				<div class="color color2"><a href=""><img src="img/color-grey2.png"></a></div>
-				<div class="color color3"><a href=""><img src="img/color-grey3.png"></a></div>
-				<div class="color color4"><a href=""><img src="img/color-ping.png"></a></div>
-				<div class="color color5"><a href=""><img src="img/color-brown2.png"></a></div>
-				<div class="color color6"><a href=""><img src="img/color-white.png"></a></div>
-				<div class="color color7"><a href=""><img src="img/color-red.png"></a></div>
-				<div class="color color8"><a href=""><img src="img/color-brown.png"></a></div>
-				<div class="color color9"><a href=""><img src="img/color-orange.png"></a></div>
-				<div class="color color10"><a href=""><img src="img/color-blue.png"></a></div>
-				<div class="color color11"><a href=""><img src="img/color-green.png"></a></div>
-				<div class="color color12"><a href=""><img src="img/color-yellow.png"></a></div>
+				<div class="color color1"><a href=""></a></div>
+				<div class="color color2"><a href=""></a></div>
+				<div class="color color3"><a href=""></a></div>
+				<div class="color color4"><a href=""></a></div>
+				<div class="color color5"><a href=""></a></div>
+				<div class="color color6"><a href=""></a></div>
+				<div class="color color7"><a href=""></a></div>
+				<div class="color color8"><a href=""></a></div>
+				<div class="color color9"><a href=""></a></div>
+				<div class="color color10"><a href=""></a></div>
+				<div class="color color11"><a href=""></a></div>
+				<div class="color color12"><a href=""></a></div>
 			</div>
 			
 		
@@ -703,6 +1039,6 @@
 					
 				</div>
 	</footer>
-
+ <script src = "js/function.js"></script>
 </body>
 </html>
