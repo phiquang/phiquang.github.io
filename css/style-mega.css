@@ -215,26 +215,19 @@ a:hover .menu-sidebar,a:hover .fa-chevron-right{
  }
  .mega-menu li a:hover{
  	color: red;
+ 	background-color: white;
+ }
+ .menu-home .mega-menu a{
+ 	font-family: roboto;
+ 	font-size: 14px;
+
  }
  .dropdown:hover .mega-menu{
  	transform: translate(0,10px);
  	visibility: unset;
  	opacity: 1;
  }
- .menu-home .dropdown .mega-menu{
- 	width: 160px;
- 	min-width: 0;
- }
- .menu-home .dropdown .mega-menu li{
- 	padding-left: 20px;
- 	width: 150px;
- 	font-size: 16px;
- 	clear: both;
- }
- .menu-home .dropdown .mega-menu li a{
- 	background-color: white;
- }
-.dropdown .mega-menu {
+ .dropdown .drop-menu-new {
 	opacity: 0;
 	position: absolute;
 	top:40px;
@@ -245,8 +238,29 @@ a:hover .menu-sidebar,a:hover .fa-chevron-right{
  	transition: all 0.5s ease;
  	display: inline-block;
  	visibility: hidden;
- 	border-radius: 5px;
 }
+ .menu-home .drop-menu-home{
+ 	opacity: 0;
+	position: absolute;
+	top:40px;
+	border-radius: 0;
+ 	margin-top: 0px;
+ 	transition: all 0.5s ease;
+ 	display: inline-block;
+ 	visibility: hidden;
+ 	width: 160px;
+ 	min-width: 0;
+ }
+ .menu-home .drop-menu-home li{
+ 	padding-left: 20px;
+ 	width: 150px;
+ 	font-size: 16px;
+ 	clear: both;
+ }
+ .menu-home .drop-menu-home li a{
+ 	background-color: white;
+ }
+
 .mega-menu li {
 	display: inline-block;
 	float: left;
@@ -451,7 +465,7 @@ a:hover .menu-sidebar,a:hover .fa-chevron-right{
 	left: 270px;
 	top:0;
 }
-.list-category-menu-lv2 h3{
+.list-category-menu-lv2 h4{
 	padding-left: 20px;
 }
 .list-category-menu-lv2 li a{
@@ -478,7 +492,7 @@ a:hover .menu-sidebar,a:hover .fa-chevron-right{
  .menu-main .link-home{
  	margin-left: 20px;
  }
- .dropdown-menu-main{
+ .nav .dropdown-menu-main{
  	position: static;
  }
  .menu-line{
@@ -543,7 +557,7 @@ a:hover .menu-sidebar,a:hover .fa-chevron-right{
 .drop-list-food .list-category-menu{
 	margin-left: -5px;
 }
-.list-category-menu h3{
+.list-category-menu h4{
 	padding-left: 47px;
 }
 .level2{
@@ -576,7 +590,7 @@ a:hover .menu-sidebar,a:hover .fa-chevron-right{
  .list-group-item .dropdown-menu{
  	opacity: 0;
  	transition: all 0.5s ease;
- 	top: -68px;
+ 	top: 0px;
  	left: 255px;
  	display: inline-block;
  	visibility: hidden;
@@ -856,6 +870,9 @@ input:checked ~ .check-mark:after {
  .content{
  	float: right;
  }
+ .description{
+ 	display: none;
+ }
  .product-item{
  	position: relative;
  	padding: 35px 20px 0 20px;
@@ -864,6 +881,10 @@ input:checked ~ .check-mark:after {
  	color: white;
  	opacity: 1;
  	transform: translate(30px,0);
+ }
+ .product-item:hover .add-to-cart a{
+ 	color: white;
+ 	background-color: white;
  }
  .product-item .add-to-cart i{
  	opacity: 0;
@@ -1119,7 +1140,7 @@ color: #626262;
 	background-color: #e12b28;
 }
 .icon-fun-insta{
-	background-color: #a3349d;
+	background: linear-gradient(#7043ba,#9c3ca7,#d44561,#faad51);
 }
 .icon-inter .twits{
 	background-color: #1ea3f0;
@@ -1132,7 +1153,7 @@ color: #626262;
 	font-size:20px;
 }
 .icon-inter .insta{
-	background-color: #a3349d;
+	background:transparent;
 	color: white;
 	font-size:20px;
 }
