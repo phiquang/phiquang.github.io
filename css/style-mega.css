@@ -131,6 +131,7 @@ nav,.logo-pc,.search,.buttonsearch,.menu-all,.menu-main,.icon-cart,footer,aside,
 	border-color: #eb1a21;
 }
 @media only screen and (min-width: 900px){
+
 nav,.logo-pc,.search,.buttonsearch,.menu-all,.menu-main,.icon-cart,footer,aside,.electric,.sup,.foot-search{
 	display: block;
 }
@@ -175,8 +176,8 @@ a:hover .menu-sidebar,a:hover .fa-chevron-right{
 	clear: right;
 }
 .topbar{
-	height: 26px;
 	margin-top: 5px;
+    margin-bottom: 5px;
 }
 .topbar li a{
 	padding: 0;
@@ -219,7 +220,7 @@ a:hover .menu-sidebar,a:hover .fa-chevron-right{
 }
 .input-search{
  	font-family: Roboto Condensed; border: none;outline: none;padding-left: 15px;
- 	opacity: 0.5;letter-spacing: 0.5px;width: 200px;margin-top: 8px;
+ 	opacity: 0.5;letter-spacing: 0.5px;width: 75%;margin-top: 8px;
  }
  .mega-menu li a:hover{
  	color: red;
@@ -310,8 +311,8 @@ a:hover .menu-sidebar,a:hover .fa-chevron-right{
 .drop-allcategory{
 	min-width: 128px;
     border-radius: 0;
-    top: 40px;
-    left: -2px;
+    top: 70px;
+    left: 66px;
 }
 .drop-allcategory li a:hover{
 	background-color: white;
@@ -334,10 +335,7 @@ a:hover .menu-sidebar,a:hover .fa-chevron-right{
 	color: red;
 }
  .search{
- 	height: 40px;
  	border: 2px solid #ed1a23;
- 	margin-top: 29px;
- 	margin-left: 66px;
  }
  .search .dropdown-menu{
  	max-width: 118px;
@@ -369,12 +367,29 @@ a:hover .menu-sidebar,a:hover .fa-chevron-right{
  	display: inline-block;
  	visibility: hidden;
  }
-
+.page-menu>div>button> a>i{
+	font-size: 14px;
+}
  header{
  	border-top: 1px solid #e9e9e9;
  }
  .logo-pc{
  	padding-top: 22px;
+    padding-bottom: 39px;
+ }
+ .search{
+ 	float: left;
+ 	width: 84.5%;
+ }
+ .buttonsearch{
+ 	float: left;
+ 	width: 15.5%;
+ }
+ .btn-search{
+ 	padding-top: 28px;
+ 	padding-bottom: 31px;
+ 	padding-left: 66px; 
+ 	width: 75.6%;
  }
  .search .dropdown-toggle{
  	font-family: roboto Condensed;
@@ -386,21 +401,20 @@ a:hover .menu-sidebar,a:hover .fa-chevron-right{
     padding-right: 17px;
     font-weight: 500;
  }
- .buttonsearch button{
- 	margin-top: 29px;
+ .buttonsearch >button{
  	background-color: #eb1a20;border: 0;
  	color: white;
- 	height: 40px;
- 	width: 70%;
+ 	width: 100%;
+ 	padding-bottom: 7px;
+    padding-top: 8px;
  }
 
  .buttonsearch span{
  	color: white; font-size:17px;font-family: Roboto Condensed;font-weight: 700;font-size: 18px;letter-spacing: 1px;
  }
  .icon-cart{
- 	width: 7%;
- 	margin-left: -51px;
- 	padding: 32px;
+ 	width: 7.6%;
+ 	padding: 32px 0 35px 38px;
  	position: relative;
  }
  .icon-cart .dropdown-menu{
@@ -444,9 +458,6 @@ a:hover .menu-sidebar,a:hover .fa-chevron-right{
     color: white;
     text-align: center;
     font-size: 12px;
- }
- .logo-pc,.buttonsearch,.icon-cart{
- 	height: 99px;
  }
  .menu-all{
  	width: 23.076%;
@@ -494,6 +505,11 @@ a:hover .menu-sidebar,a:hover .fa-chevron-right{
 	visibility: hidden;
 	opacity: 0;
 	transition: all 0.5s ease;
+}
+.menu-btn-allcategory>a>i{
+	float: right;
+    font-size: 10px;
+    padding-top: 4px;
 }
 .menu-btn-allcategory:hover .dropdown-menu{
 	visibility: unset;
@@ -550,11 +566,23 @@ a:hover .menu-sidebar,a:hover .fa-chevron-right{
  .menu-right1,.menu-right2,.menu-right3{
  	border: 1px solid #e9e9e9;
  }
+ .menu-right2>ul>li{
+ 	list-style-type: none;
+ }
+ .menu-right2>ul{
+ 	margin-left: -48px;
+ }
  .top-menu{
  	padding: 30px 0 0 22px;
  	font-family: roboto;
  	font-size: 18px;
  	font-weight: bold;
+ }
+ .size>ul{
+ 	margin-left: -38px;
+ }
+ .size>ul>li{
+ 	list-style-type: none;
  }
  .menu-level-2{
  float: left;
@@ -623,6 +651,9 @@ a:hover .menu-sidebar,a:hover .fa-chevron-right{
  .menu-right1 i{
  	font-size: 10px;
  	color: #707070;
+ 	position: relative;
+ 	top: -2px;
+ 	
  }
  .menu-right1 span{
  	color: #707070;
@@ -1085,16 +1116,17 @@ input:checked ~ .check-mark:after {
 float: left;
 padding-top: 18px;
 }
-.input-mail input{
+.input-mail>form> input{
 	float: left;
 	background-color: white;
 	font-family: roboto;
-	width: 270px;
+	width: 69.23%;
 	height: 38px;
 	border-radius: 0;
 	border:2px solid #eb1a20;
+	padding-left: 10px;
 }
-.input-mail button{
+.input-mail>form> button{
 	font-family: roboto Condensed;
 	font-size: 14px;
 	color: white;
@@ -1102,8 +1134,10 @@ padding-top: 18px;
 	border: none;
 	background-color: #eb1a20;
 	float: left;
-	width: 90px;
+	width: 30.77%;
 	height: 38px;
+	letter-spacing: 1px;
+    padding-top: 3px;
 }
 .foot-info{
 	height: 293px;
@@ -1116,8 +1150,10 @@ padding-top: 18px;
 	font-family: roboto;
 	padding-top: 40px;
 }
-.infor1 li,.infor2 li,.infor3 li{
-list-style-type: unset;
+.infor1>ul,.infor2>ul,.infor3>ul,.infor4>ul{
+    margin-left: -24px;
+}
+.infor1 >ul >li,.infor2 >ul >li,.infor3 >ul >li{
 font-family: roboto;
 font-size: 14px;
 font-weight: 400;
@@ -1130,7 +1166,8 @@ color: #626262;
 .infor1 li a,.infor2 li a,.infor3 li a{
 color: #626262;
 }
-.infor4 li{
+.infor4 >ul >li{
+list-style-type: none;
 font-family: roboto;
 font-size: 14px;
 font-weight: 400;
@@ -1199,5 +1236,12 @@ color: #626262;
 	background-color:#e12b28 ;
 	color: white;
 	font-size:20px;
+}
+.icon-footer{
+	text-align: right;
+    padding: 18px 0;
+}
+.myStyle{
+	display: none;
 }
 }
