@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Mega demo</title>
+	<title>Mega Store</title>
 	<meta charset="utf-8">
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
@@ -14,7 +14,7 @@
 <!-- bootstrap vs jquery -->
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-	<link rel="stylesheet" type="text/css" href="css/style-mega.css">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
 	<link rel="stylesheet" href="font/fontawesome-all.css">
 	<link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:300,400,700" rel="stylesheet">
@@ -23,15 +23,16 @@
 	
 <!-- file js -->
 	<script  src="js/function.js"></script>
-
 </head>
-<body>
-<script  src="js/function.js"></script>
-<!-- topbar pc -->
-	<nav>
+<body>	
+	<div class="back-to-top hidden-lg hidden-md"><a href="#" class="scroll_top"><i class="fas fa-angle-up"></i></a></div>
+
+<header>
+	<!-- topbar pc -->
+		<nav class="hidden-sm hidden-xs">
 		<div class="container">
-			<div class="row">
-			<div class="navbar-header col-md-8 topbar"><img src="img/icon.png" alt="icon"><span class="call-us">Call us:</span> <span class="phone">070-7782-9137</span></div>
+			<div class="row nav-top">
+			<div class="col-md-8 topbar"><img src="img/icon.png" alt="icon"><span class="call-us">Call us:</span> <span class="phone">070-7782-9137</span></div>
 			
 				<ul class="nav navbar-nav col-md-4 topbar">
 					<li class="list"><a class="dropdown-toggle" data-toggle="dropdown" href="#">USD <i class="fas fa-angle-down"></i>
@@ -84,33 +85,79 @@
   	</div>
 		</div>
 	</nav>
-<!-- header cho pc -->
-	<header class="container">
-		<div class="row">
-<!-- header cho iphone -->
-				<div class="menu-topbar col-xs-1">
-					<div id="mySidenav" class="sidenav">
+<!-- topbar mobile -->
+	<div class="container  hidden-md hidden-lg">
+	<div class="row topbar-mobile">
+    <nav>
+    		<div id="mySidenav" class="sidenav">
   						<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
- 						<a href="#">About</a>
-  						<a href="#">Services</a>
-  						<a href="#">Clients</a>
-  						<a href="#">Contact</a>
-					</div>
-
-<!-- Use any element to open the sidenav -->
-					<span class="js-open-menu"><i class="fas fa-align-justify"></i></span>
-				</div>
-<!-- logo megaStore cho iphone -->
-				<div class="logo col-xs-6"><a href="#"><img style="" src="img/Logo.png"></a></div>
-			
-			
-<!-- search cho iphone  -->
-				<div class="icon-search col-xs-4">
-					<button type="submit" class="col-xs-2"><i class="fas fa-search"></i></button><input class="col-xs-10" type="text" name="" placeholder="Enter your key words...">
-				</div>
-			<div class="clearfix"></div>
-<!-- head-pc -->
-		<div class="container">
+  						<ul class="list-group"> 
+  							<li class="list-group-item dropdown">
+  								<a href="#" class="dropdown-toggle" data-toggle="dropdown">Home 
+  									<button data-toggle="collapse" data-target="#menu-mobile"><i class="fas fa-angle-down"></i></button>
+  									</a>
+  								<ul id="menu-mobile" class="collapse menu-mobile-lv2">
+  									<li><a href="">Home 1</a></li>
+  									<li><a href="">Home 2</a></li>
+  									<li><a href="">Home 3</a></li>
+  								</ul>
+  							</li>
+  							<li class="list-group-item"><a href="#">About Us </a>
+  							</li>
+  							<li class="list-group-item"><a href="#">News 
+  								<button data-toggle="collapse" data-target="#menu-mobile2"><i class="fas fa-angle-down"></i></button>
+  							</a>
+  								<ul id="menu-mobile2" class="collapse menu-mobile-lv2">
+  									<li><a href="">New 1</a></li>
+  									<li><a href="">New 2</a></li>
+  									<li><a href="">New 3</a></li>
+  								</ul>
+  							</li>
+  							<li class="list-group-item"><a href="#">Contact Us</a></li>
+  							<li class="list-group-item"><a href="#">Page 
+  								<button data-toggle="collapse" data-target="#menu-mobile3"><i class="fas fa-angle-down"></i></button>
+  							</a>
+  								<ul id="menu-mobile3" class="collapse menu-mobile-lv2">
+  									<li><a href="">Page 1</a></li>
+  									<li><a href="">Page 2</a></li>
+  									<li><a href="">Page 3</a></li>
+  								</ul>
+  							</li>
+  						</ul>		
+		</div>
+			<div class="btn-bars col-xs-2 col-sm-2" onclick="openNav()" type="button">
+           		<i class="fas fa-bars"></i>
+        	</div>
+        	<div class="col-xs-6 col-sm-6"></div>
+        	<div class="topbar-mobile-right col-xs-4 col-sm-4">
+        	<div class="row">
+        		<div class="top-mobile-search col-sm-4 col-xs-4">
+        		<div><i class="fas fa-search"></i></div>
+        		<div class="topbar-form-mobile">
+        			<form class="form-group">
+        					<input type="text" name="" class="form-control" placeholder="Search...">
+        					<div class="icon-top-mobile"><i class="fas fa-search"></i></div>
+        			</form>
+        		</div>
+        				
+        	</div>
+        	
+        	<div class="col-sm-4 col-xs-4"><i class="fas fa-user"></i></div>
+        	<div class="col-sm-4 col-xs-4"><i class="fas fa-shopping-bag"></i></div>
+        	</div>
+        	
+        </div>   	  	
+    </nav>
+	</div>
+	</div>
+<!-- logo mobile -->
+<div class="row hidden-md hidden-lg">
+	<div class="logo-mobile col-xs-12">
+		<img src="img/Logo.png">
+	</div>
+</div>
+<!-- logo pc -->
+		<div class="container hidden-sm hidden-xs">
 			<div class="row">
 			<div class="col-md-2 logo-pc"><a href=""><img src="img/Logo.png"></a></div>
 		<div class="col-md-9 btn-search">
@@ -132,27 +179,27 @@
 		</div>
 				
 					
-					<div class="icon-cart col-md-1"><a href="#" class="dropdown-toggle" data-toggle="dropdown"><img src="img/cart-icon.png"><span class="count">3</span></a>
+					<div class="icon-cart col-md-1 col-sm-1 col-xs-1"><a href="#" class="dropdown-toggle" data-toggle="dropdown"><img src="img/cart-icon.png"><span class="count">3</span></a>
 						<div class="dropdown-menu">
 							<div class="no-item">NO ITEMS</div>
 						</div>
 					</div>
 		</div>
 		</div>
-		
-		
+<!-- main menu pc -->
+<div class="boder-menu hidden-sm hidden-xs">
+	
 
-<!-- menu main cho pc -->
 		<div class="container">
 			<div class="row">
-					<div class="col-md-3 menu-all">
+					<div class="col-md-3 col-sm-3 col-xs-3 menu-all">
 			<button class="dropdown-toggle" data-toggle="dropdown"><p><img src="img/icon-search.png"> <span>ALL CATEGORIES</span></p></button>
 			<ul class="dropdown-menu btn-category">
 			<li class="menu-btn-allcategory">
 				<a href="" class="dropdown-toggle" data="dropdown"><span class="menu-sidebar"> Food</span><i class="fas fa-chevron-right"></i></a>
 				<ul class="dropdown-menu btn-drop-list-food row">
 					
-                                                    <li class="list-category-menu-lv2 col-md-4">
+                                                    <li class="list-category-menu-lv2 col-md-4 col-sm-4 col-xs-4">
                                                         <h4>ACCESSORIES</h4>
                                                         <ul class="level2">
                                                             <li class="col-inner"><a href="#">Maybellin Face Power</a></li>
@@ -164,7 +211,7 @@
                                                             <li class="col-inner"><a href="#">Mirinda</a></li>
                                                         </ul>
                                                     </li>
-                                                    <li class="list-category-menu-lv2 col-md-4">
+                                                    <li class="list-category-menu-lv2 col-md-4 col-sm-4 col-xs-4">
                                                         <h4>Electronic</h4>
                                                         <ul class="level2">
                                                             <li class="col-inner"><a href="#">Maybellin Face Power</a></li>
@@ -176,7 +223,7 @@
                                                             <li class="col-inner"><a href="#">Casopia</a></li>
                                                         </ul>
                                                     </li>
-                                                    <li class="list-category-menu-lv2 col-md-4">
+                                                    <li class="list-category-menu-lv2 col-md-4 col-sm-4 col-xs-4">
                                                         <h4>COMPUTER & OTHERS</h4>
                                                         <ul class="level2">
                                                             <li class="col-inner"><a href="#">Maybellin Face Power</a></li>
@@ -234,7 +281,7 @@
 		</ul>	
 		</div>
 		
-			<ul class="nav navbar-nav col-md-9 menu-main">
+			<ul class="nav navbar-nav col-md-9 col-sm-9 col-xs-9 menu-main">
 				
 				<li class="dropdown menu-home"><button class="dropdown-toggle" data-toggle="dropdown"><a class="link-home" href=""> Home</a></button>
 						
@@ -265,7 +312,7 @@
     						
 						    <li class="col-md-4">
 						    <ul>
-						        <h3 class="nav-header">Mega menu 1</h3>
+						        <h4 class="nav-header">Mega menu 1</h4>
 						        <ul class="mega-level-2">
 						        <li><a href="#">Shop Layout</a></li>
 						        <li><a href="#">Filter area</a></li>
@@ -280,7 +327,7 @@
         
 						    <li class="col-md-4">
 						    <ul>
-						    <h3 class="nav-header">Mega menu 2</h3>
+						    <h4 class="nav-header">Mega menu 2</h4>
 						       <ul class="mega-level-2">
 						       	<li><a href="#">Shopping cart</a></li>
 						        <li><a href="#">My Account</a></li>
@@ -295,7 +342,7 @@
 
 						    <li class="col-md-4">
 						    <ul>                            
-						    <h3 class="nav-header">Mega menu 3</h3>
+						    <h4 class="nav-header">Mega menu 3</h4>
 						       <ul class="mega-level-2">
 						       	<li><a href="#">Product style</a></li>
 						        <li><a href="#">Simple Product</a></li>
@@ -324,485 +371,520 @@
 			</ul>
 			</div>
 		</div>
-		
-
-		</div>
-	</header>
-<!-- nav2 cho pc -->
+</div>
+</header>
+<!-- breadcrumb -->
 	<nav>
 		<div class="menu-line">
 			<div class="container ">
-				
-			<ul class="breadcrumb">
-				<li><a class="link1" href="">Home</a></li>
-				<li><i class="fas fa-angle-right"></i></li>
-				<li><a href="">All Products</a></li>
-			</ul>
+				<div class="row">
+					<ul class="breadcrumb">
+						<li><a class="link1" href="">Home</a></li>
+						<li><i class="fas fa-angle-right"></i></li>
+						<li><a href="">All Products</a></li>
+					</ul>
+				</div>
+			
 			</div>
 			</div>
 		</div>
 			
 	</nav>
-<!-- content -->
 <main class="container">
+	
+<section class="col-md-9 col-sm-12 col-xs-12 content">
+<!-- banner -->
 	<div class="row">
-<!-- section cho pc -->
-	<section class="col-md-9 content">
-<!--banner  -->
-	<div class="banner">	
-			<div class="img-buynow"><figure><a href="#"><img src="img/BUY-NOW.jpg"></a></figure></div>
-		
-	</div>		
-		<div class="electric">
-			<div class="row product-page">
-				<div class="col-md-2 elec">Electronic</div>
-				<div class="col-md-10 show"><span>Showing 1-20 of 75 results</span>
+		<div class="banner">
+			<div class="img-buynow"><figure><a href="#"><img src="img/BUY-NOW.jpg" class="img-responsive"></a></figure></div>
+		</div>
+	</div>
+	
+<!-- product -->
+	<div class="product">
+		<div class="row product-page">
+				<div class="col-md-2 col-xs-4 elec"><h4>Electronic</h4></div>
+				<div class="col-md-10 col-xs-8 show"><span class="hidden-xs hidden-sm">Showing 1-20 of 75 results</span>
 					<button onclick="gridView()"> <img src="img/icon4.png"></button>
 					<button onclick="listView()"><img src="img/icon3.png"></button>
 					
 				</div>
-				</div>
-			<div class="row product">
-			<div class="col-md-4 product-item column">
-				<div class="product-images"><a href=""><img src="img/1.jpg"></a></div>
-				<div class="product-info">
-					<a href=""><h3>PRODUCT DEMO TITLE</h3><strike>$700.00</strike> <span>$350.00</span><span class="star-icon"><i class="far fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star "></i><i class="fas fa-star"></i></span></a>
-				</div>
-				<div class="btn-product">
-					<div class="icon-wishlist">
-					<a href="" title="Add to Wishlist" id="icon-wishlist"><i class="fas fa-heart"></i></a>
-				</div>
-				<div class="btn-button add-to-cart">
-					<button id="btn-add"><a href="#" title="Add to cart">ADD TO CART</a></button>
-				</div>
-				</div>
-				<div class="description">
-					<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a...</p>
-				</div>
-			</div>
-
-			<div class="col-md-4 product-item column">
-				<div class="product-images"><a href=""><img src="img/2.jpg"></a></div>
-				<div class="product-info">
-					<a href=""><h3>PRODUCT DEMO TITLE</h3><strike>$700.00</strike> <span>$350.00</span><span class="star-icon"><i class="far fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star "></i><i class="fas fa-star"></i></span></a>
-				</div>
-				<div class="btn-product">
-					<div class="icon-wishlist">
-					<a href="" title="Add to Wishlist" id="icon-wishlist"><i class="fas fa-heart"></i></a>
-				</div>
-				<div class="btn-button add-to-cart">
-					<button><a href="" title="Add to cart">ADD TO CART</a></button>
-				</div>
-				</div>
-				<div class="description">
-					<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a...</p>
-				</div>
-			</div>
-
-			<div class="col-md-4 product-item column">
-				<div class="product-images"><a href=""><img src="img/3.jpg"></a></div>
-				<div class="product-info">
-					<a href=""><h3>PRODUCT DEMO TITLE</h3><strike>$700.00</strike> <span>$350.00</span><span class="star-icon"><i class="far fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star "></i><i class="fas fa-star"></i></span></a>
-				</div>
-				<div class="btn-product">
-					<div class="icon-wishlist">
-					<a href="" title="Add to Wishlist" id="icon-wishlist"><i class="fas fa-heart"></i></a>
-				</div>
-				<div class="btn-button add-to-cart">
-					<button><a href="" title="Add to cart">ADD TO CART</a></button>
-				</div>
-				</div>
-				<div class="description">
-					<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a...</p>
-				</div>
-			</div>
-
-			<div class="col-md-4 product-item column">
-				<div class="product-images"><a href=""><img src="img/4.jpg"></a></div>
-				<div class="product-info">
-					<a href=""><h3>PRODUCT DEMO TITLE</h3><strike>$700.00</strike> <span>$350.00</span><span class="star-icon"><i class="far fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star "></i><i class="fas fa-star"></i></span></a>
-				</div>
-				<div class="btn-product">
-					<div class="icon-wishlist">
-					<a href="" title="Add to Wishlist" id="icon-wishlist"><i class="fas fa-heart"></i></a>
-				</div>
-				<div class="btn-button add-to-cart">
-					<button><a href="" title="Add to cart">ADD TO CART</a></button>
-				</div>
-				</div>
-				<div class="description">
-					<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a...</p>
-				</div>
-			</div>
-
-			<div class="col-md-4 product-item column">
-				<div class="product-images"><a href=""><img src="img/5.jpg"></a></div>
-				<div class="product-info">
-					<a href=""><h3>PRODUCT DEMO TITLE</h3><strike>$700.00</strike> <span>$350.00</span><span class="star-icon"><i class="far fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star "></i><i class="fas fa-star"></i></span></a>
-				</div>
-				<div class="btn-product">
-					<div class="icon-wishlist">
-					<a href="" title="Add to Wishlist" id="icon-wishlist"><i class="fas fa-heart"></i></a>
-				</div>
-				<div class="btn-button add-to-cart">
-					<button><a href="" title="Add to cart">ADD TO CART</a></button>
-				</div>
-				</div>
-				<div class="description">
-					<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a...</p>
-				</div>
-			</div>
-
-			<div class="col-md-4 product-item column">
-				<div class="product-images"><a href=""><img src="img/6.jpg"></a></div>
-				<div class="product-info">	
-					<a href=""><h3>PRODUCT DEMO TITLE</h3><strike>$700.00</strike> <span>$350.00</span><span class="star-icon"><i class="far fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star "></i><i class="fas fa-star"></i></span></a>
-				</div>
-				<div class="btn-product">
-					<div class="icon-wishlist">
-					<a href="" title="Add to Wishlist" id="icon-wishlist"><i class="fas fa-heart"></i></a>
-				</div>
-				<div class="btn-button add-to-cart">
-					<button><a href="" title="Add to cart">ADD TO CART</a></button>
-				</div>
-				</div>
-				<div class="description">
-					<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a...</p>
-				</div>
-			</div>
-
-			<div class="col-md-4 product-item column">
-				<div class="product-images"><a href=""><img src="img/7.jpg"></a></div>
-				<div class="product-info">
-					<a href=""><h3>PRODUCT DEMO TITLE</h3><strike>$700.00</strike> <span>$350.00</span><span class="star-icon"><i class="far fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star "></i><i class="fas fa-star"></i></span></a>
-				</div>
-				<div class="btn-product">
-					<div class="icon-wishlist">
-					<a href="" title="Add to Wishlist" id="icon-wishlist"><i class="fas fa-heart"></i></a>
-				</div>
-				<div class="btn-button add-to-cart">
-					<button><a href="" title="Add to cart">ADD TO CART</a></button>
-				</div>
-				</div>
-				<div class="description">
-					<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a...</p>
-				</div>
-			</div>
-
-			<div class="col-md-4 product-item column">
-				<div class="product-images"><a href=""><img src="img/8.jpg"></a></div>
-				<div class="product-info">
-					<a href=""><h3>PRODUCT DEMO TITLE</h3><strike>$700.00</strike> <span>$350.00</span><span class="star-icon"><i class="far fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star "></i><i class="fas fa-star"></i></span></a>
-				</div>
-				<div class="btn-product">
-					<div class="icon-wishlist">
-					<a href="" title="Add to Wishlist" id="icon-wishlist"><i class="fas fa-heart"></i></a>
-				</div>
-				<div class="btn-button add-to-cart">
-					<button><a href="" title="Add to cart">ADD TO CART</a></button>
-				</div>
-				</div>
-				<div class="description">
-					<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a...</p>
-				</div>
-			</div>
-
-			<div class="col-md-4 product-item column">
-				<div class="product-images"><a href=""><img src="img/9.jpg"></a></div>
-				<div class="product-info">
-					<a href=""><h3>PRODUCT DEMO TITLE</h3><strike>$700.00</strike> <span>$350.00</span><span class="star-icon"><i class="far fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star "></i><i class="fas fa-star"></i></span></a>
-				</div>
-				<div class="btn-product">
-					<div class="icon-wishlist">
-					<a href="" title="Add to Wishlist" id="icon-wishlist"><i class="fas fa-heart"></i></a>
-				</div>
-				<div class="btn-button add-to-cart">
-					<button><a href="" title="Add to cart">ADD TO CART</a></button>
-				</div>
-				</div>
-				<div class="description">
-					<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a...</p>
-				</div>
-			</div>
-
-			<div class="col-md-4 product-item column">
-				<div class="product-images"><a href=""><img src="img/10.jpg"></a></div>
-				<div class="product-info">
-					<a href=""><h3>PRODUCT DEMO TITLE</h3><strike>$700.00</strike> <span>$350.00</span><span class="star-icon"><i class="far fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star "></i><i class="fas fa-star"></i></span></a>
-				</div>
-				<div class="btn-product">
-					<div class="icon-wishlist">
-					<a href="" title="Add to Wishlist" id="icon-wishlist"><i class="fas fa-heart"></i></a>
-				</div>
-				<div class="btn-button add-to-cart">
-					<button><a href="" title="Add to cart">ADD TO CART</a></button>
-				</div>
-				</div>
-				<div class="description">
-					<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a...</p>
-				</div>
-			</div>
-
-			<div class="col-md-4 product-item column">
-				<div class="product-images"><a href=""><img src="img/11.jpg"></a></div>
-				<div class="product-info">
-					<a href=""><h3>PRODUCT DEMO TITLE</h3><strike>$700.00</strike> <span>$350.00</span><span class="star-icon"><i class="far fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star "></i><i class="fas fa-star"></i></span></a>
-				</div>
-				<div class="btn-product">
-					<div class="icon-wishlist">
-					<a href="" title="Add to Wishlist" id="icon-wishlist"><i class="fas fa-heart"></i></a>
-				</div>
-				<div class="btn-button add-to-cart">
-					<button><a href="" title="Add to cart">ADD TO CART</a></button>
-				</div>
-				</div>
-				<div class="description">
-					<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a...</p>
-				</div>
-			</div>
-
-			<div class="col-md-4 product-item column">
-				<div class="product-images"><a href=""><img src="img/12.jpg"></a></div>
-				<div class="product-info">	
-					<a href=""><h3>PRODUCT DEMO TITLE</h3><strike>$700.00</strike> <span>$350.00</span><span class="star-icon"><i class="far fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star "></i><i class="fas fa-star"></i></span></a>
-				</div>
-				<div class="btn-product">
-					<div class="icon-wishlist">
-					<a href="" title="Add to Wishlist" id="icon-wishlist"><i class="fas fa-heart"></i></a>
-				</div>
-				<div class="btn-button add-to-cart">
-					<button><a href="" title="Add to cart">ADD TO CART</a></button>
-				</div>
-				</div>
-				<div class="description">
-					<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a...</p>
-				</div>
-			</div>
-
-			<div class="col-md-4 product-item column">
-				<div class="product-images"><a href=""><img src="img/13.jpg"></a></div>	
-				<div class="product-info">
-					<a href=""><h3>PRODUCT DEMO TITLE</h3><strike>$700.00</strike> <span>$350.00</span><span class="star-icon"><i class="far fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star "></i><i class="fas fa-star"></i></span></a>
-				</div>
-				<div class="btn-product">
-					<div class="icon-wishlist">
-					<a href="" title="Add to Wishlist" id="icon-wishlist"><i class="fas fa-heart"></i></a>
-				</div>
-				<div class="btn-button add-to-cart">
-					<button><a href="" title="Add to cart">ADD TO CART</a></button>
-				</div>
-				</div>
-				<div class="description">
-					<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a...</p>
-				</div>
-			</div>
-
-			<div class="col-md-4 product-item column">
-				<div class="product-images"><a href=""><img src="img/14.jpg"></a></div>	
-				<div class="product-info">
-					<a href=""><h3>PRODUCT DEMO TITLE</h3><strike>$700.00</strike> <span>$350.00</span><span class="star-icon"><i class="far fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star "></i><i class="fas fa-star"></i></span></a>
-				</div>
-				<div class="btn-product">
-					<div class="icon-wishlist">
-					<a href="" title="Add to Wishlist" id="icon-wishlist"><i class="fas fa-heart"></i></a>
-				</div>
-				<div class="btn-button add-to-cart">
-					<button><a href="" title="Add to cart">ADD TO CART</a></button>
-				</div>
-				</div>
-				<div class="description">
-					<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a...</p>
-				</div>
-			</div>
-
-			<div class="col-md-4 product-item column">
-				<div class="product-images"><a href=""><img src="img/15.jpg"></a></div>
-				<div class="product-info">	
-					<a href=""><h3>PRODUCT DEMO TITLE</h3><strike>$700.00</strike> <span>$350.00</span><span class="star-icon"><i class="far fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star "></i><i class="fas fa-star"></i></span></a>
-				</div>
-				<div class="btn-product">
-					<div class="icon-wishlist">
-					<a href="" title="Add to Wishlist" id="icon-wishlist"><i class="fas fa-heart"></i></a>
-				</div>
-				<div class="btn-button add-to-cart">
-					<button><a href="" title="Add to cart">ADD TO CART</a></button>
-				</div>
-				</div>
-				<div class="description">
-					<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a...</p>
-				</div>
-			</div>
-
-			<div class="col-md-4 product-item column">
-				<div class="product-images"><a href=""><img src="img/16.jpg"></a></div>
-				<div class="product-info">	
-					<a href=""><h3>PRODUCT DEMO TITLE</h3><strike>$700.00</strike> <span>$350.00</span><span class="star-icon"><i class="far fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star "></i><i class="fas fa-star"></i></span></a>
-				</div>
-				<div class="btn-product">
-					<div class="icon-wishlist">
-					<a href="" title="Add to Wishlist" id="icon-wishlist"><i class="fas fa-heart"></i></a>
-				</div>
-				<div class="btn-button add-to-cart">
-					<button><a href="" title="Add to cart">ADD TO CART</a></button>
-				</div>
-				</div>
-				<div class="description">
-					<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a...</p>
-				</div>
-			</div>
-
-			<div class="col-md-4 product-item column">
-				<div class="product-images"><a href=""><img src="img/17.jpg"></a></div>
-				<div class="product-info">	
-					<a href=""><h3>PRODUCT DEMO TITLE</h3><strike>$700.00</strike> <span>$350.00</span><span class="star-icon"><i class="far fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star "></i><i class="fas fa-star"></i></span></a>
-				</div>
-				<div class="btn-product">
-					<div class="icon-wishlist">
-					<a href="" title="Add to Wishlist" id="icon-wishlist"><i class="fas fa-heart"></i></a>
-				</div>
-				<div class="btn-button add-to-cart">
-					<button><a href="" title="Add to cart">ADD TO CART</a></button>
-				</div>
-				</div>
-				<div class="description">
-					<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a...</p>
-				</div>
-			</div>
-
-			<div class="col-md-4 product-item column">
-				<div class="product-images"><a href=""><img src="img/18.jpg"></a></div>
-				<div class="product-info">
-					<a href=""><h3>PRODUCT DEMO TITLE</h3><strike>$700.00</strike> <span>$350.00</span><span class="star-icon"><i class="far fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star "></i><i class="fas fa-star"></i></span></a>
-				</div>
-				<div class="btn-product">
-					<div class="icon-wishlist">
-					<a href="" title="Add to Wishlist" id="icon-wishlist"><i class="fas fa-heart"></i></a>
-				</div>
-				<div class="btn-button add-to-cart">
-					<button class="btn-addToCart"><a href="" title="Add to cart">ADD TO CART</a></button>
-				</div>
-				</div>
+		</div>
+		<div class="row product-all-items">
+			<div class="col-md-4 col-sm-6 col-xs-12 product-item column">
 				
+					<div class="product-images"><a href=""><img src="img/1.jpg" class="img-responsive"></a></div>
+				<div class="product-all-info">
+					<div class="product-info">
+					<a href=""><h4>PRODUCT DEMO TITLE</h4><strike>$700.00</strike> <span class="money">$350.00</span><span class="star-icon"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star "></i><i class="fas fa-star"></i></span></a>
+				</div>
+				<div class="btn-product">
+					<div class="btn-button add-to-cart">
+						<button class="btn-add"><a href="#" title="Add to cart">ADD TO CART</a></button>
+					</div>
+					<div class="icon-wishlist">
+						<a href="" title="Add to Wishlist" id="icon-wishlist"><i class="fas fa-heart"></i></a>
+					</div>
+					
+				</div>
+				</div>
+				<br>
 				<div class="description">
 					<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a...</p>
 				</div>
 			</div>
-			</div>	
-			<script>
+			<div class="col-md-4 col-sm-6 col-xs-12 product-item column">
 				
+					<div class="product-images"><a href=""><img src="img/2.jpg" class="img-responsive"></a></div>
+				<div class="product-all-info">
+					<div class="product-info">
+					<a href=""><h4>PRODUCT DEMO TITLE</h4><strike>$700.00</strike> <span class="money">$350.00</span><span class="star-icon"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star "></i><i class="fas fa-star"></i></span></a>
+				</div>
+				<div class="btn-product">
+					<div class="btn-button add-to-cart">
+						<button class="btn-add"><a href="#" title="Add to cart">ADD TO CART</a></button>
+					</div>
+					<div class="icon-wishlist">
+						<a href="" title="Add to Wishlist" id="icon-wishlist"><i class="fas fa-heart"></i></a>
+					</div>
+					
+				</div>
+				</div>
+				<br>
+				<div class="description">
+					<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a...</p>
+				</div>
+			</div>
+			<div class="col-md-4 col-sm-6 col-xs-12 product-item column">
 				
-				// Get the elements with class="column"
-				var elements = document.getElementsByClassName("column");
+					<div class="product-images"><a href=""><img src="img/3.jpg" class="img-responsive"></a></div>
+				<div class="product-all-info">
+					<div class="product-info">
+					<a href=""><h4>PRODUCT DEMO TITLE</h4><strike>$700.00</strike> <span class="money">$350.00</span><span class="star-icon"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star "></i><i class="fas fa-star"></i></span></a>
+				</div>
+				<div class="btn-product">
+					<div class="btn-button add-to-cart">
+						<button class="btn-add"><a href="#" title="Add to cart">ADD TO CART</a></button>
+					</div>
+					<div class="icon-wishlist">
+						<a href="" title="Add to Wishlist" id="icon-wishlist"><i class="fas fa-heart"></i></a>
+					</div>
+					
+				</div>
+				</div>
+				<br>
+				<div class="description">
+					<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a...</p>
+				</div>
+			</div>
+			<div class="col-md-4 col-sm-6 col-xs-12 product-item column">
+				
+					<div class="product-images"><a href=""><img src="img/4.jpg" class="img-responsive"></a></div>
+				<div class="product-all-info">
+					<div class="product-info">
+					<a href=""><h4>PRODUCT DEMO TITLE</h4><strike>$700.00</strike> <span class="money">$350.00</span><span class="star-icon"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star "></i><i class="fas fa-star"></i></span></a>
+				</div>
+				<div class="btn-product">
+					<div class="btn-button add-to-cart">
+						<button class="btn-add"><a href="#" title="Add to cart">ADD TO CART</a></button>
+					</div>
+					<div class="icon-wishlist">
+						<a href="" title="Add to Wishlist" id="icon-wishlist"><i class="fas fa-heart"></i></a>
+					</div>
+					
+				</div>
+				</div>
+				<br>
+				<div class="description">
+					<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a...</p>
+				</div>
+			</div>
+			<div class="col-md-4 col-sm-6 col-xs-12 product-item column">
+				
+					<div class="product-images"><a href=""><img src="img/5.jpg" class="img-responsive"></a></div>
+				<div class="product-all-info">
+					<div class="product-info">
+					<a href=""><h4>PRODUCT DEMO TITLE</h4><strike>$700.00</strike> <span class="money">$350.00</span><span class="star-icon"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star "></i><i class="fas fa-star"></i></span></a>
+				</div>
+				<div class="btn-product">
+					<div class="btn-button add-to-cart">
+						<button class="btn-add"><a href="#" title="Add to cart">ADD TO CART</a></button>
+					</div>
+					<div class="icon-wishlist">
+						<a href="" title="Add to Wishlist" id="icon-wishlist"><i class="fas fa-heart"></i></a>
+					</div>
+					
+				</div>
+				</div>
+				<br>
+				<div class="description">
+					<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a...</p>
+				</div>
+			</div>
+			<div class="col-md-4 col-sm-6 col-xs-12 product-item column">
+				
+					<div class="product-images"><a href=""><img src="img/6.jpg" class="img-responsive"></a></div>
+				<div class="product-all-info">
+					<div class="product-info">
+					<a href=""><h4>PRODUCT DEMO TITLE</h4><strike>$700.00</strike> <span class="money">$350.00</span><span class="star-icon"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star "></i><i class="fas fa-star"></i></span></a>
+				</div>
+				<div class="btn-product">
+					<div class="btn-button add-to-cart">
+						<button class="btn-add"><a href="#" title="Add to cart">ADD TO CART</a></button>
+					</div>
+					<div class="icon-wishlist">
+						<a href="" title="Add to Wishlist" id="icon-wishlist"><i class="fas fa-heart"></i></a>
+					</div>
+					
+				</div>
+				</div>
+				<br>
+				<div class="description">
+					<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a...</p>
+				</div>
+			</div>
+			<div class="col-md-4 col-sm-6 col-xs-12 product-item column">
+				
+					<div class="product-images"><a href=""><img src="img/7.jpg" class="img-responsive"></a></div>
+				<div class="product-all-info">
+					<div class="product-info">
+					<a href=""><h4>PRODUCT DEMO TITLE</h4><strike>$700.00</strike> <span class="money">$350.00</span><span class="star-icon"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star "></i><i class="fas fa-star"></i></span></a>
+				</div>
+				<div class="btn-product">
+					<div class="btn-button add-to-cart">
+						<button class="btn-add"><a href="#" title="Add to cart">ADD TO CART</a></button>
+					</div>
+					<div class="icon-wishlist">
+						<a href="" title="Add to Wishlist" id="icon-wishlist"><i class="fas fa-heart"></i></a>
+					</div>
+					
+				</div>
+				</div>
+				<br>
+				<div class="description">
+					<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a...</p>
+				</div>
+			</div>
+			<div class="col-md-4 col-sm-6 col-xs-12 product-item column">
+				
+					<div class="product-images"><a href=""><img src="img/8.jpg" class="img-responsive"></a></div>
+				<div class="product-all-info">
+					<div class="product-info">
+					<a href=""><h4>PRODUCT DEMO TITLE</h4><strike>$700.00</strike> <span class="money">$350.00</span><span class="star-icon"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star "></i><i class="fas fa-star"></i></span></a>
+				</div>
+				<div class="btn-product">
+					<div class="btn-button add-to-cart">
+						<button class="btn-add"><a href="#" title="Add to cart">ADD TO CART</a></button>
+					</div>
+					<div class="icon-wishlist">
+						<a href="" title="Add to Wishlist" id="icon-wishlist"><i class="fas fa-heart"></i></a>
+					</div>
+					
+				</div>
+				</div>
+				<br>
+				<div class="description">
+					<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a...</p>
+				</div>
+			</div>
+			<div class="col-md-4 col-sm-6 col-xs-12 product-item column">
+				
+					<div class="product-images"><a href=""><img src="img/9.jpg" class="img-responsive"></a></div>
+				<div class="product-all-info">
+					<div class="product-info">
+					<a href=""><h4>PRODUCT DEMO TITLE</h4><strike>$700.00</strike> <span class="money">$350.00</span><span class="star-icon"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star "></i><i class="fas fa-star"></i></span></a>
+				</div>
+				<div class="btn-product">
+					<div class="btn-button add-to-cart">
+						<button class="btn-add"><a href="#" title="Add to cart">ADD TO CART</a></button>
+					</div>
+					<div class="icon-wishlist">
+						<a href="" title="Add to Wishlist" id="icon-wishlist"><i class="fas fa-heart"></i></a>
+					</div>
+					
+				</div>
+				</div>
+				<br>
+				<div class="description">
+					<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a...</p>
+				</div>
+			</div>
+			<div class="col-md-4 col-sm-6 col-xs-12 product-item column">
+				
+					<div class="product-images"><a href=""><img src="img/10.jpg" class="img-responsive"></a></div>
+				<div class="product-all-info">
+					<div class="product-info">
+					<a href=""><h4>PRODUCT DEMO TITLE</h4><strike>$700.00</strike> <span class="money">$350.00</span><span class="star-icon"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star "></i><i class="fas fa-star"></i></span></a>
+				</div>
+				<div class="btn-product">
+					<div class="btn-button add-to-cart">
+						<button class="btn-add"><a href="#" title="Add to cart">ADD TO CART</a></button>
+					</div>
+					<div class="icon-wishlist">
+						<a href="" title="Add to Wishlist" id="icon-wishlist"><i class="fas fa-heart"></i></a>
+					</div>
+					
+				</div>
+				</div>
+				<br>
+				<div class="description">
+					<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a...</p>
+				</div>
+			</div>
+			<div class="col-md-4 col-sm-6 col-xs-12 product-item column">
+				
+					<div class="product-images"><a href=""><img src="img/11.jpg" class="img-responsive"></a></div>
+				<div class="product-all-info">
+					<div class="product-info">
+					<a href=""><h4>PRODUCT DEMO TITLE</h4><strike>$700.00</strike> <span class="money">$350.00</span><span class="star-icon"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star "></i><i class="fas fa-star"></i></span></a>
+				</div>
+				<div class="btn-product">
+					<div class="btn-button add-to-cart">
+						<button class="btn-add"><a href="#" title="Add to cart">ADD TO CART</a></button>
+					</div>
+					<div class="icon-wishlist">
+						<a href="" title="Add to Wishlist" id="icon-wishlist"><i class="fas fa-heart"></i></a>
+					</div>
+					
+				</div>
+				</div>
+				<br>
+				<div class="description">
+					<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a...</p>
+				</div>
+			</div>
+			<div class="col-md-4 col-sm-6 col-xs-12 product-item column">
+				
+					<div class="product-images"><a href=""><img src="img/12.jpg" class="img-responsive"></a></div>
+				<div class="product-all-info">
+					<div class="product-info">
+					<a href=""><h4>PRODUCT DEMO TITLE</h4><strike>$700.00</strike> <span class="money">$350.00</span><span class="star-icon"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star "></i><i class="fas fa-star"></i></span></a>
+				</div>
+				<div class="btn-product">
+					<div class="btn-button add-to-cart">
+						<button class="btn-add"><a href="#" title="Add to cart">ADD TO CART</a></button>
+					</div>
+					<div class="icon-wishlist">
+						<a href="" title="Add to Wishlist" id="icon-wishlist"><i class="fas fa-heart"></i></a>
+					</div>
+					
+				</div>
+				</div>
+				<br>
+				<div class="description">
+					<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a...</p>
+				</div>
+			</div>
+			<div class="col-md-4 col-sm-6 col-xs-12 product-item column">
+				
+					<div class="product-images"><a href=""><img src="img/13.jpg" class="img-responsive"></a></div>
+				<div class="product-all-info">
+					<div class="product-info">
+					<a href=""><h4>PRODUCT DEMO TITLE</h4><strike>$700.00</strike> <span class="money">$350.00</span><span class="star-icon"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star "></i><i class="fas fa-star"></i></span></a>
+				</div>
+				<div class="btn-product">
+					<div class="btn-button add-to-cart">
+						<button class="btn-add"><a href="#" title="Add to cart">ADD TO CART</a></button>
+					</div>
+					<div class="icon-wishlist">
+						<a href="" title="Add to Wishlist" id="icon-wishlist"><i class="fas fa-heart"></i></a>
+					</div>
+					
+				</div>
+				</div>
+				<br>
+				<div class="description">
+					<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a...</p>
+				</div>
+			</div>
+			<div class="col-md-4 col-sm-6 col-xs-12 product-item column">
+				
+					<div class="product-images"><a href=""><img src="img/14.jpg" class="img-responsive"></a></div>
+				<div class="product-all-info">
+					<div class="product-info">
+					<a href=""><h4>PRODUCT DEMO TITLE</h4><strike>$700.00</strike> <span class="money">$350.00</span><span class="star-icon"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star "></i><i class="fas fa-star"></i></span></a>
+				</div>
+				<div class="btn-product">
+					<div class="btn-button add-to-cart">
+						<button class="btn-add"><a href="#" title="Add to cart">ADD TO CART</a></button>
+					</div>
+					<div class="icon-wishlist">
+						<a href="" title="Add to Wishlist" id="icon-wishlist"><i class="fas fa-heart"></i></a>
+					</div>
+					
+				</div>
+				</div>
+				<br>
+				<div class="description">
+					<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a...</p>
+				</div>
+			</div>
+			<div class="col-md-4 col-sm-6 col-xs-12 product-item column">
+				
+					<div class="product-images"><a href=""><img src="img/15.jpg" class="img-responsive"></a></div>
+				<div class="product-all-info">
+					<div class="product-info">
+					<a href=""><h4>PRODUCT DEMO TITLE</h4><strike>$700.00</strike> <span class="money">$350.00</span><span class="star-icon"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star "></i><i class="fas fa-star"></i></span></a>
+				</div>
+				<div class="btn-product">
+					<div class="btn-button add-to-cart">
+						<button class="btn-add"><a href="#" title="Add to cart">ADD TO CART</a></button>
+					</div>
+					<div class="icon-wishlist">
+						<a href="" title="Add to Wishlist" id="icon-wishlist"><i class="fas fa-heart"></i></a>
+					</div>
+					
+				</div>
+				</div>
+				<br>
+				<div class="description">
+					<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a...</p>
+				</div>
+			</div>
+			<div class="col-md-4 col-sm-6 col-xs-12 product-item column">
+				
+					<div class="product-images"><a href=""><img src="img/16.jpg" class="img-responsive"></a></div>
+				<div class="product-all-info">
+					<div class="product-info">
+					<a href=""><h4>PRODUCT DEMO TITLE</h4><strike>$700.00</strike> <span class="money">$350.00</span><span class="star-icon"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star "></i><i class="fas fa-star"></i></span></a>
+				</div>
+				<div class="btn-product">
+					<div class="btn-button add-to-cart">
+						<button class="btn-add"><a href="#" title="Add to cart">ADD TO CART</a></button>
+					</div>
+					<div class="icon-wishlist">
+						<a href="" title="Add to Wishlist" id="icon-wishlist"><i class="fas fa-heart"></i></a>
+					</div>
+					
+				</div>
+				</div>
+				<br>
+				<div class="description">
+					<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a...</p>
+				</div>
+			</div>
+			<div class="col-md-4 col-sm-6 col-xs-12 product-item column">
+				
+					<div class="product-images"><a href=""><img src="img/17.jpg" class="img-responsive"></a></div>
+				<div class="product-all-info">
+					<div class="product-info">
+					<a href=""><h4>PRODUCT DEMO TITLE</h4><strike>$700.00</strike> <span class="money">$350.00</span><span class="star-icon"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star "></i><i class="fas fa-star"></i></span></a>
+				</div>
+				<div class="btn-product">
+					<div class="btn-button add-to-cart">
+						<button class="btn-add"><a href="#" title="Add to cart">ADD TO CART</a></button>
+					</div>
+					<div class="icon-wishlist">
+						<a href="" title="Add to Wishlist" id="icon-wishlist"><i class="fas fa-heart"></i></a>
+					</div>
+					
+				</div>
+				</div>
+				<br>
+				<div class="description">
+					<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a...</p>
+				</div>
+			</div>
+			<div class="col-md-4 col-sm-6 col-xs-12 product-item column">
+				
+					<div class="product-images"><a href=""><img src="img/18.jpg" class="img-responsive"></a></div>
+				<div class="product-all-info">
+					<div class="product-info">
+					<a href=""><h4>PRODUCT DEMO TITLE</h4><strike>$700.00</strike> <span class="money">$350.00</span><span class="star-icon"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star "></i><i class="fas fa-star"></i></span></a>
+				</div>
+				<div class="btn-product">
+					<div class="btn-button add-to-cart">
+						<button class="btn-add"><a href="#" title="Add to cart">ADD TO CART</a></button>
+					</div>
+					<div class="icon-wishlist">
+						<a href="" title="Add to Wishlist" id="icon-wishlist"><i class="fas fa-heart"></i></a>
+					</div>
+					
+				</div>
+				</div>
+				<br>
+				<div class="description">
+					<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a...</p>
+				</div>
+			</div>
+		</div>
+	</div>
+	
 
-				// Declare a loop variable
-				var i;
-
-				// List View
-				function listView() {
-				  for (i = 0; i < elements.length; i++) {
-				    elements[i].style.width = "100%";
-
-				  }
-				  $(".product-images").css("width","40%");
-				  $(".product-info").css("width","40%");
-				  $(".product-info").css("position","absolute");
-				  $(".product-info").css("top","100px");
-				  $(".product-info").css("left","400px");
-				  $(".description").css("display","inline-block");
-				  $(".description").css("width","40%");
-				  $(".description").css("position","absolute");
-				  $(".description").css("left","400px");
-				  $(".description").css("top","178px");
-				  $(".add-to-cart").css("position","absolute");
-				  $(".add-to-cart").css("bottom","38px");
-				  $(".add-to-cart").css("left","402px");
-				  $(".icon-wishlist").css("position","absolute");
-				  $(".icon-wishlist").css("bottom","38px");
-				  $(".icon-wishlist").css("left","536px");
-				}
-
-				// Grid View
-				function gridView() {
-				  for (i = 0; i < elements.length; i++) {
-				    elements[i].style.width = "33.33333333%";
-				  }
-				  $(".product-images").css("width","100%");
-				  $(".product-info").css("width","100%");
-				  $(".product-info").css("position","unset");
-				  $(".description").css("display","none");
-				  $(".add-to-cart").css("position","absolute");
-				  $(".add-to-cart").css("bottom","76px");
-				  $(".add-to-cart").css("left","20px");
-				  $(".icon-wishlist").css("position","absolute");
-				  $(".icon-wishlist").css("bottom","76px");
-				  $(".icon-wishlist").css("left","156px");
-				}
-			</script>
-			<!-- first-last -->			
+	<!-- first-last -->			
 		<div class="pagi">
 			<ul class="pagination">
 				<li><a href="#"><i class="fas fa-chevron-left"></i> First</a></li>
 				<li class="active"><a href="#">1</a></li>
 				<li><a href="#">2</a></li>
 				<li><a href="#">3</a></li>
-				<li><a href="#">...</a></li>
+				<li id="pagi-three"><a href="#">...</a></li>
 				<li><a href="#">Last <i class="fas fa-chevron-right"></i></a></li>
 			</ul>
 		</div>
 		</div>
-		
-
-	</section>
-
+</section>
 <!-- aside cho pc -->
-	<aside class="sidebar col-md-3">
+
+	
+	<aside class="sidebar col-md-3 col-sm-12 col-xs-12">
+		<div class="navbar-header hidden-md hidden-lg">
+			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    			<span class="fas fa-bars"></span>
+    			<span>ALL CATEGORIES</span>
+  			</button>
+		</div>
+
 <!-- catelogry -->
+	<div class="collapse"  id="navbarSupportedContent">
+		
+	
 		<div class="menu-right1">
 		<p class="top-menu">CATEGORIES</p>
 		<ul class="list-group">
 			<li class="list-group-item">
-				<a href="#" class="dropdown-toggle" data="dropdown"><i class="fas fa-chevron-right"></i><span class="menu-sidebar"> Food</span></a>	
+				<a href="#"><i class="fas fa-chevron-right"></i><span class="menu-sidebar"> Food</span></a>	
 				
 			</li>
 
 			<li class="list-group-item">
-				<a href="" class="dropdown-toggle" data="dropdown"><i class="fas fa-chevron-right"></i><span class="menu-sidebar"> Mobile & Tablet</span></a>
+				<a href="#"><i class="fas fa-chevron-right"></i><span class="menu-sidebar"> Mobile & Tablet</span></a>
 				
 			</li>
-			<li class="list-group-item" class="dropdown-toggle" data="dropdown">
+			<li class="list-group-item">
 				<a href=""><i class="fas fa-chevron-right"></i><span class="menu-sidebar"> Electric Appliances</span></a>
 				
 			</li>
-			<li class="list-group-item" class="dropdown-toggle" data="dropdown">
-				<a href=""><i class="fas fa-chevron-right"></i><span class="menu-sidebar"> Electronics & Technology</span></a>
+			<li class="list-group-item">
+				<a href="#"><i class="fas fa-chevron-right"></i><span class="menu-sidebar"> Electronics & Technology</span></a>
 				
 			</li>
-			<li class="list-group-item" class="dropdown-toggle" data="dropdown">
-				<a href=""><i class="fas fa-chevron-right"></i><span class="menu-sidebar"> Fashion</span></a>
+			<li class="list-group-item">
+				<a href="#"><i class="fas fa-chevron-right"></i><span class="menu-sidebar"> Fashion</span></a>
 				
 			</li>
-			<li class="list-group-item" class="dropdown-toggle" data="dropdown">
-				<a href=""><i class="fas fa-chevron-right"></i><span class="menu-sidebar"> Heal & Beauty</span></a>
+			<li class="list-group-item">
+				<a href="#"><i class="fas fa-chevron-right"></i><span class="menu-sidebar"> Heal & Beauty</span></a>
 
 			</li>
-			<li class="list-group-item" class="dropdown-toggle" data="dropdown">
-				<a href=""><i class="fas fa-chevron-right"></i><span class="menu-sidebar"> Mother & Baby</span></a>
+			<li class="list-group-item">
+				<a href="#"><i class="fas fa-chevron-right"></i><span class="menu-sidebar"> Mother & Baby</span></a>
 
 			</li>
-			<li class="list-group-item" class="dropdown-toggle" data="dropdown">
-				<a href=""><i class="fas fa-chevron-right"></i><span class="menu-sidebar"> Books & Stationery</span></a>
+			<li class="list-group-item">
+				<a href="#"><i class="fas fa-chevron-right"></i><span class="menu-sidebar"> Books & Stationery</span></a>
 
 			</li>
-			<li class="list-group-item" class="dropdown-toggle" data="dropdown">
-				<a href=""><i class="fas fa-chevron-right"></i><span class="menu-sidebar"> Home & Life</span></a>
+			<li class="list-group-item">
+				<a href="#"><i class="fas fa-chevron-right"></i><span class="menu-sidebar"> Home & Life</span></a>
 
 			</li>
-			<li class="list-group-item" class="dropdown-toggle" data="dropdown">
-				<a href=""><i class="fas fa-chevron-right"></i><span class="menu-sidebar"> Sports & Outdoors</span></a>
+			<li class="list-group-item">
+				<a href="#"><i class="fas fa-chevron-right"></i><span class="menu-sidebar"> Sports & Outdoors</span></a>
 
 			</li>
-			<li class="list-group-item" class="dropdown-toggle" data="dropdown">
-				<a href=""><i class="fas fa-chevron-right"></i><span class="menu-sidebar"> Auto & Moto</span></a>
+			<li class="list-group-item">
+				<a href="#"><i class="fas fa-chevron-right"></i><span class="menu-sidebar"> Auto & Moto</span></a>
 
 			</li>
 		</ul>	
@@ -847,21 +929,6 @@
 			<p class="top-menu">PRINCE</p>
 			<div class="ellipse">
 			<!-- Javascript -->
-      <script>
-         $(function() {
-            $( "#slider-3" ).slider({
-               range:true,
-               min: 0,
-               max: 500,
-               values: [ 50, 350 ],
-               slide: function( event, ui ) {
-                  $( "#price" ).val( "$" + ui.values[ 0 ] + " - $" + ui.values[ 1 ] );
-               }
-            });
-            $( "#price" ).val( "$" + $( "#slider-3" ).slider( "values", 0 ) +
-               " - $" + $( "#slider-3" ).slider( "values", 1 ) );
-         });s
-      </script>
    
       <!-- HTML --> 
       <div id = "slider-3"></div>
@@ -920,28 +987,29 @@
 		</div>
 		</div>
 <!-- sale-image -->
-	<div class="sale">
-		<figure><a href=""><img src="img/Sale-off.jpg"></a></figure>		
-	</div>
-	</aside>
-
-
+		<div class="sale">
+		<figure><a href=""><img src="img/Sale-off.jpg" class="img-responsive"></a></figure>		
 		</div>
+
+	</div> <!-- end collapse! -->
+
+	</aside>
 </main>
+<div class="clearfix"></div>
 <!--nav support  -->
 	<div class="sup">
 				<div class="container">
 					<div class="row">
-					<div class="col-md-3 sup-red1">
+					<div class="col-md-3 col-sm-6 col-xs-12 sup-red1">
 						<img src="img/palane.png"><p class="text-top"><b>FREE SHIPPING</b></p><p class="text-bot">ON ORDER OVER $500</p>
 					</div>
-					<div class="col-md-3 sup-red2">
+					<div class="col-md-3  col-sm-6 col-xs-12 sup-red2">
 						<img src="img/support.png"><p class="text-top"><b>SUPPORT</b></p><p class="text-bot">LIFE TIME SUPPORT 24/7</p>
 					</div>
-					<div class="col-md-3 sup-red3">
+					<div class="col-md-3  col-sm-6 col-xs-12 sup-red3">
 						<img src="img/help.png"><p class="text-top"><b>HELP PARTNER</b></p><p class="text-bot">HELP ALL ASPECTS</p>
 					</div>
-					<div class="col-md-3 sup-red4">
+					<div class="col-md-3  col-sm-6 col-xs-12 sup-red4">
 						<img src="img/contact-with.png"><p class="text-top"><b>CONTACT WITH US</b></p><p class="text-bot">+07(0)77829137</p>
 					</div>
 				</div>
@@ -952,7 +1020,7 @@
 	<div class="foot-search">
 					<div class="container">
 						<div class="row">
-						<div class="col-md-4 sign-up">
+						<div class="col-md-4 col-sm-6 col-xs-12  sign-up">
 						<div class="letter"><i class="far fa-envelope"></i></div>
 						<div class="text-letter">
 							<a href="#" class="sign"><b>SIGN UP FOR NEWSLETTER</b></a>
@@ -961,12 +1029,12 @@
 						</div>
 						
 					</div>
-					<div class="col-md-4 input-mail">
-						<form>
-							<input type="text" name="" placeholder="Enter your email..."><button type="submit">SUBSCRIBE</button>
+					<div class="col-md-4  col-sm-6 col-xs-12 input-mail">
+						<form class="form-group">
+							<input type="text" name="" placeholder="Enter your email..." class="form-control"><button type="submit">SUBSCRIBE</button>
 						</form>
 						</div>
-					<div class="col-md-4 icon-inter social">
+					<div class="col-md-4  col-sm-12 col-xs-12 icon-inter social">
 						<div class="icon-all">
 							<div class="icon-fun-tw "><a href="#"><i class="fab fa-twitter twits"></i></a></div>
 							<div class="icon-fun-face "><a href="#"><i class="fab fa-facebook-f face"></i></a></div>
@@ -983,12 +1051,12 @@
 <!-- footer -->
 	<footer>
 
-<!-- nav information -->
+<!-- information -->
 	<div class="foot-info">
 				<div class="container">
 					<div class="row">
-					<div class="infor1 col-md-3 ">
-						<p>MY ACCOUNT</p>
+					<div class="infor1 col-md-3 col-sm-6 col-xs-12">
+						<h4>MY ACCOUNT</h4>
 						<ul>
 						<li><a href="">My Account</a></li>
 						<li><a href="">Login</a></li>
@@ -999,8 +1067,8 @@
 						
 
 					</div>
-					<div class="infor2 col-md-3">
-						<p>INFORMATION</p>
+					<div class="infor2 col-md-3 col-sm-6 col-xs-12">
+						<h4>INFORMATION</h4>
 						<ul>
 						<li><a href="">Information</a></li>
 						<li><a href="">Orders History</a></li>
@@ -1011,8 +1079,8 @@
 						
 					
 					</div>
-					<div class="infor3 col-md-3">
-						<p>OUR SERVICES</p>
+					<div class="infor3 col-md-3 col-sm-6 col-xs-12">
+						<h4>OUR SERVICES</h4>
 						<ul>
 						<li><a href="">Produce Recall</a></li>
 						<li><a href="">Gift Vouchers</a></li>
@@ -1023,8 +1091,8 @@
 						
 					
 					</div>
-					<div class="infor4 nav col-md-3">
-						<p>CONTACT US</p>
+					<div class="infor4 col-md-3 col-sm-6 col-xs-12">
+						<h4>CONTACT US</h4>
 						<ul>
 						<li><i class="fas fa-home"></i><span>262 Milacina Mrest,Behansed,Paris</span></li>
 						<li><i class="fas fa-envelope"></i><span>contact@yourcompany.com</span></li>
@@ -1042,8 +1110,8 @@
 				<div class="copy">
 					<div class="container">
 						<div class="row">
-						<p class="copyright col-md-8">Copyright <i class="far fa-copyright"></i> 2018 by EngoCreative. All Rights Reserved.</p>
-						<div class="icon-footer col-md-4">
+						<p class="copyright col-md-8 col-xs-12">Copyright <i class="far fa-copyright"></i> 2018 by EngoCreative. All Rights Reserved.</p>
+						<div class="icon-footer col-md-4 col-xs-12">
 							<img src="img/icons-footer.png">
 						</div>
 					</div>
@@ -1051,5 +1119,6 @@
 					
 				</div>
 	</footer>
+<script  src="js/function.js"></script>
 </body>
 </html>
