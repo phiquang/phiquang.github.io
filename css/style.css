@@ -239,10 +239,14 @@ color: #626262;
 	color: white;
 }
 .navbar-header{
-	padding-bottom: 30px;
+	margin-bottom: 30px;
 	line-height: 50px;
+	width: 100%;
+    text-align: center;
+    background: red;
 }
 .navbar-header>button{
+	width: 100%;
 	background: red;
     border: 0;
     color: white;
