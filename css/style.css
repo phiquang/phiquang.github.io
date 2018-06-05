@@ -837,9 +837,17 @@ input:checked ~ .check-mark:after {
 
  }
  .buttonsearch{
+ 	position: relative;
  	float: left;
  	width: 16.5%;
  }
+.buttonsearch:hover>button{
+	background-position: 100%;
+	background-color: white;
+}
+.buttonsearch:hover span{
+	color: #eb1a20;
+}
  .btn-search{
  	padding-top: 28px;
  	padding-bottom: 31px;
@@ -857,14 +865,18 @@ input:checked ~ .check-mark:after {
     font-weight: 500;
  }
  .buttonsearch >button{
- 	background-color: #eb1a20;border: 0;
+ 	 background-image: -webkit-linear-gradient(30deg, #eb1a20 50%, transparent 50%);
+ 	 background-image: linear-gradient(30deg, #eb1a20 50%, transparent 50%);
+ 	 background-size:600px;
+ 	background-repeat: no-repeat;
+  	background-position: 0%;
+ 	border: 2px solid #eb1a20;
  	color: white;
  	width: 100%;
- 	padding-bottom: 7px;
-    padding-top: 8px;
- }
- .buttonsearch:hover button{
- 	box-shadow: 0 6px 12px rgba(0,0,0,.17) ;
+ 	padding-bottom: 5px;
+    padding-top: 6px;
+    -webkit-transition: background 300ms ease-in-out;
+  transition: background 300ms ease-in-out;
  }
  .buttonsearch span{
  	color: white; font-size:17px;font-family: Roboto Condensed;font-weight: 700;font-size: 18px;letter-spacing: 1px;
@@ -1188,7 +1200,7 @@ input:checked ~ .check-mark:after {
 	overflow: hidden;
     position: absolute;
     top: 0;
-    right:-6%;
+    right:20%;
     z-index: 2;
     display: block;
     content: '';
