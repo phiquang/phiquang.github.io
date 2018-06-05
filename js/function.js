@@ -28,7 +28,7 @@ function scrollFunction() {
 // ------------------------------
 // function menu mobile
 function openNav() {
-    document.getElementById("mySidenav").style.width = "375px";
+    document.getElementById("mySidenav").style.width = "100%";
 }
 
 /* Set the width of the side navigation to 0 */
