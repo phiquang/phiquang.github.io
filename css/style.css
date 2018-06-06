@@ -5,10 +5,34 @@
 /* Dành cho điện thoại */
 @media all and (min-width: 320px) {
 .menu-line{
-	padding: 0 15px;
+	
+}
+.head-mobile{
+	display: table;
+    width: 100%;
+    z-index: 100;
+    background: #fff;
+}
+.call-us-mobile{
+	background-color: #eb1a20;
+	text-align: center;
+    line-height: 35px;
+
+}
+.call-us-mobile>span{
+	font-family: roboto;
+	color: #fff;
+}
+.call-us-mobile>i{
+	font-size: 14px;
+    transform: rotateY(180deg);
+    color: #fff;
+}
+.img-responsive{
+	width: 100%;
 }
 .breadcrumb{
-	padding-left: 0;
+	margin-bottom: 0;
 }
 .form-control:focus{
 	border-color: #ccc;
@@ -69,7 +93,7 @@ button{
     margin-left: 50px;
 }
 .topbar-mobile{
-	line-height: 50px;
+	line-height: 64px;
 	border-bottom: 1px solid #e9e9e9;
 }
 .topbar-mobile i{
@@ -79,9 +103,9 @@ button{
 .topbar-mobile-right{
 	padding:0;
 }
-.top-mobile-search,.top-mobile-user,.top-mobile-bag{
+.top-mobile-search,.btn-bars,.top-mobile-bag{
 	float: right;
-	padding-right: 18px;
+	padding: 0 10px;
 }
 .top-mobile-search:hover .topbar-form-mobile{
 	display: block;
@@ -112,12 +136,11 @@ button{
 }
 .btn-bars{
 	text-align: left;
-    padding-left: 18px;
+    padding-right: 15px;
 }
 .logo-mobile{
 	line-height: 50px;
-	text-align: center;
-	padding-bottom: 15px;
+	text-align: left;
 }
 .back-to-top a{
 	opacity: 0;
@@ -137,7 +160,7 @@ button{
 .elec{
 	text-align: center;
     padding: 10px;
-    width: 30%;
+    
 }
 .elec>h4{
 	border-bottom: 2px solid red;
@@ -193,6 +216,7 @@ button{
 	color: white;
 }
 .description{
+	font-family: roboto;
 	display: none;
 	padding-top: 386px
 }
@@ -267,11 +291,10 @@ color: #626262;
 	margin-bottom: 30px;
 	line-height: 50px;
 	width: 100%;
-    text-align: center;
-    background: red;
+	padding-left: 0;
 }
 .navbar-header>button{
-	width: 100%;
+	width: 150px;
 	background: red;
     border: 0;
     color: white;
@@ -594,7 +617,7 @@ padding-top: 18px;
  /*điện thoại chiều ngang*/
  @media all and (min-width: 568px){
 .description{
-	padding-top: 116px;
+	padding: 116px 0 0 320px;
 }
  }
 
@@ -605,7 +628,7 @@ padding-top: 18px;
 	padding-left: 18px;
 }
 .topbar-form-mobile>form>.icon-top-mobile{
-	width: 48px;
+	width: 25px;
 }
 .topbar-form-mobile{
 	width: 200px;
@@ -621,7 +644,7 @@ padding-top: 18px;
     padding: 28px 30px 0 30px;
 }
 .description{
-	padding: 122px 0 0 300px;
+	padding: 122px 0 0 320px;
 }
 #navbarSupportedContent{
 	padding-top: 60px;
@@ -668,7 +691,7 @@ padding-top: 18px;
 	font-size: 18px;
 }
 .description {
-    padding: 115px 0 0 268px;
+    padding: 115px 0 0 320px;
 }
 button{
 	outline: 0;
@@ -871,6 +894,7 @@ input:checked ~ .check-mark:after {
  	background-repeat: no-repeat;
   	background-position: 0%;
  	border: 2px solid #eb1a20;
+ 	border-left: 0;
  	color: white;
  	width: 100%;
  	padding-bottom: 5px;
@@ -1149,6 +1173,7 @@ input:checked ~ .check-mark:after {
  	border-top: 2px solid #e4171c;
  	font-family: roboto;
  	font-size: 15px;
+
  }
  .btn-category {
  	border-radius: 0;
@@ -1346,8 +1371,8 @@ input:checked ~ .check-mark:after {
  	background-color: red;
  	border-color: red;
  }
-.product-item .icon-wishlist:hover>i{
-	background-color: #b50404;
+.product-item .icon-wishlist:hover i{
+	border:1px solid red !important;
 }
 .product-item .icon-wishlist{
 	
@@ -1355,7 +1380,6 @@ input:checked ~ .check-mark:after {
 	transition: all 0.3s ease;
 }
 .product-item:hover .icon-wishlist{
-	
 	transform: scale(1);
 }
 .pagi{
