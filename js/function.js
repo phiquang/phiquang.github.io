@@ -53,7 +53,7 @@ function scrollFunction() {
 // ------------------------------
 // function menu mobile
 function openNav() {
-    document.getElementById("mySidenav").style.width = "70%";
+    document.getElementById("mySidenav").style.width = "320px";
 }
 
 /* Set the width of the side navigation to 0 */
@@ -61,6 +61,17 @@ function closeNav() {
     document.getElementById("mySidenav").style.width = "0";
 }
 // ----------------------------------
+/* Set the width of the side navigation to 250px */
+function openFilter() {
+    document.getElementById("myFilter").style.width = "270px";
+}
+
+/* Set the width of the side navigation to 0 */
+function closeFilter() {
+    document.getElementById("myFilter").style.width = "0";
+}
+// -------------------------------------------------------
+
 // function grid-list
 function gridView(){
             $(".product-item").css("width","");
@@ -78,3 +89,40 @@ function listView(){
             $(".btn-add").css("transform","scale(1)");
             $(".icon-wishlist").css("transform","scale(1)");
             }
+// ----------------------------------------------------------
+function btnMenu(){
+    var x= document.getElementById("btn1").getAttribute("aria-expanded");
+    if(x=="true"){
+        $(".up1").css("display","none");
+        $(".down1").css("display","inline-block");
+    }
+    else{
+         $(".down1").css("display","none");
+         $(".up1").css("display","inline-block");
+    }
+}
+// -------------------------------------------------------------------
+function btnMenu2(){
+    var y= document.getElementById("btn2").getAttribute("aria-expanded");
+    if(y=="true"){
+        $(".up2").css("display","none");
+        $(".down2").css("display","inline-block");
+    }
+    else{
+         $(".down2").css("display","none");
+         $(".up2").css("display","inline-block");
+    }
+}
+// -------------------------------------------------------------------
+function btnMenu3(){
+    var z= document.getElementById("btn3").getAttribute("aria-expanded");
+    if(z=="true"){
+        $(".up3").css("display","none");
+        $(".down3").css("display","inline-block");
+    }
+    else{
+         $(".down3").css("display","none");
+         $(".up3").css("display","inline-block");
+    }
+}
+// -------------------------------------------------------------------

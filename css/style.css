@@ -4,34 +4,44 @@
 }
 /* Dành cho điện thoại */
 @media all and (min-width: 320px) {
+.filter-mobile{
+	height: 100%; /* 100% Full-height */
+    width: 0; /* 0 width - change this with JavaScript */
+    position: fixed; /* Stay in place */
+    z-index: 9000; /* Stay on top */
+    top: 0; /* Stay at the top */
+    left: 0;
+    background-color: #fff; 
+    overflow-x: hidden; /* Disable horizontal scroll */
+    padding-top: 60px; /* Place content 60px from the top */
+    transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
+}
+.filter-mobile>a{
+	color: black;
+}
+.filter-mobile>a:hover{
+	text-decoration: none;
+}
+.filter-mobile .closebtn-filter{
+	position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 20px;
+}
+
 .img-buynow>figure>a>img{
 	width: 100%;
 }
-.foot-logo-mobile{
-	background-color:#ddd;
-}
-.foot-search-mobile{
-	
-	text-align: center;
-	padding: 20px 15px;
-}
-.foot-search-mobile>a{
-	color: #fff;
-	padding: 20px 5px;
-}
-.foot-search-mobile>a>i{
-	font-size: 18px;
-}
-.logo-footer{
-	padding: 20px 0;
-}
 .product-item{
 	padding-bottom: 20px;
+	transition: all .5s ease;
 }
 .pagi{
 	text-align: center;
 }
 .menu-filter{
+	padding-top: 34px;
 	display: inline-block;
 }
  input[type="checkbox"]{
@@ -143,6 +153,7 @@ button{
 	line-height: 25px;
 }
 .sidenav>.list-group>.list-group-item>a>button{
+	width: 16%;
 	float: right;
     padding: 0px 15px;
     border: none;
@@ -169,6 +180,10 @@ button{
     font-size: 36px;
     margin-left: 50px;
 }
+.sidenav>ul>.list-group-item>a>button>.fa-angle-up{
+	display: none;
+}
+
 .topbar-mobile{
 	line-height: 64px;
 	
@@ -702,7 +717,10 @@ padding-top: 18px;
 .description{
 	padding: 116px 0 0 320px;
 }
+.icon-all{
+	padding-left: 0;
  }
+}
 
 /* Dành cho máy tính bảng chiều dọc */
 @media all and (min-width: 768px) {
@@ -747,7 +765,7 @@ padding-top: 18px;
 /* Dành cho máy tính bảng chiều ngang */
 @media all and (min-width: 1024px){
 .icon-all{
-	padding-left: 0;
+	padding-left: 310px;
 }
 .sign-up .sign{
 	font-size: 14px;

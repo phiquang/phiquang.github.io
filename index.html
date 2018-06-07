@@ -103,11 +103,12 @@
     		<div id="mySidenav" class="sidenav">
   						<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
   						<ul class="list-group"> 
-  							<li class="list-group-item dropdown">
-  								<a href="#" class="dropdown-toggle" data-toggle="dropdown">Home 
-  									<button data-toggle="collapse" data-target="#menu-mobile"><i class="fas fa-angle-down"></i></button>
+  							<li class="list-group-item">
+  								<a href="#">Home 
+  									<button data-toggle="collapse" data-target="#menu-mobile1" onclick="btnMenu()" id="btn1"><i class="fas fa-angle-down down1"></i>
+  										<i class="fas fa-angle-up up1"></i></button>
   									</a>
-  								<ul id="menu-mobile" class="collapse menu-mobile-lv2">
+  								<ul id="menu-mobile1" class="collapse menu-mobile-lv2">
   									<li><a href="">Home 1</a></li>
   									<li><a href="">Home 2</a></li>
   									<li><a href="">Home 3</a></li>
@@ -115,8 +116,10 @@
   							</li>
   							<li class="list-group-item"><a href="#">About Us </a>
   							</li>
-  							<li class="list-group-item"><a href="#">News 
-  								<button data-toggle="collapse" data-target="#menu-mobile2"><i class="fas fa-angle-down"></i></button>
+  							<li class="list-group-item">
+  								<a href="#">News 
+  									<button data-toggle="collapse" data-target="#menu-mobile2" onclick="btnMenu2()" id="btn2"><i class="fas fa-angle-down down2"></i>
+  										<i class="fas fa-angle-up up2"></i></button>
   							</a>
   								<ul id="menu-mobile2" class="collapse menu-mobile-lv2">
   									<li><a href="">New 1</a></li>
@@ -125,8 +128,10 @@
   								</ul>
   							</li>
   							<li class="list-group-item"><a href="#">Contact Us</a></li>
-  							<li class="list-group-item"><a href="#">Page 
-  								<button data-toggle="collapse" data-target="#menu-mobile3"><i class="fas fa-angle-down"></i></button>
+  							<li class="list-group-item">
+  								<a href="#">Page 
+  									<button data-toggle="collapse" data-target="#menu-mobile3" onclick="btnMenu3()" id="btn3"><i class="fas fa-angle-down down3"></i>
+  										<i class="fas fa-angle-up up3"></i></button>
   							</a>
   								<ul id="menu-mobile3" class="collapse menu-mobile-lv2">
   									<li><a href="">Page 1</a></li>
@@ -412,16 +417,16 @@
 <!-- btn-filter -->
 <div class="menu-filter">
 		<div class="navbar-header col-md-12 col-sm-12 col-xs-12">
-			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+			<button class="" type="button"  onclick="openFilter()">
     			<span class="fas fa-bars"></span>
     			<span>Filter</span>
   			</button>
 		</div>
 
 <!-- catelogry -->
-	<div class="collapse"  id="navbarSupportedContent">
+	<div id="myFilter" class="filter-mobile">
 		
-	
+		<a href="javascript:void(0)" class="closebtn-filter" onclick="closeFilter()">&times;</a>
 		<div class="menu-right1">
 		<p class="top-menu">CATEGORIES</p>
 		<ul class="list-group">
@@ -567,6 +572,10 @@
 			</ul>
 				
 
+		</div>
+		<!-- sale-image -->
+		<div class="sale">
+		<figure><a href=""><img src="img/Sale-off.jpg" class="img-responsive"></a></figure>		
 		</div>
 		</div>
 </div>
@@ -1174,10 +1183,11 @@
 				</div>
 	</div>
 <!-- nav search email -->
-	<div class="foot-search hidden-md hidden-sm hidden-xs">
+	<div class="foot-search">
 					<div class="container">
 						<div class="row">
-						<div class="col-lg-4 sign-up">
+							
+						<div class="col-lg-4 col-md-6 col-sm-6 col-xs-12 sign-up">
 						<div class="letter"><i class="far fa-envelope"></i></div>
 						<div class="text-letter">
 							<a href="#" class="sign"><b>SIGN UP FOR NEWSLETTER</b></a>
@@ -1186,12 +1196,14 @@
 						</div>
 						
 					</div>
-					<div class="col-lg-4 input-mail">
+					
+					<div class="col-lg-4 col-md-6 col-sm-6 col-xs-12  input-mail">
 						<form class="form-group">
 							<input type="text" name="" placeholder="Enter your email..." class="form-control"><button class="btn-sub" type="submit">SUBSCRIBE</button>
 						</form>
 						</div>
-					<div class="col-lg-4 icon-inter social">
+					
+					<div class="col-lg-4 col-md-12 col-sm-12 col-xs-12  icon-inter social">
 						<div class="icon-all">
 							<div class="icon-fun-tw "><a href="#"><i class="fab fa-twitter twits"></i></a></div>
 							<div class="icon-fun-face "><a href="#"><i class="fab fa-facebook-f face"></i></a></div>
@@ -1200,22 +1212,13 @@
 						</div>
 						
 					</div>
+					
 					</div>
 					</div>
 					
 				
 	</div>
-	<div class="hidden-lg foot-logo-mobile">
-	<div class="container">
-	<div class="foot-search-mobile col-md-12 col-sm-12 col-xs-12">
-		<div class="logo-footer"><a href=""><img src="img/Logo.png"></a></div>
-		<a href=""><i class="fab fa-facebook-f"></i></a>
-		<a href=""><i class="fab fa-twitter"></i></a>
-		<a href=""><i class="fab fa-google-plus-g"></i></a>
-		<a href=""><i class="fas fa-envelope"></i></a>
-	</div>
-	</div>
-	</div>
+
 <!-- footer -->
 	<footer>
 
