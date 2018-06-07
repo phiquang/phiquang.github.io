@@ -4,8 +4,11 @@
 }
 /* Dành cho điện thoại */
 @media all and (min-width: 320px) {
-.foot-search-mobile{
+.foot-logo-mobile{
 	background-color:#ddd;
+}
+.foot-search-mobile{
+	
 	text-align: center;
 	padding: 20px 15px;
 }
