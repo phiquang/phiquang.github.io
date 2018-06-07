@@ -1,5 +1,9 @@
 $(document).ready(function(){
-// function range prince
+
+
+
+
+// function range prince-pc
 $(function() {
             $( "#slider-3" ).slider({
                range:true,
@@ -14,6 +18,21 @@ $(function() {
                " - $" + $( "#slider-3" ).slider( "values", 1 ) );
          });
 // --------------------------------
+// function range prince-mobile
+$(function() {
+            $( "#slider-3-mobile" ).slider({
+               range:true,
+               min: 0,
+               max: 500,
+               values: [ 50, 350 ],
+               slide: function( event, ui ) {
+                  $( "#price-mobile" ).val( "$" + ui.values[ 0 ] + " - $" + ui.values[ 1 ] );
+               }
+            });
+            $( "#price-mobile" ).val( "$" + $( "#slider-3-mobile" ).slider( "values", 0 ) +
+               " - $" + $( "#slider-3-mobile" ).slider( "values", 1 ) );
+         });
+// --------------------------------
 // function back-to-top
 window.onscroll = function() {scrollFunction()};
 
@@ -22,7 +41,6 @@ function scrollFunction() {
     $(".scroll_top").css("opacity","1");
     $(".head-mobile").css("position","fixed");
     $(".head-mobile").css("top","0");
-    $(".menu-line").css("padding-top","96px");
   } else {
     $(".scroll_top").css("opacity","0");
     $(".head-mobile").css("position","absolute");
@@ -35,7 +53,7 @@ function scrollFunction() {
 // ------------------------------
 // function menu mobile
 function openNav() {
-    document.getElementById("mySidenav").style.width = "100%";
+    document.getElementById("mySidenav").style.width = "70%";
 }
 
 /* Set the width of the side navigation to 0 */
