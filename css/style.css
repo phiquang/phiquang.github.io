@@ -4,7 +4,35 @@
 }
 /* Dành cho điện thoại */
 @media all and (min-width: 320px) {
+.basel{
+	content: " ";
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: rgba(0,0,0,.7);
+    opacity: 0;
+    visibility: hidden;
+    z-index:400;
+    width: 100%;
+    height: 100%;
+    -webkit-transition: all .3s ease;
+    -moz-transition: all .3s ease;
+    -o-transition: all .3s ease;
+    transition: all .3s ease;
+}
+.list-group{
+	padding: 0 20px;
+}
+.list-group-item:first-child{
+	 border-top-left-radius: 0;
+     border-top-right-radius: 0;
+}
+.list-group-item:last-child{
+	border-bottom-right-radius: 0;
+    border-bottom-left-radius: 0;
+}
 .filter-mobile{
+
 	height: 100%; /* 100% Full-height */
     width: 0; /* 0 width - change this with JavaScript */
     position: fixed; /* Stay in place */
@@ -15,6 +43,9 @@
     overflow-x: hidden; /* Disable horizontal scroll */
     padding-top: 60px; /* Place content 60px from the top */
     transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
+}
+.filter-mobile>.menu-right1,.filter-mobile>.menu-right2,.filter-mobile>.menu-right3{
+	margin: 15px 20px;
 }
 .filter-mobile>a{
 	color: black;
@@ -100,8 +131,8 @@ input:checked ~ .check-mark-mobile:after {
     top: 32px;
 	display: table;
     width: 100%;
-    z-index: 100;
     background: #fff;
+    z-index: 350;
 }
 .call-us-mobile{
 	background-color: #eb1a20;
@@ -139,7 +170,7 @@ button{
     height: 100%; /* 100% Full-height */
     width: 0; /* 0 width - change this with JavaScript */
     position: fixed; /* Stay in place */
-    z-index: 1; /* Stay on top */
+    z-index: 9000; /* Stay on top */
     top: 0; /* Stay at the top */
     left: 0;
     background-color: #fff; /* white*/
@@ -500,6 +531,7 @@ padding-top: 18px;
 }
 .icon-all{
 	padding-left: 66px;
+	list-style-type: none;
 }
 .icon-fun-tw,.icon-fun-face,.icon-fun-insta,.icon-fun-youtube{
 	cursor: pointer;
@@ -765,7 +797,7 @@ padding-top: 18px;
 /* Dành cho máy tính bảng chiều ngang */
 @media all and (min-width: 1024px){
 .icon-all{
-	padding-left: 310px;
+	padding-left: 368px;
 }
 .sign-up .sign{
 	font-size: 14px;
@@ -874,6 +906,7 @@ a:hover{
  	margin-right: 24px;
  	border-bottom: 1px solid #e9e9e9;
  }
+
 .dropdown-menu{
 	border-radius: 0;
 }
@@ -1144,6 +1177,9 @@ a:hover{
 	opacity: 1;
 	transform: translate(5px,0);
 }
+.menu-main{
+	position: static;
+}
  .menu-main >li>a{
  	font-family: roboto;
 	font-weight: 500;
@@ -1152,7 +1188,7 @@ a:hover{
  	margin-left: 20px;
  }
  .nav .dropdown-menu-main{
- 	position: static;
+ 	position: relative;
  }
  .mega-menu li a:hover{
  	color: red;
@@ -1172,6 +1208,7 @@ a:hover{
 	opacity: 0;
 	position: absolute;
 	top:40px;
+	left: -262%;
 	padding: 10px 0px ! important;
 	width: 800px;
 	border: 0;
@@ -1181,6 +1218,26 @@ a:hover{
  	display: inline-block;
  	visibility: hidden;
 }
+.nav .menu-about{
+	position: static;
+}
+.menu-about .drop-menu-about{
+ 	opacity: 0;
+	position: absolute;
+	top:26%;
+	left: 0;
+	border-radius: 0;
+ 	margin-top: 0px;
+ 	transition: all 0.5s ease;
+ 	display: inline-block;
+ 	visibility: hidden;
+ 	width: 100%;
+ 	min-width: 0;
+ 	border: 0;
+ }
+ .drop-menu-about>.container>.row>ul>li>a>img{
+ 	padding: 10px 80px;
+ }
  .menu-home .drop-menu-home{
  	opacity: 0;
 	position: absolute;
@@ -1514,6 +1571,9 @@ a:hover{
 }
 .menu-right1 span{
 	color: unset;
+}
+.list-group{
+	padding: 0;
 }
 .list-group .list-group-item{
  	margin-bottom: 0;

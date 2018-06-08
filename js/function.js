@@ -54,21 +54,30 @@ function scrollFunction() {
 // function menu mobile
 function openNav() {
     document.getElementById("mySidenav").style.width = "320px";
+    document.getElementById("baselMobile").style.visibility = "visible";
+    document.getElementById("baselMobile").style.opacity = "1";
+
 }
 
 /* Set the width of the side navigation to 0 */
 function closeNav() {
     document.getElementById("mySidenav").style.width = "0";
+    document.getElementById("baselMobile").style.visibility = "hidden";
+    document.getElementById("baselMobile").style.opacity = "0";
 }
 // ----------------------------------
 /* Set the width of the side navigation to 250px */
 function openFilter() {
-    document.getElementById("myFilter").style.width = "270px";
+    document.getElementById("myFilter").style.width = "320px";
+    document.getElementById("baselMobile").style.visibility = "visible";
+    document.getElementById("baselMobile").style.opacity = "1";
 }
 
 /* Set the width of the side navigation to 0 */
 function closeFilter() {
     document.getElementById("myFilter").style.width = "0";
+    document.getElementById("baselMobile").style.visibility = "hidden";
+    document.getElementById("baselMobile").style.opacity = "0";
 }
 // -------------------------------------------------------
 

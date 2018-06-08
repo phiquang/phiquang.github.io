@@ -88,6 +88,7 @@
   	</div>
 		</div>
 	</nav>
+
 <!-- topbar mobile -->
     <div class="head-mobile hidden-lg">
 	<div class="container ">
@@ -100,7 +101,35 @@
 		<img src="img/Logo.png">
 	</div>
 
-    		<div id="mySidenav" class="sidenav">
+    		
+			
+  		
+		<div class="topbar-mobile-right col-xs-6 col-sm-8 col-md-8">
+        	<div class="btn-bars" onclick="openNav()" type="button">
+           		<i class="fas fa-bars"></i>
+        	</div>
+        	
+        		
+        	<div class="top-mobile-bag"><i class="fas fa-shopping-cart"></i></div>
+        	
+        	
+        	<div class="top-mobile-search">
+        		<div><i class="fas fa-search"></i></div>
+        		<div class="topbar-form-mobile">
+        			<form class="form-group">
+        					<input type="text" name="" class="form-control" placeholder="Search...">
+        					<div class="icon-top-mobile"><i class="fas fa-search"></i></div>
+        			</form>
+        		</div>
+        				
+        	</div>
+        </div>   	  	
+    
+  	</div>
+	</div>
+	</div>
+<!-- menu mobile -->
+	<div id="mySidenav" class="sidenav hidden-lg">
   						<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
   						<ul class="list-group"> 
   							<li class="list-group-item">
@@ -140,33 +169,7 @@
   								</ul>
   							</li>
   						</ul>		
-		</div>
-			
-  		
-		<div class="topbar-mobile-right col-xs-6 col-sm-8 col-md-8">
-        	<div class="btn-bars" onclick="openNav()" type="button">
-           		<i class="fas fa-bars"></i>
-        	</div>
-        	
-        		
-        	<div class="top-mobile-bag"><i class="fas fa-shopping-cart"></i></div>
-        	
-        	
-        	<div class="top-mobile-search">
-        		<div><i class="fas fa-search"></i></div>
-        		<div class="topbar-form-mobile">
-        			<form class="form-group">
-        					<input type="text" name="" class="form-control" placeholder="Search...">
-        					<div class="icon-top-mobile"><i class="fas fa-search"></i></div>
-        			</form>
-        		</div>
-        				
-        	</div>
-        </div>   	  	
-    
-  	</div>
-	</div>
-	</div>
+		</div> <!-- end menu mobile -->
 
 <!-- logo pc -->
 		<div class="container hidden-md hidden-sm hidden-xs">
@@ -318,7 +321,80 @@
 				</li>
 				
 
-				<li class="dropdown"><button class="dropbtn"><a href=""> About Us</a></button></li>
+				<li class="dropdown menu-about">
+					<button class="dropbtn"><a href=""> About Us</a></button>
+					<div class=" dropdown-menu mega-menu drop-menu-about">
+						
+					
+					<div class="container">
+						<div class="row">
+						<ul class="">
+    						
+						    <li class="col-lg-3">
+						    <ul>
+						        <h4 class="nav-header">Mega menu 1</h4>
+						        <ul class="mega-level-2">
+						        <li><a href="#">Shop Layout</a></li>
+						        <li><a href="#">Filter area</a></li>
+						        <li><a href="#">Full Width</a></li>
+						        <li><a href="#">Sidebar Right</a></li>
+						        <li><a href="#">Grid View</a></li>
+						        <li><a href="#">List View</a></li>
+						        </ul>
+								
+						    </ul>
+						    </li>    
+        
+						    <li class="col-lg-3">
+						    <ul>
+						    <h4 class="nav-header">Mega menu 2</h4>
+						       <ul class="mega-level-2">
+						       	<li><a href="#">Shopping cart</a></li>
+						        <li><a href="#">My Account</a></li>
+						        <li><a href="#">Check out</a></li>
+						        <li><a href="#">Wishlist</a></li>
+						        <li><a href="#">Track order</a></li>
+						        <li><a href="#">Woocommerce</a></li>
+						       </ul>
+								
+						    </ul>
+						    </li> 
+
+						    <li class="col-lg-3">
+						    <ul>                            
+						    <h4 class="nav-header">Mega menu 3</h4>
+						       <ul class="mega-level-2">
+						       	<li><a href="#">Product style</a></li>
+						        <li><a href="#">Simple Product</a></li>
+						        <li><a href="#">Variable Product</a></li>
+						        <li><a href="#">Group Product</a></li>
+						        <li><a href="#">External Product</a></li>
+						        <li><a href="#">Product with Video</a></li>
+						       </ul>
+								
+						    </ul>
+						    </li> 
+						    <li class="col-lg-3">
+						    <ul>                            
+						    <h4 class="nav-header">Mega menu 4</h4>
+						       <ul class="mega-level-2">
+						       	<li><a href="#">Product style</a></li>
+						        <li><a href="#">Simple Product</a></li>
+						        <li><a href="#">Variable Product</a></li>
+						        <li><a href="#">Group Product</a></li>
+						        <li><a href="#">External Product</a></li>
+						        <li><a href="#">Product with Video</a></li>
+						       </ul>
+								
+						    </ul>
+						    </li> 
+							<li><a href=""><img src="img/BUY-NOW.jpg" class="img-responsive"></a></li>
+						</ul>
+					</div>
+					</div>
+					</div>
+					
+				</li>
 				<li class="dropdown dropdown-menu-main">
 					<button class="dropbtn"><a href=""> News</a></button>
 					<div class="row">
@@ -1204,12 +1280,12 @@
 						</div>
 					
 					<div class="col-lg-4 col-md-12 col-sm-12 col-xs-12  icon-inter social">
-						<div class="icon-all">
-							<div class="icon-fun-tw "><a href="#"><i class="fab fa-twitter twits"></i></a></div>
-							<div class="icon-fun-face "><a href="#"><i class="fab fa-facebook-f face"></i></a></div>
-							<div class="icon-fun-insta"><a href="#"><i class="fab fa-instagram insta"></i></a></div>
-							<div class="icon-fun-youtube"><a href="#"><i class="fab fa-youtube youtube"></i></a></div>
-						</div>
+						<ul class="icon-all">
+							<li class="icon-fun-tw "><a href="#"><i class="fab fa-twitter twits"></i></a></li>
+							<li class="icon-fun-face "><a href="#"><i class="fab fa-facebook-f face"></i></a></li>
+							<li class="icon-fun-insta"><a href="#"><i class="fab fa-instagram insta"></i></a></li>
+							<li class="icon-fun-youtube"><a href="#"><i class="fab fa-youtube youtube"></i></a></li>
+						</ul>
 						
 					</div>
 					
@@ -1290,6 +1366,7 @@
 					
 				</div>
 	</footer>
+	<div class="basel hidden-lg" id="baselMobile"></div>
 <script  src="js/function.js"></script>
 </body>
 </html>
