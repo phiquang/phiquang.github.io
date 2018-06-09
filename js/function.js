@@ -49,47 +49,19 @@ function scrollFunction() {
   }
 
 }
-});
-// ------------------------------
-// function menu mobile
-function openNav() {
-    document.getElementById("mySidenav").style.width = "320px";
-    document.getElementById("baselMobile").style.visibility = "visible";
-    document.getElementById("baselMobile").style.opacity = "1";
 
-}
-
-/* Set the width of the side navigation to 0 */
-function closeNav() {
-    document.getElementById("mySidenav").style.width = "0";
-    document.getElementById("baselMobile").style.visibility = "hidden";
-    document.getElementById("baselMobile").style.opacity = "0";
-}
-// ----------------------------------
-/* Set the width of the side navigation to 250px */
-function openFilter() {
-    document.getElementById("myFilter").style.width = "320px";
-    document.getElementById("baselMobile").style.visibility = "visible";
-    document.getElementById("baselMobile").style.opacity = "1";
-}
-
-/* Set the width of the side navigation to 0 */
-function closeFilter() {
-    document.getElementById("myFilter").style.width = "0";
-    document.getElementById("baselMobile").style.visibility = "hidden";
-    document.getElementById("baselMobile").style.opacity = "0";
-}
 // -------------------------------------------------------
 
 // function grid-list
-function gridView(){
+$(".btn-grid").click(function(){
             $(".product-item").css("width","");
             $(".description").css("display","none");
             $(".btn-add").css("transform","");
             $(".icon-wishlist").css("transform","");
             $(".product-all-info").css("padding-left","0");
-            }
-function listView(){
+});
+
+$(".btn-list").click(function(){
             $(".description").css("display","inherit");
             $(".product-item").css("width","100%");
             $(".product-images").css("float","left");
@@ -97,7 +69,168 @@ function listView(){
             $(".product-all-info").css("padding-left","50px");
             $(".btn-add").css("transform","scale(1)");
             $(".icon-wishlist").css("transform","scale(1)");
-            }
+});
+// ------------------------------
+// function menu mobile
+
+$(".btn-bars").on("click",function(){
+    $("#mySidenav").css("width","320px");
+    $("#baselMobile").css("visibility","visible");
+    $("#baselMobile").css("opacity","1");
+});
+/* Set the width of the side navigation to 0 */
+$(".closebtn").click(function(){
+    $("#mySidenav").css("width","0");
+    $("#baselMobile").css("visibility","hidden");
+    $("#baselMobile").css("opacity","0");
+});
+// ----------------------------------
+/* Set the width of the side navigation to 250px */
+$(".openFilter").click(function() {
+    $("#myFilter").css("width","320px");
+    $("#baselMobile").css("visibility","visible");
+    $("#baselMobile").css("opacity","1");
+});
+
+/* Set the width of the side navigation to 0 */
+$(".closeFilter").click(function() {
+    $("#myFilter").css("width","0");
+    $("#baselMobile").css("visibility","hidden");
+    $("#baselMobile").css("opacity","0");
+});
+// ------------------------------------------
+// ------add-item------
+// var number = $(".count");
+// var numberQty =  number.html();
+// $(".btn-add").click(function(){
+//    numberQty++;
+//    number.html(numberQty);
+// $(".div-total").show();
+// var number1= document.getElementById("input1").value;
+// document.getElementById("total-cart").innerText= Number(number1)*350;
+// });
+// // ---------------------------------------------
+// //------------- add to cart----------
+
+// $("#btn-add-1").on("click",function(){
+
+//   $("#img1").show();
+//   $(".no-item").hide();
+  
+  
+// });
+// // ------------
+// $("#btn-add-2").on("click",function(){
+//   $("#img2").show();
+//   $(".no-item").hide();
+
+// });
+// // ------------
+// $("#btn-add-3").on("click",function(){
+//   $("#img3").show();
+//   $(".no-item").hide();
+
+// });
+// // ------------
+// $("#btn-add-4").on("click",function(){
+//   $("#img4").show();
+//   $(".no-item").hide();
+
+// });
+// // ------------
+// $("#btn-add-5").on("click",function(){
+//   $("#img5").show();
+//   $(".no-item").hide();
+
+// });
+// // ------------
+// $("#btn-add-6").on("click",function(){
+//   $("#img6").show();
+//   $(".no-item").hide();
+
+// });
+// // ------------
+// $("#btn-add-7").on("click",function(){
+//   $("#img7").show();
+//   $(".no-item").hide();
+
+// });
+// // ------------
+// $("#btn-add-8").on("click",function(){
+//   $("#img8").show();
+//   $(".no-item").hide();
+
+// });
+// // ------------
+// $("#btn-add-9").on("click",function(){
+//   $("#img9").show();
+//   $(".no-item").hide();
+
+// });
+// // ------------
+// $("#btn-add-10").on("click",function(){
+//   $("#img10").show();
+//   $(".no-item").hide();
+
+// });
+// // ------------
+// $("#btn-add-11").on("click",function(){
+//   $("#img11").show();
+//   $(".no-item").hide();
+
+// });
+// // ------------
+// $("#btn-add-12").on("click",function(){
+//   $("#img12").show();
+//   $(".no-item").hide();
+
+// });
+// // ------------
+// $("#btn-add-13").on("click",function(){
+//   $("#img13").show();
+//   $(".no-item").hide();
+
+// });
+// // ------------
+// $("#btn-add-14").on("click",function(){
+//   $("#img14").show();
+//   $(".no-item").hide();
+
+// });
+// // ------------
+// $("#btn-add-15").on("click",function(){
+//   $("#img15").show();
+//   $(".no-item").hide();
+
+// });
+// // ------------
+// $("#btn-add-16").on("click",function(){
+//   $("#img16").show();
+//   $(".no-item").hide();
+
+// });
+// // ------------
+// $("#btn-add-17").on("click",function(){
+//   $("#img17").show();
+//   $(".no-item").hide();
+
+// });
+// // ------------
+// $("#btn-add-18").on("click",function(){
+//   $("#img18").show();
+//   $(".no-item").hide();
+
+// });
+
+
+
+
+
+
+// --------------end------------------
+});
+
+
 // ----------------------------------------------------------
 function btnMenu(){
     var x= document.getElementById("btn1").getAttribute("aria-expanded");
@@ -135,3 +268,62 @@ function btnMenu3(){
     }
 }
 // -------------------------------------------------------------------
+function btnMenu4(){
+    var a= document.getElementById("btn4").getAttribute("aria-expanded");
+    if(a=="true"){
+        $(".up4").css("display","none");
+        $(".down4").css("display","inline-block");
+    }
+    else{
+         $(".down4").css("display","none");
+         $(".up4").css("display","inline-block");
+    }
+}
+// ------------------------------------------------------------------------
+function btnMenu41(){
+    var b= document.getElementById("btn41").getAttribute("aria-expanded");
+    if(b=="true"){
+        $(".up41").css("display","none");
+        $(".down41").css("display","inline-block");
+    }
+    else{
+         $(".down41").css("display","none");
+         $(".up41").css("display","inline-block");
+    }
+}
+// ------------------------------------------------------------------------
+function btnMenu42(){
+    var c= document.getElementById("btn42").getAttribute("aria-expanded");
+    if(c=="true"){
+        $(".up42").css("display","none");
+        $(".down42").css("display","inline-block");
+    }
+    else{
+         $(".down42").css("display","none");
+         $(".up42").css("display","inline-block");
+    }
+}
+// ------------------------------------------------------------------------
+function btnMenu43(){
+    var d= document.getElementById("btn43").getAttribute("aria-expanded");
+    if(d=="true"){
+        $(".up43").css("display","none");
+        $(".down43").css("display","inline-block");
+    }
+    else{
+         $(".down43").css("display","none");
+         $(".up43").css("display","inline-block");
+    }
+}
+// ------------------------------------------------------------------------
+function btnMenu44(){
+    var e= document.getElementById("btn44").getAttribute("aria-expanded");
+    if(e=="true"){
+        $(".up44").css("display","none");
+        $(".down44").css("display","inline-block");
+    }
+    else{
+         $(".down44").css("display","none");
+         $(".up44").css("display","inline-block");
+    }
+}

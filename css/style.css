@@ -4,6 +4,12 @@
 }
 /* Dành cho điện thoại */
 @media all and (min-width: 320px) {
+#menu-mobile4{
+	padding-left: 0;
+}
+#menu-mobile4>.li-lv2{
+	list-style-type: none;
+}
 .basel{
 	content: " ";
     position: fixed;
@@ -42,7 +48,7 @@
     background-color: #fff; 
     overflow-x: hidden; /* Disable horizontal scroll */
     padding-top: 60px; /* Place content 60px from the top */
-    transition: 0.3s; /* 0.5 second transition effect to slide in the sidenav */
+    transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
 }
 .filter-mobile>.menu-right1,.filter-mobile>.menu-right2,.filter-mobile>.menu-right3{
 	margin: 15px 20px;
@@ -53,7 +59,7 @@
 .filter-mobile>a:hover{
 	text-decoration: none;
 }
-.filter-mobile .closebtn-filter{
+.filter-mobile .closeFilter{
 	position: absolute;
     top: 0;
     right: 25px;
@@ -66,7 +72,7 @@
 }
 .product-item{
 	padding-bottom: 20px;
-	transition: all .5s ease;
+	transition: all .7s ease;
 }
 .pagi{
 	text-align: center;
@@ -191,6 +197,14 @@ button{
     background: none;
     outline: 0;
 }
+.sidenav>.list-group>.list-group-item>ul>li>a>button{
+	width: 16%;
+	float: right;
+    padding: 0px 15px;
+    border: none;
+    background: none;
+    outline: 0;
+}
 /* The navigation menu links */
 .sidenav a {
 	font-family: roboto;
@@ -211,7 +225,10 @@ button{
     font-size: 36px;
     margin-left: 50px;
 }
-.sidenav>ul>.list-group-item>a>button>.fa-angle-up{
+.sidenav>ul>.list-group-item>a>button>.fa-times{
+	display: none;
+}
+.sidenav>ul>.list-group-item>ul>li>a>button>.fa-times{
 	display: none;
 }
 
@@ -812,6 +829,10 @@ padding-top: 18px;
 }
 /*laptop*/
 @media all and (min-width: 1200px) {
+.list-my-cart{
+	min-width: 320px;
+	height: auto;
+}
 .input-mail>form> button{
 	padding-top: 8px;
 }
@@ -878,9 +899,12 @@ a:hover{
 	color: red;
 	text-decoration: none;
 }
-.nav>li>a:focus, .nav>li>a:hover{
+.nav>li>a:hover{
 	background-color: white;
 	color: red;
+}
+.nav>li>a:focus{
+	background-color: white;
 }
 .nav .open>a, .nav .open>a:focus, .nav .open>a:hover {
     background-color: white;
@@ -1035,7 +1059,45 @@ a:hover{
  .buttonsearch span{
  	color: white; font-size:17px;font-family: Roboto Condensed;font-weight: 700;font-size: 18px;letter-spacing: 1px;
  }
-
+#img1,#img2,#img3{
+	float: left;
+	padding: 20px;
+}
+#img1>i,#img2>i,#img3>i{
+	float: right;
+}
+#img1>img,#img2>img,#img3>img{
+	float: left;
+}
+.title-cart{
+	float: left;
+	padding-top: 18px;
+	padding-left: 20px;
+	font-family: roboto;
+	font-weight: 600;
+}
+.div-total{
+	padding: 20px;
+}
+.span-total{
+	font-family: roboto;
+    font-size: 20px;
+    font-weight: 500;
+    padding-left: 10px;
+}
+#total-cart{
+	float: right;
+    font-size: 20px;
+    font-family: roboto;
+    padding-right: 10px;
+}
+input[type="number"]{
+	width: 50px;
+	margin-left: 20px;
+}
+.list-my-cart>div>img{
+	width: 30%;
+}
  .icon-cart{
  	width: 5.8%;
  	padding: 32px 0 35px 18px;
@@ -1044,7 +1106,7 @@ a:hover{
  .icon-cart .dropdown-menu{
  	opacity: 0;
  	position: absolute;
- 	left: -80px;
+ 	left: -248px;
  	display: inline-block;
  	visibility: hidden;
  	transition: all 0.3s ease;
@@ -1069,19 +1131,21 @@ a:hover{
  	opacity: 0.5;
  	font-weight: 700;
  	text-align: center;
- 	padding: 10px;
+ 	padding: 30px;
+ 	
  }
  .count{
+ 	font-family: Montserrat;
  	position: absolute;
-    right: 0;
+    right: 2px;
     top: 26px;
-    height: 16px;
-    width: 16px;
+    height: 14px;
+    width: 14px;
     background-color: #ea1a27;
     border-radius: 50%;
     color: white;
     text-align: center;
-    font-size: 12px;
+    font-size: 11px;
  }
  .search{
  	border: 2px solid #ed1a23;

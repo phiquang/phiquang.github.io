@@ -16,6 +16,8 @@
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 	<link rel="stylesheet" type="text/css" href="css/style.css">
 	<link rel="stylesheet" href="font/fontawesome-all.css">
+	<!-- GG FONT -->
+	<link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:300,400,700" rel="stylesheet">
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
@@ -23,6 +25,8 @@
 	
 <!-- file js -->
 	<script  src="js/function.js"></script>
+	
+
 </head>
 <body>	
 	<div class="back-to-top hidden-lg hidden-md"><a href="#" class="scroll_top"><i class="fas fa-angle-up"></i></a></div>
@@ -105,7 +109,7 @@
 			
   		
 		<div class="topbar-mobile-right col-xs-6 col-sm-8 col-md-8">
-        	<div class="btn-bars" onclick="openNav()" type="button">
+        	<div class="btn-bars"  type="button">
            		<i class="fas fa-bars"></i>
         	</div>
         	
@@ -130,12 +134,12 @@
 	</div>
 <!-- menu mobile -->
 	<div id="mySidenav" class="sidenav hidden-lg">
-  						<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  						<a href="javascript:void(0)" class="closebtn" >&times;</a>
   						<ul class="list-group"> 
   							<li class="list-group-item">
   								<a href="#">Home 
   									<button data-toggle="collapse" data-target="#menu-mobile1" onclick="btnMenu()" id="btn1"><i class="fas fa-angle-down down1"></i>
-  										<i class="fas fa-angle-up up1"></i></button>
+  										<i class="fas fa-times up1"></i></button>
   									</a>
   								<ul id="menu-mobile1" class="collapse menu-mobile-lv2">
   									<li><a href="">Home 1</a></li>
@@ -143,12 +147,58 @@
   									<li><a href="">Home 3</a></li>
   								</ul>
   							</li>
-  							<li class="list-group-item"><a href="#">About Us </a>
+  							<li class="list-group-item"><a href="#">About Us 
+  								<button data-toggle="collapse" data-target="#menu-mobile4" onclick="btnMenu4()" id="btn4"><i class="fas fa-angle-down down4"></i>
+  										<i class="fas fa-times up4"></i></button>
+  							</a>
+  								<ul id="menu-mobile4" class="collapse menu-mobile-lv2">
+  									<li class="li-lv2">
+  										<a href="#">Mega menu 1
+  											<button data-toggle="collapse" data-target="#menu-mobile41" onclick="btnMenu41()" id="btn41"><i class="fas fa-angle-down down41"></i>
+  										<i class="fas fa-times up41"></i></button>
+  										</a>
+  										<ul id="menu-mobile41" class="collapse menu-mobile-lv2">
+  											<li><a href="#">Shop Layout</a></li>
+  											<li><a href="#">Shop Layout</a></li>
+  											<li><a href="#">Shop Layout</a></li>
+  										</ul>
+  									</li>
+  									<li class="li-lv2"><a href="#">Mega menu 2
+  										<button data-toggle="collapse" data-target="#menu-mobile42" onclick="btnMenu42()" id="btn42"><i class="fas fa-angle-down down42"></i>
+  										<i class="fas fa-times up42"></i></button>
+  									</a>
+  										<ul id="menu-mobile42" class="collapse menu-mobile-lv2">
+  											<li><a href="#">Shop Layout</a></li>
+  											<li><a href="#">Shop Layout</a></li>
+  											<li><a href="#">Shop Layout</a></li>
+  										</ul>
+  									</li>
+  									<li class="li-lv2"><a href="#">Mega menu 3
+  										<button data-toggle="collapse" data-target="#menu-mobile43" onclick="btnMenu43()" id="btn43"><i class="fas fa-angle-down down43"></i>
+  										<i class="fas fa-times up43"></i></button>
+  									</a>
+  										<ul id="menu-mobile43" class="collapse menu-mobile-lv2">
+  											<li><a href="#">Shop Layout</a></li>
+  											<li><a href="#">Shop Layout</a></li>
+  											<li><a href="#">Shop Layout</a></li>
+  										</ul>
+  									</li>
+  									<li class="li-lv2"><a href="#">Mega menu 4
+  										<button data-toggle="collapse" data-target="#menu-mobile44" onclick="btnMenu44()" id="btn44"><i class="fas fa-angle-down down44"></i>
+  										<i class="fas fa-times up44"></i></button>
+  									</a>
+  										<ul id="menu-mobile44" class="collapse menu-mobile-lv2">
+  											<li><a href="#">Shop Layout</a></li>
+  											<li><a href="#">Shop Layout</a></li>
+  											<li><a href="#">Shop Layout</a></li>
+  										</ul>
+  									</li>
+  								</ul>
   							</li>
   							<li class="list-group-item">
   								<a href="#">News 
   									<button data-toggle="collapse" data-target="#menu-mobile2" onclick="btnMenu2()" id="btn2"><i class="fas fa-angle-down down2"></i>
-  										<i class="fas fa-angle-up up2"></i></button>
+  										<i class="fas fa-times up2"></i></button>
   							</a>
   								<ul id="menu-mobile2" class="collapse menu-mobile-lv2">
   									<li><a href="">New 1</a></li>
@@ -160,7 +210,7 @@
   							<li class="list-group-item">
   								<a href="#">Page 
   									<button data-toggle="collapse" data-target="#menu-mobile3" onclick="btnMenu3()" id="btn3"><i class="fas fa-angle-down down3"></i>
-  										<i class="fas fa-angle-up up3"></i></button>
+  										<i class="fas fa-times up3"></i></button>
   							</a>
   								<ul id="menu-mobile3" class="collapse menu-mobile-lv2">
   									<li><a href="">Page 1</a></li>
@@ -197,8 +247,77 @@
 				
 					
 					<div class="icon-cart col-lg-1"><a href="#" class="dropdown-toggle" data-toggle="dropdown"><img src="img/cart-icon.png"><span class="count">3</span></a>
-						<div class="dropdown-menu">
-							<div class="no-item">NO ITEMS</div>
+						<div class="dropdown-menu list-my-cart">
+							<!-- <div class="no-item">NO ITEMS</div> -->
+							<!-- image to cart -->
+							<div id="img1">
+								<i class="fas fa-times"></i>
+								<img src="img/1.jpg">
+								<span class="title-cart">PRODUCT DEMO TITLE</span>
+								<input type="number" id="input1" name="" value="1">
+								<span>x</span><span class="money"> 350$</span>
+							</div>
+							<div id="img2">
+								<i class="fas fa-times"></i>
+								<img src="img/2.jpg">
+								<span class="title-cart">PRODUCT DEMO TITLE</span>
+								<input type="number" id="input1" name="" value="1">
+								<span>x</span><span class="money"> 350$</span>
+							</div>
+							<div id="img3">
+								<i class="fas fa-times"></i>
+								<img src="img/3.jpg">
+								<span class="title-cart">PRODUCT DEMO TITLE</span>
+								<input type="number" id="input1" name="" value="1">
+								<span>x</span><span class="money"> 350$</span>
+							</div>
+							<!-- <div id="img4">
+								<img src="img/4.jpg">
+							</div>
+							<div id="img5">
+								<img src="img/5.jpg">
+							</div>
+							<div id="img6">
+								<img src="img/6.jpg">
+							</div>
+							<div id="img7">
+								<img src="img/7.jpg">
+							</div>
+							<div id="img8">
+								<img src="img/8.jpg">
+							</div>
+							<div id="img9">
+								<img src="img/9.jpg">
+							</div>
+							<div id="img10">
+								<img src="img/10.jpg">
+							</div>
+							<div id="img11">
+								<img src="img/11.jpg">
+							</div>
+							<div id="img12">
+								<img src="img/12.jpg">
+							</div>
+							<div id="img13">
+								<img src="img/13.jpg">
+							</div>
+							<div id="img14">
+								<img src="img/14.jpg">
+							</div>
+							<div id="img15">
+								<img src="img/15.jpg">
+							</div>
+							<div id="img16">
+								<img src="img/16.jpg">
+							</div>
+							<div id="img17">
+								<img src="img/17.jpg">
+							</div>
+							<div id="img18">
+								<img src="img/18.jpg">
+							</div> -->
+							<!-- end -->
+							<div class="div-total"><span class="span-total">Total: </span><span class="total money" id="total-cart">1050$</span></div>
 						</div>
 					</div>
 		</div>
@@ -493,7 +612,7 @@
 <!-- btn-filter -->
 <div class="menu-filter">
 		<div class="navbar-header col-md-12 col-sm-12 col-xs-12">
-			<button class="" type="button"  onclick="openFilter()">
+			<button class="openFilter" type="button">
     			<span class="fas fa-bars"></span>
     			<span>Filter</span>
   			</button>
@@ -502,7 +621,7 @@
 <!-- catelogry -->
 	<div id="myFilter" class="filter-mobile">
 		
-		<a href="javascript:void(0)" class="closebtn-filter" onclick="closeFilter()">&times;</a>
+		<a href="javascript:void(0)" class="closeFilter" >&times;</a>
 		<div class="menu-right1">
 		<p class="top-menu">CATEGORIES</p>
 		<ul class="list-group">
@@ -662,8 +781,8 @@
 		<div class="row product-page">
 				<div class="col-lg-2 col-md-2 col-sm-4 col-xs-4 elec"><h4>Electronic</h4></div>
 				<div class="col-lg-10 col-md-10 col-sm-8 col-xs-8 show"><span class="hidden-xs hidden-sm">Showing 1-20 of 75 results</span>
-					<button onclick="gridView()"> <img src="img/icon4.png"></button>
-					<button onclick="listView()"><img src="img/icon3.png"></button>
+					<button class="btn-grid"> <img src="img/icon4.png"></button>
+					<button class="btn-list"><img src="img/icon3.png"></button>
 					
 				</div>
 		</div>
@@ -677,7 +796,7 @@
 				</div>
 				<div class="btn-product">
 					<div class="btn-button add-to-cart">
-						<button class="btn-add"><a href="#" title="Add to cart">ADD TO CART</a></button>
+						<button class="btn-add" id="btn-add-1" data-id="1" data-name="product-1" data-summary="summary-1" data-price="350" data-quantity="1" data-image="img/1.jpg"><a href="#" title="Add to cart">ADD TO CART</a></button>
 					</div>
 					<div class="icon-wishlist">
 						<a href="" title="Add to Wishlist" id="icon-wishlist"><i class="fas fa-heart"></i></a>
@@ -699,7 +818,7 @@
 				</div>
 				<div class="btn-product">
 					<div class="btn-button add-to-cart">
-						<button class="btn-add"><a href="#" title="Add to cart">ADD TO CART</a></button>
+						<button class="btn-add" id="btn-add-2" data-id="2" data-name="product-2" data-summary="summary-2" data-price="350" data-quantity="1" data-image="img/2.jpg"><a href="#" title="Add to cart">ADD TO CART</a></button>
 					</div>
 					<div class="icon-wishlist">
 						<a href="" title="Add to Wishlist" id="icon-wishlist"><i class="fas fa-heart"></i></a>
@@ -721,7 +840,7 @@
 				</div>
 				<div class="btn-product">
 					<div class="btn-button add-to-cart">
-						<button class="btn-add"><a href="#" title="Add to cart">ADD TO CART</a></button>
+						<button class="btn-add" id="btn-add-3" data-id="3" data-name="product-3" data-summary="summary-3" data-price="350" data-quantity="1" data-image="img/3.jpg"><a href="#" title="Add to cart">ADD TO CART</a></button>
 					</div>
 					<div class="icon-wishlist">
 						<a href="" title="Add to Wishlist" id="icon-wishlist"><i class="fas fa-heart"></i></a>
@@ -743,7 +862,7 @@
 				</div>
 				<div class="btn-product">
 					<div class="btn-button add-to-cart">
-						<button class="btn-add"><a href="#" title="Add to cart">ADD TO CART</a></button>
+						<button class="btn-add" id="btn-add-4" data-id="4" data-name="product-4" data-summary="summary-4" data-price="350" data-quantity="1" data-image="img/4.jpg"><a href="#" title="Add to cart">ADD TO CART</a></button>
 					</div>
 					<div class="icon-wishlist">
 						<a href="" title="Add to Wishlist" id="icon-wishlist"><i class="fas fa-heart"></i></a>
@@ -765,7 +884,7 @@
 				</div>
 				<div class="btn-product">
 					<div class="btn-button add-to-cart">
-						<button class="btn-add"><a href="#" title="Add to cart">ADD TO CART</a></button>
+						<button class="btn-add" id="btn-add-5" data-id="5" data-name="product-5" data-summary="summary-5" data-price="350" data-quantity="1" data-image="img/5.jpg"><a href="#" title="Add to cart">ADD TO CART</a></button>
 					</div>
 					<div class="icon-wishlist">
 						<a href="" title="Add to Wishlist" id="icon-wishlist"><i class="fas fa-heart"></i></a>
@@ -787,7 +906,7 @@
 				</div>
 				<div class="btn-product">
 					<div class="btn-button add-to-cart">
-						<button class="btn-add"><a href="#" title="Add to cart">ADD TO CART</a></button>
+						<button class="btn-add" id="btn-add-6" data-id="6" data-name="product-6" data-summary="summary-6" data-price="350" data-quantity="1" data-image="img/6.jpg"><a href="#" title="Add to cart">ADD TO CART</a></button>
 					</div>
 					<div class="icon-wishlist">
 						<a href="" title="Add to Wishlist" id="icon-wishlist"><i class="fas fa-heart"></i></a>
@@ -809,7 +928,7 @@
 				</div>
 				<div class="btn-product">
 					<div class="btn-button add-to-cart">
-						<button class="btn-add"><a href="#" title="Add to cart">ADD TO CART</a></button>
+						<button class="btn-add" id="btn-add-7" data-id="7" data-name="product-7" data-summary="summary-7" data-price="350" data-quantity="1" data-image="img/7.jpg"><a href="#" title="Add to cart">ADD TO CART</a></button>
 					</div>
 					<div class="icon-wishlist">
 						<a href="" title="Add to Wishlist" id="icon-wishlist"><i class="fas fa-heart"></i></a>
@@ -831,7 +950,7 @@
 				</div>
 				<div class="btn-product">
 					<div class="btn-button add-to-cart">
-						<button class="btn-add"><a href="#" title="Add to cart">ADD TO CART</a></button>
+						<button class="btn-add" id="btn-add-8" data-id="8" data-name="product-8" data-summary="summary-8" data-price="350" data-quantity="1" data-image="img/8.jpg"><a href="#" title="Add to cart">ADD TO CART</a></button>
 					</div>
 					<div class="icon-wishlist">
 						<a href="" title="Add to Wishlist" id="icon-wishlist"><i class="fas fa-heart"></i></a>
@@ -853,7 +972,7 @@
 				</div>
 				<div class="btn-product">
 					<div class="btn-button add-to-cart">
-						<button class="btn-add"><a href="#" title="Add to cart">ADD TO CART</a></button>
+						<button class="btn-add" id="btn-add-9" data-id="9" data-name="product-9" data-summary="summary-9" data-price="350" data-quantity="1" data-image="img/9.jpg"><a href="#" title="Add to cart">ADD TO CART</a></button>
 					</div>
 					<div class="icon-wishlist">
 						<a href="" title="Add to Wishlist" id="icon-wishlist"><i class="fas fa-heart"></i></a>
@@ -875,7 +994,7 @@
 				</div>
 				<div class="btn-product">
 					<div class="btn-button add-to-cart">
-						<button class="btn-add"><a href="#" title="Add to cart">ADD TO CART</a></button>
+						<button class="btn-add" id="btn-add-10" data-id="10" data-name="product-10" data-summary="summary-10" data-price="350" data-quantity="1" data-image="img/10.jpg"><a href="#" title="Add to cart">ADD TO CART</a></button>
 					</div>
 					<div class="icon-wishlist">
 						<a href="" title="Add to Wishlist" id="icon-wishlist"><i class="fas fa-heart"></i></a>
@@ -897,7 +1016,7 @@
 				</div>
 				<div class="btn-product">
 					<div class="btn-button add-to-cart">
-						<button class="btn-add"><a href="#" title="Add to cart">ADD TO CART</a></button>
+						<button class="btn-add" id="btn-add-11" data-id="11" data-name="product-11" data-summary="summary-11" data-price="350" data-quantity="1" data-image="img/11.jpg"><a href="#" title="Add to cart">ADD TO CART</a></button>
 					</div>
 					<div class="icon-wishlist">
 						<a href="" title="Add to Wishlist" id="icon-wishlist"><i class="fas fa-heart"></i></a>
@@ -919,7 +1038,7 @@
 				</div>
 				<div class="btn-product">
 					<div class="btn-button add-to-cart">
-						<button class="btn-add"><a href="#" title="Add to cart">ADD TO CART</a></button>
+						<button class="btn-add" id="btn-add-12" data-id="12" data-name="product-12" data-summary="summary-12" data-price="350" data-quantity="1" data-image="img/12.jpg"><a href="#" title="Add to cart">ADD TO CART</a></button>
 					</div>
 					<div class="icon-wishlist">
 						<a href="" title="Add to Wishlist" id="icon-wishlist"><i class="fas fa-heart"></i></a>
@@ -941,7 +1060,7 @@
 				</div>
 				<div class="btn-product">
 					<div class="btn-button add-to-cart">
-						<button class="btn-add"><a href="#" title="Add to cart">ADD TO CART</a></button>
+						<button class="btn-add" id="btn-add-13" data-id="13" data-name="product-13" data-summary="summary-13" data-price="350" data-quantity="1" data-image="img/13.jpg"><a href="#" title="Add to cart">ADD TO CART</a></button>
 					</div>
 					<div class="icon-wishlist">
 						<a href="" title="Add to Wishlist" id="icon-wishlist"><i class="fas fa-heart"></i></a>
@@ -963,7 +1082,7 @@
 				</div>
 				<div class="btn-product">
 					<div class="btn-button add-to-cart">
-						<button class="btn-add"><a href="#" title="Add to cart">ADD TO CART</a></button>
+						<button class="btn-add" id="btn-add-14" data-id="14" data-name="product-14" data-summary="summary-14" data-price="350" data-quantity="1" data-image="img/14.jpg"><a href="#" title="Add to cart">ADD TO CART</a></button>
 					</div>
 					<div class="icon-wishlist">
 						<a href="" title="Add to Wishlist" id="icon-wishlist"><i class="fas fa-heart"></i></a>
@@ -985,7 +1104,7 @@
 				</div>
 				<div class="btn-product">
 					<div class="btn-button add-to-cart">
-						<button class="btn-add"><a href="#" title="Add to cart">ADD TO CART</a></button>
+						<button class="btn-add" id="btn-add-15" data-id="15" data-name="product-15" data-summary="summary-15" data-price="350" data-quantity="1" data-image="img/15.jpg"><a href="#" title="Add to cart">ADD TO CART</a></button>
 					</div>
 					<div class="icon-wishlist">
 						<a href="" title="Add to Wishlist" id="icon-wishlist"><i class="fas fa-heart"></i></a>
@@ -1007,7 +1126,7 @@
 				</div>
 				<div class="btn-product">
 					<div class="btn-button add-to-cart">
-						<button class="btn-add"><a href="#" title="Add to cart">ADD TO CART</a></button>
+						<button class="btn-add" id="btn-add-16" data-id="16" data-name="product-16" data-summary="summary-16" data-price="350" data-quantity="1" data-image="img/16.jpg"><a href="#" title="Add to cart">ADD TO CART</a></button>
 					</div>
 					<div class="icon-wishlist">
 						<a href="" title="Add to Wishlist" id="icon-wishlist"><i class="fas fa-heart"></i></a>
@@ -1029,7 +1148,7 @@
 				</div>
 				<div class="btn-product">
 					<div class="btn-button add-to-cart">
-						<button class="btn-add"><a href="#" title="Add to cart">ADD TO CART</a></button>
+						<button class="btn-add" id="btn-add-17" data-id="17" data-name="product-17" data-summary="summary-17" data-price="350" data-quantity="1" data-image="img/17.jpg"><a href="#" title="Add to cart">ADD TO CART</a></button>
 					</div>
 					<div class="icon-wishlist">
 						<a href="" title="Add to Wishlist" id="icon-wishlist"><i class="fas fa-heart"></i></a>
@@ -1051,7 +1170,7 @@
 				</div>
 				<div class="btn-product">
 					<div class="btn-button add-to-cart">
-						<button class="btn-add"><a href="#" title="Add to cart">ADD TO CART</a></button>
+						<button class="btn-add" id="btn-add-18" data-id="18" data-name="product-18" data-summary="summary-18" data-price="350" data-quantity="1" data-image="img/18.jpg"><a href="#" title="Add to cart">ADD TO CART</a></button>
 					</div>
 					<div class="icon-wishlist">
 						<a href="" title="Add to Wishlist" id="icon-wishlist"><i class="fas fa-heart"></i></a>
