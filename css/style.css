@@ -4,6 +4,57 @@
 }
 /* Dành cho điện thoại */
 @media all and (min-width: 320px) {
+.img-responsive{
+	width: 100%;
+}
+.btn-addtocart{
+	margin-left: 10px;
+}
+.btn-checkout{
+	float: right;
+    padding: 20px 10px;
+}
+.span-total{
+	padding: 10px;
+}
+.total{
+	float: right;
+    padding-right: 10px;
+}
+.mobile-prince{
+	text-align: center;
+    line-height: 6px;
+    margin-top: -23px;
+}
+input[type=number]{
+	width: 40px;
+	height: 24px;
+}
+.list-mobile-cart{
+	position: absolute;
+    left: 192px;
+}
+.title-cart{
+	font-family: roboto;
+	font-weight: 500;
+}
+#img-mobile1{
+	width: 250px;
+	height: auto;
+}
+#img-mobile1>a>i{
+	float: right;
+	padding-right: 5px;
+}
+.list-mobile-cart{
+
+}
+#img-mobile1>img{
+	width: 30%;
+}
+.modal-backdrop{
+	z-index: 0;
+}
 #menu-mobile4{
 	padding-left: 0;
 }
@@ -247,33 +298,12 @@ button{
 	float: right;
 	padding: 0 10px;
 }
-.top-mobile-search:hover .topbar-form-mobile{
-	display: block;
-}
-.topbar-form-mobile{
-	display: none;
+.icon-top-mobile{
 	position: absolute;
-	right: 0;
-    height: 36px;
-    width: 100px;
-    z-index: 2000;
+    top: 0;
+    right: 30px;
 }
-.topbar-form-mobile>form>input{
-	border-radius: 0;
-	width: 100%;
-    float: left;
-    text-align: left;
-}
-.topbar-form-mobile>form>.icon-top-mobile{
-	position: absolute;
-    width: 20px;
-    line-height: 36px;
-    right: 2px;
-}
-.topbar-form-mobile>form>.icon-top-mobile>i{
-	font-size: 16px;
-    color: darkgrey;
-}
+
 .btn-bars{
 	text-align: left;
     padding-right: 15px;
@@ -777,12 +807,7 @@ padding-top: 18px;
 .btn-bars{
 	padding-left: 18px;
 }
-.topbar-form-mobile>form>.icon-top-mobile{
-	width: 25px;
-}
-.topbar-form-mobile{
-	width: 200px;
-}
+
 .topbar-mobile i{
 	font-size: 20px;
 }
@@ -1059,12 +1084,27 @@ a:hover{
  .buttonsearch span{
  	color: white; font-size:17px;font-family: Roboto Condensed;font-weight: 700;font-size: 18px;letter-spacing: 1px;
  }
+.btn-addtocart{
+	margin: 20px;
+    font-size: 14px;
+    background: lightgray;
+    border-color: currentColor;
+}
+.btn-addtocart:hover{
+	box-shadow: 0 6px 12px grey;
+}
+.btn-checkout{
+	float: right;
+	padding: 30px;
+	text-decoration: underline;
+}
 #img1,#img2,#img3{
 	float: left;
 	padding: 20px;
 }
-#img1>i,#img2>i,#img3>i{
+#img1>a>i,#img2>a>i,#img3>a>i{
 	float: right;
+	color: black;
 }
 #img1>img,#img2>img,#img3>img{
 	float: left;
