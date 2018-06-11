@@ -4,6 +4,14 @@
 }
 /* Dành cho điện thoại */
 @media all and (min-width: 320px) {
+.modal-content{
+	border-radius: 0;
+}
+.btn-danger{
+	background-color: red;
+	border:0;
+	border-radius: 0;
+}
 .img-responsive{
 	width: 100%;
 }
@@ -34,6 +42,7 @@ input[type=number]{
 	position: absolute;
     right: 15px;
     left: unset;
+    border-radius: 0;
 }
 .title-cart{
 	font-family: roboto;
@@ -1091,14 +1100,16 @@ a:hover{
 .btn-addtocart{
 	margin: 20px;
     font-size: 14px;
-    background: lightgray;
-    border-color: currentColor;
+    background: red;
+    border: 0;
+    border-radius: 0;
 }
 .btn-checkout{
-	
+	border: 0;
+    border-radius: 0;
 	margin: 20px 20px 20px 0;
 	font-size: 14px;
-    background: lightgray;
+    background: red;
     border-color: currentColor;
 }
 #img1,#img2,#img3{
