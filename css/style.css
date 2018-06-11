@@ -4,6 +4,14 @@
 }
 /* Dành cho điện thoại */
 @media all and (min-width: 320px) {
+.modal-body>h5{
+	background-color: wheat;
+}
+.modal-body>h5>i{
+	background: wheat;
+    color: orangered;
+    float: right;
+}
 .modal-content{
 	border-radius: 0;
 }
@@ -786,6 +794,10 @@ padding-top: 18px;
 }
 #pagi-three>a{
 	border: 0;
+	padding: 18px 0 0 0;
+}
+#page102{
+	padding: 6px;
 }
 .breadcrumb{
 	background-color: white;
@@ -1673,12 +1685,25 @@ input[type="number"]{
 	transform: scale(1);
 }
 .pagi{
-	padding-top: 70px;
-	padding-bottom: 100px;
+	padding:0 0 70px 0;
+}
+#page102{
+	padding: 8px;
 }
 .pagi li a{
-	margin-right: 7px;
+	margin-right: 5px;
 	color: #3e3e3e;
+	font-family: roboto;
+	font-size: 16px;
+}
+.pagi li a i{
+	font-size: 11px;
+}
+.pagination>li>a>.fa-chevron-left{
+	position: absolute;left: 17px;bottom: 13px;
+}
+.pagination>li>a>.fa-chevron-right{
+	position: absolute;right: 17px;bottom: 13px;
 }
 .pagination li a:hover{
 	background-color: white;
@@ -1732,6 +1757,7 @@ input[type="number"]{
 }
 #pagi-three>a{
 	border: 0;
+	padding: 0 10px ;
 }
 }
 /* Dành cho màn hình desktop */
