@@ -52,21 +52,26 @@ function scrollFunction() {
 
 // -------------------------------------------------------
 
-// function grid-list
+//--------------- function grid-list------------------
 $(".btn-grid").click(function(){
             $(".product-item").css("width","");
             $(".description").css("display","none");
             $(".btn-add").css("transform","");
             $(".icon-wishlist").css("transform","");
             $(".product-all-info").css("padding-left","0");
+
 });
 
 $(".btn-list").click(function(){
+  var x=$(window).width();
             $(".description").css("display","inherit");
             $(".product-item").css("width","100%");
             $(".product-images").css("float","left");
             $(".product-all-info").css("float","left");
-            $(".product-all-info").css("padding-left","50px");
+            if(x>414){
+              $(".product-all-info").css("padding-left","50px");
+            };
+            
             $(".btn-add").css("transform","scale(1)");
             $(".icon-wishlist").css("transform","scale(1)");
 });
@@ -221,7 +226,6 @@ $(".closeFilter").click(function() {
 //   $(".no-item").hide();
 
 // });
-
 
 
 

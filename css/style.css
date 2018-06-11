@@ -4,6 +4,12 @@
 }
 /* Dành cho điện thoại */
 @media all and (min-width: 320px) {
+.product-info>a>h4{
+	 white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    width: 164px;
+}
 .modal-body>h5{
 	background-color: wheat;
 }
@@ -335,6 +341,9 @@ button{
 	line-height: 50px;
 	text-align: left;
 }
+.back-to-top{
+	transition: all 1s ease;
+}
 .back-to-top a{
 	opacity: 0;
 	color: black;
@@ -348,7 +357,7 @@ button{
     z-index: 9999;
     border: 0;
     background: grey;
-    transition: all 0.5s ease;
+    transition: all 1s ease;
 }
 .elec{
 	text-align: center;
@@ -611,6 +620,10 @@ padding-top: 18px;
 	height: 40px;
 	border-radius: 50%;
 	margin-left: 10px;
+	transition: all 0.5s ease;
+}
+.icon-fun-tw:hover,.icon-fun-face:hover,.icon-fun-insta:hover,.icon-fun-youtube:hover{
+	opacity: 0.5;
 }
 .icon-fun-tw{
 	background-color: #1ea3f0;
@@ -887,7 +900,7 @@ padding-top: 18px;
 }
 .list-my-cart{
 	min-width: 320px;
-	max-height: 300px;
+	max-height: 262px;
 	overflow-y: scroll;
 }
 .input-mail>form> button{
@@ -1216,8 +1229,7 @@ input[type="number"]{
  	position: absolute;
     right: 2px;
     top: 26px;
-    height: 14px;
-    width: 14px;
+    padding: 0 5px;
     background-color: #ea1a27;
     border-radius: 50%;
     color: white;
@@ -1241,10 +1253,12 @@ input[type="number"]{
  .drop-page li a:hover{
  	background-color: white;
  	color: red;
+
  }
  .drop-page{
  	border-radius: 0;
  	border:0;
+ 	top: 48px;
  }
  .page-menu:hover .dropdown-menu{
  	opacity: 1;
@@ -1348,7 +1362,7 @@ input[type="number"]{
  .dropdown .drop-menu-new {
 	opacity: 0;
 	position: absolute;
-	top:40px;
+	top:42px;
 	left: -216px;
 	padding: 10px 0px ! important;
 	width: 800px;
@@ -1377,12 +1391,12 @@ input[type="number"]{
  	border: 0;
  }
  .drop-menu-about>.container>.row>ul>li>a>img{
- 	padding: 10px 80px;
+ 	padding: 30px 0;
  }
  .menu-home .drop-menu-home{
  	opacity: 0;
 	position: absolute;
-	top:40px;
+	top:42px;
 	border-radius: 0;
  	margin-top: 0px;
  	transition: all 0.5s ease;
@@ -1400,6 +1414,7 @@ input[type="number"]{
  }
  .menu-home .drop-menu-home li a{
  	background-color: white;
+ 	padding: 0 20px;
  }
 
 .mega-menu li {
@@ -1425,7 +1440,7 @@ input[type="number"]{
 }
 .mega-level-2 >li{
 	clear: both;
-	padding: 5px 40px;
+	padding: 3px 40px;
 }
 .mega-level-2 >li>a{
 	font-family: roboto;
@@ -1443,7 +1458,7 @@ input[type="number"]{
     border-radius: 0;
     top: 70px;
     left: 66px;
-    max-height: 100px;
+    max-height: 88px;
     overflow-y: scroll;
 }
 .drop-allcategory li a:hover{
@@ -1578,6 +1593,9 @@ input[type="number"]{
  .show>button{
  	border: 1px solid #d0cdcd;
  	padding: 6px 8px;
+ }
+ .show>button:active,.show>button:focus{
+ 	border:1px solid red;
  }
  .product-all-items{
  	padding-top: 40px;
