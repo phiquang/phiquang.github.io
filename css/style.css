@@ -12,7 +12,7 @@
 }
 .btn-checkout{
 	float: right;
-    padding: 20px 10px;
+	margin: 17px 10px;
 }
 .span-total{
 	padding: 10px;
@@ -24,7 +24,7 @@
 .mobile-prince{
 	text-align: center;
     line-height: 6px;
-    margin-top: -23px;
+    margin-top: -16px;
 }
 input[type=number]{
 	width: 40px;
@@ -32,7 +32,7 @@ input[type=number]{
 }
 .list-mobile-cart{
 	position: absolute;
-    right: 0;
+    right: 15px;
     left: unset;
 }
 .title-cart{
@@ -207,6 +207,12 @@ input:checked ~ .check-mark-mobile:after {
 .breadcrumb{
 	margin-bottom: 0;
 }
+#mySidenav>.form-group{
+	padding: 0 20px;
+}
+.form-control{
+	border-radius: 0;
+}
 .form-control:focus{
 	border-color: #ccc;
 	box-shadow: unset;
@@ -298,7 +304,7 @@ button{
 }
 .icon-top-mobile{
 	position: absolute;
-    top: 0;
+    top: 66px;
     right: 30px;
 }
 
@@ -1088,13 +1094,12 @@ a:hover{
     background: lightgray;
     border-color: currentColor;
 }
-.btn-addtocart:hover{
-	box-shadow: 0 6px 12px grey;
-}
 .btn-checkout{
-	float: right;
-	padding: 30px;
-	text-decoration: underline;
+	
+	margin: 20px 20px 20px 0;
+	font-size: 14px;
+    background: lightgray;
+    border-color: currentColor;
 }
 #img1,#img2,#img3{
 	float: left;
