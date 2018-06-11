@@ -17,10 +17,12 @@
 }
 .btn-addtocart{
 	margin-left: 10px;
+	transition: all .5s ease;
 }
 .btn-checkout{
 	float: right;
 	margin: 17px 10px;
+	transition: all .5s ease;
 }
 .span-total{
 	padding: 10px;
@@ -867,9 +869,14 @@ padding-top: 18px;
 }
 /*laptop*/
 @media all and (min-width: 1200px) {
+.sign-up .get-text{
+	font-size: 15px;
+	font-weight: 500;
+}
 .list-my-cart{
 	min-width: 320px;
-	height: auto;
+	max-height: 300px;
+	overflow-y: scroll;
 }
 .input-mail>form> button{
 	padding-top: 8px;
@@ -1042,6 +1049,9 @@ a:hover{
  .search{
  	float: left;
  	width: 83.5%;
+ }
+ .btn-allcategory{
+ 	transition: all .5s ease;
  }
  .btn-allcategory:hover{
  	background-color: red;
@@ -1421,6 +1431,8 @@ input[type="number"]{
     border-radius: 0;
     top: 70px;
     left: 66px;
+    max-height: 100px;
+    overflow-y: scroll;
 }
 .drop-allcategory li a:hover{
 	background-color: white;

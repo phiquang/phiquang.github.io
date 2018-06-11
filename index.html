@@ -266,6 +266,9 @@
 								<li><a href="#">Food</a></li>
 								<li><a href="#">Fashion</a></li>
 								<li><a href="#">Mobile</a></li>
+								<li><a href="#">Mobile</a></li>
+								<li><a href="#">Mobile</a></li>
+								<li><a href="#">Mobile</a></li>
 							</ul>
 						
 						<input class="input-search " type="text" name="" placeholder="Enter keyword here...">
@@ -279,28 +282,29 @@
 				
 					
 					<div class="icon-cart col-lg-1"><a href="#" class="dropdown-toggle" data-toggle="dropdown"><img src="img/cart-icon.png"><span class="count">3</span></a>
-						<div class="dropdown-menu list-my-cart">
+						<div class="dropdown-menu list-my-cart" data-spy="scroll" data-target="#img1" data-offset="50">
+
 							<!-- <div class="no-item">NO ITEMS</div> -->
 							<!-- image to cart -->
-							<div id="img1">
+							<div id="img1" >
 								<a href="#"><i class="fas fa-times"></i></a>
 								<img src="img/1.jpg">
 								<span class="title-cart">PRODUCT DEMO TITLE</span>
-								<input type="number" id="input1" name="" value="1">
+								<input type="number" id="input1" name="" value="1" min="0">
 								<span>x</span><span class="money"> 350$</span>
 							</div>
 							<div id="img2">
 								<a href=""><i class="fas fa-times"></i></a>
 								<img src="img/2.jpg">
 								<span class="title-cart">PRODUCT DEMO TITLE</span>
-								<input type="number" id="input1" name="" value="1">
+								<input type="number" id="input1" name="" value="1" min="0">
 								<span>x</span><span class="money"> 350$</span>
 							</div>
 							<div id="img3">
 								<a href=""><i class="fas fa-times"></i></a>
 								<img src="img/3.jpg">
 								<span class="title-cart">PRODUCT DEMO TITLE</span>
-								<input type="number" id="input1" name="" value="1">
+								<input type="number" id="input1" name="" value="1" min="0">
 								<span>x</span><span class="money"> 350$</span>
 							</div>
 							<!-- <div id="img4">
@@ -349,9 +353,12 @@
 								<img src="img/18.jpg">
 							</div> -->
 							<!-- end -->
-							<div class="div-total"><span class="span-total">Total: </span><span class="total money" id="total-cart">1050$</span></div>
-							<button class="btn-addtocart btn-danger btn-lg">VIEW CART</button>
-							<button class="btn-checkout btn-danger btn-lg">CHECK OUT</button>
+							<div>
+								<div class="div-total"><span class="span-total">Total: </span><span class="total money" id="total-cart">1050$</span></div>
+								<button class="btn-addtocart btn-danger btn-lg">VIEW CART</button>
+								<button class="btn-checkout btn-danger btn-lg">CHECK OUT</button>
+							</div>
+							
 						</div>
 					</div>
 		</div>
