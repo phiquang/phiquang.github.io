@@ -68,7 +68,7 @@ $(".btn-list").click(function(){
             $(".product-item").css("width","100%");
             $(".product-images").css("float","left");
             $(".product-all-info").css("float","left");
-            if(x>414){
+            if(x>567){
               $(".product-all-info").css("padding-left","50px");
             };
             
