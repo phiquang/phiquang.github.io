@@ -433,7 +433,6 @@ button{
 .description{
 	font-family: roboto;
 	display: none;
-	padding-top: 386px
 }
 .icon-wishlist{
 	float: left;
@@ -843,9 +842,7 @@ padding-top: 18px;
 }
  /*điện thoại chiều ngang*/
  @media all and (min-width: 568px){
-.description{
-	padding: 116px 0 0 320px;
-}
+
 .icon-all{
 	padding-left: 0;
  }
@@ -876,9 +873,7 @@ padding-top: 18px;
 .product-all-info {
     padding: 28px 30px 0 30px;
 }
-.description{
-	padding: 122px 0 0 320px;
-}
+
 #navbarSupportedContent{
 	padding-top: 60px;
 }
@@ -995,9 +990,7 @@ input:checked ~ .check-mark:after {
 .sign-up .sign{
 	font-size: 18px;
 }
-.description {
-    padding: 115px 0 0 320px;
-}
+
 button{
 	outline: 0;
 }

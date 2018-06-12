@@ -59,19 +59,40 @@ $(".btn-grid").click(function(){
             $(".btn-add").css("transform","");
             $(".icon-wishlist").css("transform","");
             $(".product-all-info").css("padding-left","0");
+            $(".product-all-info").css("width","100%");
+            $(".product-images").css("width","100%");
+          
+            
 
 });
 
 $(".btn-list").click(function(){
   var x=$(window).width();
-            $(".description").css("display","inherit");
+            $(".description").css("display","inline-block");
             $(".product-item").css("width","100%");
             $(".product-images").css("float","left");
             $(".product-all-info").css("float","left");
+            
             if(x>567){
-              $(".product-all-info").css("padding-left","50px");
+              $(".product-all-info").css("padding","0");
+              $(".product-images").css("width","50%");
+              $(".product-all-info").css("width","50%");
+              $(".description").css("width","50%");
+              $(".description").css("padding","0");
+              $(".description").css("float","right");
+            };
+            if(x>767){
+              $(".product-all-info").css("padding","50px 30px");
+              $(".product-images").css("width","30%");
+              $(".product-all-info").css("width","32%");
+              $(".description").css("width","38%");
+              $(".description").css("padding","32px 0");
             };
             
+
+               
+            
+           
             $(".btn-add").css("transform","scale(1)");
             $(".icon-wishlist").css("transform","scale(1)");
 });
