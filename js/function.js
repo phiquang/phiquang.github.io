@@ -5,6 +5,7 @@ $(document).ready(function(){
 
 // function range prince-pc
 $(function() {
+  'use trick';
             $( "#slider-3" ).slider({
                range:true,
                min: 0,
@@ -20,6 +21,7 @@ $(function() {
 // --------------------------------
 // function range prince-mobile
 $(function() {
+  'use trick';
             $( "#slider-3-mobile" ).slider({
                range:true,
                min: 0,
@@ -38,6 +40,7 @@ $(function() {
 window.onscroll = function() {scrollFunction()};
 
 function scrollFunction() {
+  'use trick';
   if ($("body,html").scrollTop() > 50) {
     $(".scroll_top").css("opacity","1");
     $(".head-mobile").css("position","fixed");
@@ -55,6 +58,7 @@ function scrollFunction() {
 
 //--------------- function grid-list------------------
 $(".btn-grid").click(function(){
+  'use trick';
             $(".product-item").css("width","");
             $(".description").css("display","none");
             $(".btn-add").css("transform","");
@@ -68,6 +72,7 @@ $(".btn-grid").click(function(){
 });
 
 $(".btn-list").click(function(){
+  'use trick';
   var x=$(window).width();
            
             
@@ -99,12 +104,14 @@ $(".btn-list").click(function(){
 // function menu mobile
 
 $(".btn-bars").on("click",function(){
+  'use trick';
     $("#mySidenav").css("width","320px");
     $("#baselMobile").css("visibility","visible");
     $("#baselMobile").css("opacity","1");
 });
 /* Set the width of the side navigation to 0 */
 $(".closebtn").click(function(){
+  'use trick';
     $("#mySidenav").css("width","0");
     $("#baselMobile").css("visibility","hidden");
     $("#baselMobile").css("opacity","0");
@@ -112,6 +119,7 @@ $(".closebtn").click(function(){
 // ----------------------------------
 /* Set the width of the side navigation to 250px */
 $(".openFilter").click(function() {
+  'use trick';
     $("#myFilter").css("width","320px");
     $("#baselMobile").css("visibility","visible");
     $("#baselMobile").css("opacity","1");
@@ -119,6 +127,7 @@ $(".openFilter").click(function() {
 
 /* Set the width of the side navigation to 0 */
 $(".closeFilter").click(function() {
+  'use trick';
     $("#myFilter").css("width","0");
     $("#baselMobile").css("visibility","hidden");
     $("#baselMobile").css("opacity","0");
@@ -126,6 +135,7 @@ $(".closeFilter").click(function() {
 // ------------------------------------------
 // -------btn-click menu-------------------
 $("#btn1").on("click",function(){
+  'use trick';
   var x=$("#btn1").attr("aria-expanded");
     if(x=="true"){
         $(".up1").css("display","none");
@@ -138,6 +148,7 @@ $("#btn1").on("click",function(){
 });
 // -------------------------------------------------------------------
 $("#btn2").on("click",function(){
+  'use trick';
     var y= $("#btn2").attr("aria-expanded");
     if(y=="true"){
         $(".up2").css("display","none");
@@ -150,6 +161,7 @@ $("#btn2").on("click",function(){
 });
     // ------------------------------------------------------------------------
 $("#btn21").on("click",function(){
+  'use trick';
     var b= $("#btn21").attr("aria-expanded");
     if(b=="true"){
         $(".up21").css("display","none");
@@ -162,6 +174,7 @@ $("#btn21").on("click",function(){
 });
 // ------------------------------------------------------------------------
 $("#btn22").on("click",function(){
+  'use trick';
     var c= $("#btn22").attr("aria-expanded");
     if(c=="true"){
         $(".up22").css("display","none");
@@ -174,6 +187,7 @@ $("#btn22").on("click",function(){
 });
 // ------------------------------------------------------------------------
 $("#btn23").on("click",function(){
+  'use trick';
     var d= $("#btn23").attr("aria-expanded");
     if(d=="true"){
         $(".up23").css("display","none");
@@ -186,6 +200,7 @@ $("#btn23").on("click",function(){
 });
 // -------------------------------------------------------------------
 $("#btn3").on("click",function(){
+  'use trick';
     var z= $("#btn3").attr("aria-expanded");
     if(z=="true"){
         $(".up3").css("display","none");
@@ -200,6 +215,7 @@ $("#btn3").on("click",function(){
 
 // -------------------------------------------------------------------
 $("#btn4").on("click",function(){
+  'use trick';
     var a= $("#btn4").attr("aria-expanded");
     if(a=="true"){
         $(".up4").css("display","none");
@@ -212,6 +228,7 @@ $("#btn4").on("click",function(){
 });
 // ------------------------------------------------------------------------
 $("#btn41").on("click",function(){
+  'use trick';
     var b= $("#btn41").attr("aria-expanded");
     if(b=="true"){
         $(".up41").css("display","none");
@@ -224,6 +241,7 @@ $("#btn41").on("click",function(){
 });
 // ------------------------------------------------------------------------
 $("#btn42").on("click",function(){
+  'use trick';
     var c= $("#btn42").attr("aria-expanded");
     if(c=="true"){
         $(".up42").css("display","none");
@@ -236,6 +254,7 @@ $("#btn42").on("click",function(){
 });
 // ------------------------------------------------------------------------
 $("#btn43").on("click",function(){
+  'use trick';
     var d= $("#btn43").attr("aria-expanded");
     if(d=="true"){
         $(".up43").css("display","none");
@@ -248,6 +267,7 @@ $("#btn43").on("click",function(){
 });
 // ------------------------------------------------------------------------
 $("#btn44").on("click",function(){
+  'use trick';
     var e= $("#btn44").attr("aria-expanded");
     if(e=="true"){
         $(".up44").css("display","none");
@@ -259,8 +279,18 @@ $("#btn44").on("click",function(){
     }
 });
 // ----------------end btn menu-------------------------------
-
-
+// -------count-----------
+var f=0;
+$(".btn-add").on("click",function(){
+  
+  f++;
+  $(".count").text(f);
+  if (f>99) {
+    $(".count").text("99+").css("font-size","8px").css("padding-top","3px");
+    
+  };
+});
+// ---------------------------------------------
 
 // --------------end------------------
 });
