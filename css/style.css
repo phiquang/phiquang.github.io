@@ -847,10 +847,6 @@ padding-top: 18px;
 .breadcrumb li+li:before{
  	content: "";
  }
- .icon-footer{
- 	padding-bottom: 30px;
- }
-
 }
 @media (max-width: 480px){
 .product-item{
@@ -903,9 +899,7 @@ padding-top: 18px;
 	font-size: 14px;
 	padding-bottom: 10px;
 }
-.icon-footer{
-	padding-top: 18px;
- }
+
 }
 /* Dành cho máy tính bảng chiều ngang */
 @media all and (min-width: 992px){
@@ -925,9 +919,6 @@ padding-top: 18px;
 	font-size: 14px;
 }
 
-.icon-footer{
-	padding-top: 16px;
-}
 .pagi{
 	padding: 30px 0;
 }
@@ -1262,14 +1253,6 @@ input[type="number"]{
  	opacity: 1;
  	transform: translate(0,-5px);
  	visibility: unset;
- }
- .icon-cart .no-item{
- 	font-size: 20px;
- 	opacity: 0.5;
- 	font-weight: 700;
- 	text-align: center;
- 	padding: 30px;
- 	
  }
  .count{
  	font-family: Montserrat;
