@@ -348,6 +348,9 @@ button{
 	float: right;
 	padding: 0 10px;
 }
+.top-mobile-search>a:hover,.top-mobile-bag>a:hover{
+	text-decoration: none;
+}
 .icon-top-mobile{
 	position: absolute;
     top: 66px;
@@ -399,6 +402,9 @@ button{
     border: 1px solid grey;
     padding: 4px 6px;
 }
+.show>button:active, .show>button:focus {
+    border: 1px solid red;
+    }
 
 .product-all-info{
 	padding: 10px 0;
