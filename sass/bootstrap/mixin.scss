@@ -1,0 +1,185 @@
+﻿nav{
+	.open{
+	a{background-color:unset !important;&:hover{background-color:unset !important;}&:focus{background-color:unset !important;}}
+	}
+}
+.nav .open>a, .nav .open>a:focus, .nav .open>a:hover{background-color:unset !important;}
+@mixin background-image($url,$position,$height){
+	background-image:url($url);
+	background-position: $position;
+    height: $height;
+}
+@mixin dropdown{&:hover{.dropdown-menu{visibility:visible;opacity:1;}}}
+@mixin dropdown-menu{
+	display:inline-block;
+	visibility:hidden;
+	opacity:0;
+	transition: all .5s ease;
+	min-width:0;
+	border-radius:0;
+	border:0;
+}
+@mixin font-face($font,$size,$weight){
+	font-family: $font;
+	font-weight: $weight;
+	font-size: $size;
+	color:black;
+}
+@mixin btn-defaut($color){
+	outline:0;
+	border:0;
+	background:$color;
+	color:white;
+}
+@mixin btn-style($deg,$background,$color) {
+	background-image: -webkit-linear-gradient($deg, $background 50%, transparent 50%);
+ 	 background-image: linear-gradient($deg, $background 50%, transparent 50%);
+ 	 background-size:600px;
+ 	background-repeat: no-repeat;
+  	background-position: 0%;
+ 	border-left: 2px solid $background;
+    -webkit-transition: background .3s ease-in-out;
+  	transition: background .3s ease-in-out;
+  &:hover{
+  background-position:100%;
+  background-color:$color;
+  color:$background;
+  }
+}
+@mixin btn-style-color{
+	&:hover{background:#eb1a20;color:white;border:2px solid #eb1a20;}
+}
+@mixin input-defaut{
+	outline:0;
+	border:0;
+	border-radius:0;
+	box-shadow:none;
+	padding-left:15px;
+	opacity:.5;
+    letter-spacing:.7px;
+}
+%nav-li-a{
+	padding-top:0;
+	padding-bottom:0;
+	color:black;
+}
+@mixin social($width,$height){
+border-radius:50%;
+	color:white;
+	padding:0;
+	width:$width;
+	height:$height;
+}
+@mixin link{
+	text-decoration:none;
+	color:red;
+}
+@mixin p-blogdetail{
+	font-size:17px;
+padding-top:0;
+padding-bottom:45px;
+color:#c4c4c4;
+}
+@mixin tooltip{
+	position: relative;
+    display: inline-block;
+}
+@mixin tooltiptext($width,$background,$color){
+	width: $width;
+    background-color: $background;
+    color: $color;
+    text-align: center;
+    border-radius: 3px;
+    padding: 5px 0;
+    position: absolute;
+    z-index: 1;
+    top: -18px;
+    right:-35px;
+}
+@mixin tooltiptext-after($background){
+	content: "";
+    position: absolute;
+    top: 50%;
+    right: 100%;
+    margin-top: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: transparent $background transparent transparent;
+}
+@mixin avatar($width,$height,$background){
+	width:$width;
+	height:$height;
+	background-color:$background;
+}
+@mixin input-checkbox{
+	position:relative;
+	opacity:0;
+	cursor: pointer;
+}
+@mixin check-mark($width,$height,$top,$left){
+	width:$width;
+	height:$height;
+	position:absolute;
+	top:$top;
+	left:$left;
+	border-radius:50%;
+	background-color:#f5f5f5;
+	border:1px solid grey;
+}
+@mixin label{
+	position:relative;
+	cursor:pointer;
+}
+@mixin counter{
+	position:relative;
+	text-align: right;
+	background: transparent;
+	#tiles{
+		
+		span{
+			width: 90px;
+			max-width: 90px;
+			font-family:Poppins;
+			font-size:36px;
+			font-weight:600;
+			text-align:center;
+			color: #111;
+			background-color: #fff;
+			margin: 0 7px;
+			padding: 10px 0px 30px 0;
+			display: inline-block;
+			
+		}
+	}
+	.labels{
+
+		li{
+		width: 100px;
+		font-family:Poppins;
+		font-size:14px;
+		font-weight:400;
+		color: grey;
+		text-align: center;
+		display: inline-block;
+		}
+	}
+}
+@mixin btn-shopnow{
+	@include font-face(Abril Fatface,18px,400);transition:all .5s ease;color:white;padding:10px 40px;background-color:black;
+	&:hover{@include link;background-color:white;color:#fbb0c4;}
+}
+@mixin product-icon($top,$left){
+	position:absolute;z-index:1;text-align:center;top:$top;left:$left;opacity:0;transform:scale(0);transition:all .3s ease;
+		i{width:55px;height:55px;background-color:white;border-radius:50%;font-size: 20px;padding-top: 18px;margin-right:8px;}
+		a{&:first-child{color:lightgrey;}&:last-child{color:lightgrey;}color:black;&:hover{color:pink;}}
+}
+.show-search{
+	opacity:1 !important;
+	visibility:visible !important;
+}
+@mixin figure{
+	position:absolute;width: 30px;height: 2px;background: black;bottom: 8px;left: 10px;visibility:hidden;opacity:0;
+}
+@mixin figure-hover{
+	visibility:unset;opacity:1;transform:translateX(5px);transition:all .35s ease;
+}

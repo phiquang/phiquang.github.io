@@ -1,0 +1,15 @@
+nav .open a {
+  background-color: unset !important; }
+  nav .open a:hover {
+    background-color: unset !important; }
+  nav .open a:focus {
+    background-color: unset !important; }
+
+.nav .open > a, .nav .open > a:focus, .nav .open > a:hover {
+  background-color: unset !important; }
+
+.show-search {
+  opacity: 1 !important;
+  visibility: visible !important; }
+
+/*# sourceMappingURL=mixin.css.map */
