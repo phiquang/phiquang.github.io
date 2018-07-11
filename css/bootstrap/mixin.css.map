@@ -1,7 +1,0 @@
-{
-"version": 3,
-"mappings": "AAEC,WAAC;EAAC,gBAAgB,EAAC,gBAAgB;EAAC,iBAAO;IAAC,gBAAgB,EAAC,gBAAgB;EAAE,iBAAO;IAAC,gBAAgB,EAAC,gBAAgB;;AAGzH,0DAAoD;EAAC,gBAAgB,EAAC,gBAAgB;;AA0KtF,YAAY;EACX,OAAO,EAAC,YAAY;EACpB,UAAU,EAAC,kBAAkB",
-"sources": ["../../sass/bootstrap/mixin.scss"],
-"names": [],
-"file": "mixin.css"
-}
